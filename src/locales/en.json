@@ -1,0 +1,62 @@
+{
+  "nav": {
+    "home": "Home",
+    "features": "Features",
+    "quickStart": "Quick Start",
+    "technical": "Technical",
+    "community": "Community",
+    "github": "GitHub"
+  },
+  "hero": {
+    "title": "EchoNote",
+    "tagline": "Smart Voice Transcription & Calendar Management",
+    "description": "Privacy-first local solution for intelligent voice transcription and calendar management that's smart, secure, and efficient.",
+    "downloadButton": "Download Now",
+    "docsButton": "View Docs",
+    "githubButton": "GitHub"
+  },
+  "features": {
+    "title": "Core Features",
+    "subtitle": "Why Choose EchoNote",
+    "privacyTitle": "Privacy First",
+    "privacyDescription": "All data processed locally, no cloud uploads required, complete privacy protection.",
+    "localTitle": "Local Processing",
+    "localDescription": "Powerful local speech recognition and processing capabilities, works without internet connection.",
+    "smartTitle": "Smart Management",
+    "smartDescription": "Intelligent calendar integration, automatically extracts time and event information from speech."
+  },
+  "quickStart": {
+    "title": "Quick Start",
+    "subtitle": "Get started with EchoNote in minutes",
+    "installationTitle": "Installation Guide",
+    "requirementsTitle": "System Requirements",
+    "configurationTitle": "Configuration"
+  },
+  "technical": {
+    "title": "Technical Information",
+    "subtitle": "Learn about EchoNote's technical architecture",
+    "architectureTitle": "System Architecture",
+    "techStackTitle": "Tech Stack",
+    "performanceTitle": "Performance Metrics"
+  },
+  "community": {
+    "title": "Community Support",
+    "subtitle": "Join the EchoNote open source community",
+    "contributorsTitle": "Contributors",
+    "supportTitle": "Get Help",
+    "roadmapTitle": "Roadmap"
+  },
+  "footer": {
+    "license": "Apache 2.0 License",
+    "version": "Version",
+    "lastUpdated": "Last Updated"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Error occurred",
+    "retry": "Retry",
+    "copy": "Copy",
+    "copied": "Copied",
+    "learnMore": "Learn More"
+  }
+}
