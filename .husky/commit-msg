@@ -1,0 +1,13 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+# Check if commit message follows conventional commit format
+commit_regex='^(feat|fix|docs|style|refactor|test|chore)(\(.+\))?: .{1,50}'
+
+if ! grep -qE "$commit_regex" "$1"; then
+    echo "Invalid commit message format!"
+    echo "Please use the format: <type>(<scope>): <subject>"
+    echo "Types: feat, fix, docs, style, refactor, test, chore"
+    echo "Example: feat(components): add navigation bar component"
+    exit 1
+fi

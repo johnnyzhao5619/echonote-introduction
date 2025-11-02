@@ -3,6 +3,11 @@
     "Vue.volar",
     "dbaeumer.vscode-eslint",
     "EditorConfig.EditorConfig",
-    "esbenp.prettier-vscode"
+    "esbenp.prettier-vscode",
+    "bradlc.vscode-tailwindcss",
+    "ms-vscode.vscode-typescript-next",
+    "formulahendry.auto-rename-tag",
+    "christian-kohler.path-intellisense",
+    "ms-vscode.vscode-json"
   ]
 }

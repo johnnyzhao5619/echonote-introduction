@@ -14,9 +14,71 @@ export default defineConfigWithVueTs(
     files: ['**/*.{ts,mts,tsx,vue}'],
   },
 
-  globalIgnores(['**/dist/**', '**/dist-ssr/**', '**/coverage/**']),
+  globalIgnores(['**/dist/**', '**/dist-ssr/**', '**/coverage/**', '**/node_modules/**']),
 
-  pluginVue.configs['flat/essential'],
+  pluginVue.configs['flat/strongly-recommended'],
   vueTsConfigs.recommended,
-  skipFormatting,
+
+  {
+    name: 'app/vue-rules',
+    files: ['**/*.vue'],
+    rules: {
+      // Vue 3 Composition API best practices
+      'vue/component-api-style': ['error', ['script-setup', 'composition']],
+      'vue/component-name-in-template-casing': ['error', 'PascalCase'],
+      'vue/custom-event-name-casing': ['error', 'camelCase'],
+      'vue/define-macros-order': [
+        'error',
+        {
+          order: ['defineOptions', 'defineProps', 'defineEmits', 'defineSlots'],
+        },
+      ],
+      'vue/no-undef-components': 'error',
+      'vue/no-unused-refs': 'error',
+      'vue/prefer-separate-static-class': 'error',
+      'vue/prefer-true-attribute-shorthand': 'error',
+      'vue/block-order': [
+        'error',
+        {
+          order: ['script', 'template', 'style'],
+        },
+      ],
+      // Accessibility rules
+      'vue/require-toggle-inside-transition': 'error',
+    },
+  },
+
+  {
+    name: 'app/typescript-rules',
+    files: ['**/*.{ts,tsx,mts,cts}'],
+    rules: {
+      // TypeScript best practices
+      '@typescript-eslint/no-unused-vars': [
+        'error',
+        {
+          argsIgnorePattern: '^_',
+          varsIgnorePattern: '^_',
+        },
+      ],
+      '@typescript-eslint/explicit-function-return-type': 'off',
+      '@typescript-eslint/explicit-module-boundary-types': 'off',
+      '@typescript-eslint/no-explicit-any': 'warn',
+      '@typescript-eslint/no-inferrable-types': 'error',
+    },
+  },
+
+  {
+    name: 'app/general-rules',
+    rules: {
+      // General code quality rules
+      'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
+      'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
+      'prefer-const': 'error',
+      'no-var': 'error',
+      'object-shorthand': 'error',
+      'prefer-template': 'error',
+    },
+  },
+
+  skipFormatting
 )
