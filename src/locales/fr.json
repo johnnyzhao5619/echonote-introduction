@@ -1,0 +1,416 @@
+{
+  "meta": {
+    "title": "EchoNote - Transcription vocale intelligente et gestion de calendrier",
+    "description": "Solution locale axée sur la confidentialité pour la transcription vocale intelligente et la gestion de calendrier. Application de bureau open source avec traitement local.",
+    "keywords": "transcription vocale, reconnaissance vocale, gestion de calendrier, traitement local, protection de la confidentialité, logiciel open source, application de bureau",
+    "author": "Équipe EchoNote"
+  },
+  "nav": {
+    "home": "Accueil",
+    "features": "Fonctionnalités",
+    "quickStart": "Démarrage rapide",
+    "technical": "Informations techniques",
+    "community": "Support communautaire",
+    "github": "GitHub",
+    "language": "Langue"
+  },
+  "hero": {
+    "title": "EchoNote",
+    "tagline": "Transcription vocale intelligente et gestion de calendrier",
+    "description": "Solution locale axée sur la confidentialité pour une transcription vocale intelligente et une gestion de calendrier sécurisée et efficace.",
+    "features": {
+      "0": "🔒 Protection complète de la confidentialité par traitement local",
+      "1": "🎤 Technologie avancée de reconnaissance vocale IA",
+      "2": "📅 Intégration et gestion intelligente du calendrier",
+      "3": "⚡ Traitement en temps réel rapide et efficace",
+      "4": "🌐 Compatibilité multiplateforme complète"
+    },
+    "downloadButton": "Télécharger maintenant",
+    "docsButton": "Voir la documentation",
+    "githubButton": "Voir sur GitHub",
+    "stats": {
+      "stars": "Étoiles GitHub",
+      "forks": "Forks",
+      "contributors": "Contributeurs",
+      "releases": "Versions"
+    }
+  },
+  "features": {
+    "title": "Fonctionnalités principales",
+    "subtitle": "Pourquoi choisir EchoNote",
+    "items": {
+      "privacy": {
+        "title": "Confidentialité d'abord",
+        "description": "Toutes vos données sont traitées localement sur votre appareil, sans aucun téléchargement vers des serveurs cloud, garantissant ainsi une protection absolue de vos informations sensibles et une confidentialité totale.",
+        "highlights": [
+          "Traitement vocal local",
+          "Aucune transmission de données",
+          "Stockage local chiffré",
+          "Conforme au RGPD"
+        ]
+      },
+      "local": {
+        "title": "Traitement local",
+        "description": "Utilise une technologie de pointe pour la reconnaissance et le traitement vocal local, fonctionnant entièrement hors ligne pour assurer un service fiable et stable dans toutes les situations.",
+        "highlights": [
+          "Fonctionnalité hors ligne",
+          "Vitesse de traitement rapide",
+          "Aucune dépendance Internet",
+          "Latence réduite"
+        ]
+      },
+      "smart": {
+        "title": "Gestion intelligente",
+        "description": "Grâce à des technologies avancées de traitement du langage naturel, extrait intelligemment les informations temporelles, les dates et les événements de votre voix pour créer automatiquement vos rendez-vous.",
+        "highlights": [
+          "Extraction automatique d'événements",
+          "Planification intelligente",
+          "Traitement du langage naturel",
+          "Synchronisation du calendrier"
+        ]
+      },
+      "crossPlatform": {
+        "title": "Multiplateforme",
+        "description": "Application de bureau native développée pour une compatibilité parfaite avec Windows, macOS et Linux, offrant une expérience utilisateur cohérente et de qualité sur tous les systèmes.",
+        "highlights": [
+          "Support Windows",
+          "Compatibilité macOS",
+          "Distribution Linux",
+          "Interface utilisateur cohérente"
+        ]
+      }
+    }
+  },
+  "quickStart": {
+    "title": "Démarrage rapide",
+    "subtitle": "Commencez avec EchoNote en quelques minutes",
+    "installation": {
+      "title": "Guide d'installation",
+      "subtitle": "Choisissez votre plateforme et suivez les étapes d'installation",
+      "platforms": {
+        "windows": "Windows",
+        "macos": "macOS",
+        "linux": "Linux"
+      },
+      "steps": {
+        "download": "Télécharger la dernière version",
+        "install": "Exécuter l'installateur",
+        "launch": "Lancer EchoNote",
+        "configure": "Configurer vos préférences"
+      }
+    },
+    "requirements": {
+      "title": "Configuration système requise",
+      "subtitle": "Spécifications système minimales",
+      "items": {
+        "os": "Système d'exploitation : Windows 10+, macOS 10.14+ ou Linux",
+        "memory": "Mémoire : 4 Go de RAM minimum, 8 Go recommandés",
+        "storage": "Stockage : 500 Mo d'espace disponible",
+        "audio": "Audio : Microphone pour la saisie vocale"
+      }
+    },
+    "configuration": {
+      "title": "Configuration initiale",
+      "subtitle": "Configurez EchoNote pour des performances optimales",
+      "steps": [
+        "Configurer les paramètres du microphone",
+        "Configurer l'intégration du calendrier",
+        "Personnaliser les préférences de transcription",
+        "Configurer les paramètres de confidentialité"
+      ]
+    }
+  },
+  "technical": {
+    "title": "Informations techniques",
+    "subtitle": "Découvrez l'architecture technique et l'implémentation d'EchoNote",
+    "architecture": {
+      "title": "Architecture système",
+      "description": "EchoNote adopte une architecture modulaire moderne, plaçant la protection de la confidentialité, l'optimisation des performances et l'extensibilité au cœur de sa conception pour assurer stabilité et maintenabilité.",
+      "components": [
+        "Moteur de reconnaissance vocale",
+        "Traitement du langage naturel",
+        "Couche d'intégration du calendrier",
+        "Système de stockage local",
+        "Framework d'interface utilisateur"
+      ]
+    },
+    "techStack": {
+      "title": "Stack technologique",
+      "subtitle": "Construit avec des technologies modernes et fiables",
+      "items": {
+        "python": "Python - Logique d'application principale",
+        "whisper": "OpenAI Whisper - Reconnaissance vocale",
+        "nlp": "spaCy - Traitement du langage naturel",
+        "qt": "PyQt - Framework d'interface utilisateur",
+        "sqlite": "SQLite - Stockage de données local"
+      }
+    },
+    "performance": {
+      "title": "Métriques de performance",
+      "subtitle": "Optimisé pour la vitesse et l'efficacité",
+      "metrics": {
+        "transcription": "Transcription en temps réel en millisecondes",
+        "accuracy": "Plus de 95% de précision de transcription",
+        "startup": "Démarrage rapide en moins de 3 secondes",
+        "memory": "Utilisation mémoire inférieure à 200MB"
+      }
+    }
+  },
+  "community": {
+    "title": "Communauté et support",
+    "subtitle": "Rejoignez la communauté open source EchoNote",
+    "contributors": {
+      "title": "Contributeurs",
+      "description": "Merci à tous les contributeurs formidables qui aident à améliorer EchoNote.",
+      "viewAll": "Voir tous les contributeurs"
+    },
+    "support": {
+      "title": "Obtenir de l'aide",
+      "description": "Plusieurs façons d'obtenir du support et de se connecter avec la communauté",
+      "channels": {
+        "github": "GitHub Issues - Rapports de bugs et demandes de fonctionnalités",
+        "discussions": "GitHub Discussions - Q&R communautaire",
+        "docs": "Documentation - Guides complets et tutoriels",
+        "email": "Support par email - Contact direct pour les problèmes urgents"
+      }
+    },
+    "contribute": {
+      "title": "Comment contribuer",
+      "description": "Nous accueillons les contributions de développeurs de tous niveaux",
+      "ways": [
+        "Signaler des bugs et suggérer des fonctionnalités",
+        "Améliorer la documentation",
+        "Soumettre des contributions de code",
+        "Aider avec les traductions",
+        "Partager votre expérience"
+      ]
+    },
+    "roadmap": {
+      "title": "Feuille de route de développement",
+      "description": "Fonctionnalités et améliorations à venir",
+      "items": [
+        "Reconnaissance vocale multilingue",
+        "Intégrations de calendrier avancées",
+        "Architecture de système de plugins",
+        "Application mobile compagnon",
+        "Synchronisation cloud (optionnelle)"
+      ]
+    }
+  },
+  "footer": {
+    "license": "Licence Apache 2.0",
+    "version": "Version",
+    "lastUpdated": "Dernière mise à jour",
+    "links": {
+      "privacy": "Politique de confidentialité",
+      "terms": "Conditions d'utilisation",
+      "security": "Sécurité",
+      "changelog": "Journal des modifications"
+    },
+    "social": {
+      "github": "GitHub",
+      "twitter": "Twitter",
+      "discord": "Discord"
+    }
+  },
+  "faq": {
+    "title": "Questions fréquemment posées",
+    "subtitle": "Tout ce que vous devez savoir sur EchoNote",
+    "moreQuestions": "Vous avez d'autres questions ?",
+    "askCommunity": "Demander à la communauté",
+    "reportIssue": "Signaler un problème",
+    "items": {
+      "whatIs": {
+        "question": "Qu'est-ce qu'EchoNote ?",
+        "answer": "EchoNote est une application de bureau axée sur la confidentialité pour la transcription vocale intelligente et la gestion de calendrier qui traite toutes les données localement sur votre appareil.",
+        "details": [
+          "Reconnaissance vocale avancée utilisant la technologie OpenAI Whisper",
+          "Intégration intelligente du calendrier avec traitement du langage naturel",
+          "Fonctionnalité complètement hors ligne sans dépendances cloud",
+          "Support multiplateforme pour Windows, macOS et Linux"
+        ],
+        "links": {
+          "features": "Voir les fonctionnalités",
+          "quickStart": "Guide de démarrage rapide"
+        }
+      },
+      "free": {
+        "question": "EchoNote est-il gratuit à utiliser ?",
+        "answer": "Oui, EchoNote est complètement gratuit et open source sous la licence Apache 2.0.",
+        "details": [
+          "Aucun frais d'abonnement ou niveau premium",
+          "Accès complet à toutes les fonctionnalités sans limitations",
+          "Code source ouvert disponible pour examen et contribution"
+        ],
+        "links": {
+          "license": "Voir la licence",
+          "source": "Code source"
+        }
+      },
+      "platforms": {
+        "question": "Quelles plateformes EchoNote supporte-t-il ?",
+        "answer": "EchoNote supporte Windows 10+, macOS 10.14+ et les distributions Linux.",
+        "details": [
+          "Windows 10 et Windows 11 avec performance native",
+          "macOS Mojave (10.14) et versions ultérieures",
+          "Principales distributions Linux incluant Ubuntu, Fedora et Debian",
+          "Expérience utilisateur cohérente sur toutes les plateformes"
+        ],
+        "links": {
+          "download": "Télécharger maintenant",
+          "requirements": "Configuration requise"
+        }
+      },
+      "offline": {
+        "question": "EchoNote nécessite-t-il une connexion Internet ?",
+        "answer": "Non, EchoNote fonctionne complètement hors ligne. Tout le traitement vocal est effectué localement sur votre appareil pour une confidentialité maximale.",
+        "details": [
+          "Reconnaissance vocale locale sans dépendances cloud",
+          "Toutes les données restent sur votre appareil en permanence",
+          "Aucune requête réseau pour les fonctionnalités principales",
+          "Connexion Internet optionnelle uniquement pour les mises à jour logicielles"
+        ],
+        "links": {
+          "privacy": "Fonctionnalités de confidentialité",
+          "technical": "Détails techniques"
+        }
+      },
+      "accuracy": {
+        "question": "Quelle est la précision de la transcription vocale ?",
+        "answer": "EchoNote atteint plus de 95% de précision de transcription en utilisant une technologie avancée de reconnaissance vocale locale.",
+        "details": [
+          "Modèle de reconnaissance vocale OpenAI Whisper de pointe",
+          "Amélioration continue grâce aux mises à jour de modèle",
+          "Support pour plusieurs langues et accents",
+          "Traitement en temps réel avec latence minimale"
+        ],
+        "links": {
+          "technical": "Informations techniques",
+          "performance": "Métriques de performance"
+        }
+      },
+      "privacy": {
+        "question": "Comment EchoNote protège-t-il ma confidentialité ?",
+        "answer": "EchoNote traite toutes les données localement sur votre appareil sans téléchargements cloud, garantissant une protection complète de la confidentialité.",
+        "details": [
+          "Zéro transmission de données vers des serveurs externes",
+          "Chiffrement local pour les transcriptions stockées",
+          "Aucun suivi d'utilisateur ou collecte d'analyses",
+          "Conforme au RGPD par conception"
+        ],
+        "links": {
+          "features": "Fonctionnalités de confidentialité",
+          "security": "Politique de sécurité"
+        }
+      },
+      "calendar": {
+        "question": "Comment fonctionne l'intégration du calendrier ?",
+        "answer": "EchoNote extrait automatiquement les dates, heures et événements de votre parole et s'intègre avec vos applications de calendrier existantes.",
+        "details": [
+          "Traitement du langage naturel pour l'extraction de date et heure",
+          "Intégration avec Google Calendar, Outlook et Apple Calendar",
+          "Création d'événements intelligente avec planification automatique",
+          "Détection de conflits et suggestions de résolution"
+        ],
+        "links": {
+          "setup": "Guide de configuration",
+          "features": "Fonctionnalités du calendrier"
+        }
+      },
+      "languages": {
+        "question": "Quelles langues EchoNote supporte-t-il ?",
+        "answer": "Actuellement, EchoNote supporte l'anglais avec des langues supplémentaires prévues pour les versions futures.",
+        "details": [
+          "Support complet de la langue anglaise avec haute précision",
+          "Support multilingue dans la feuille de route de développement",
+          "Contributions communautaires bienvenues pour l'expansion linguistique",
+          "Interface disponible en anglais, chinois et français"
+        ],
+        "links": {
+          "roadmap": "Feuille de route de développement",
+          "contribute": "Contribuer"
+        }
+      },
+      "support": {
+        "question": "Comment puis-je obtenir de l'aide ou du support ?",
+        "answer": "EchoNote offre plusieurs canaux de support incluant les forums communautaires, la documentation et le signalement direct de problèmes.",
+        "details": [
+          "GitHub Discussions pour les Q&R communautaires",
+          "Documentation complète et tutoriels",
+          "GitHub Issues pour les rapports de bugs et demandes de fonctionnalités",
+          "Communauté active d'utilisateurs et contributeurs"
+        ],
+        "links": {
+          "community": "Rejoindre la communauté",
+          "github": "GitHub Issues"
+        }
+      },
+      "contribute": {
+        "question": "Comment puis-je contribuer à EchoNote ?",
+        "answer": "EchoNote accueille les contributions de développeurs de tous niveaux à travers le code, la documentation, les tests et le support communautaire.",
+        "details": [
+          "Contributions de code via les pull requests GitHub",
+          "Améliorations de documentation et traductions",
+          "Tests de bugs et assurance qualité",
+          "Support communautaire et assistance utilisateur"
+        ],
+        "links": {
+          "guide": "Guide de contribution",
+          "community": "Communauté de développeurs"
+        }
+      }
+    }
+  },
+  "feedback": {
+    "title": "Partagez vos commentaires",
+    "button": {
+      "label": "Envoyer des commentaires"
+    },
+    "type": {
+      "label": "Quel type de commentaire souhaitez-vous partager ?",
+      "bug": "Rapport de bug",
+      "feature": "Demande de fonctionnalité",
+      "general": "Commentaire général",
+      "translation": "Problème de traduction"
+    },
+    "rating": {
+      "label": "Comment évaluez-vous votre expérience ?"
+    },
+    "message": {
+      "label": "Votre message",
+      "placeholder": "Veuillez décrire vos commentaires en détail..."
+    },
+    "contact": {
+      "label": "Informations de contact",
+      "optional": "optionnel",
+      "placeholder": "votre.email@exemple.com"
+    },
+    "privacy": {
+      "notice": "Vos commentaires nous aident à améliorer EchoNote. Nous respectons votre vie privée et n'utiliserons ces informations que pour traiter vos commentaires."
+    },
+    "submit": "Envoyer les commentaires",
+    "submitting": "Envoi en cours...",
+    "success": {
+      "title": "Merci !",
+      "message": "Nous avons reçu vos commentaires. Nous vous remercions d'avoir pris le temps de nous aider à améliorer EchoNote.",
+      "newFeedback": "Envoyer plus de commentaires"
+    }
+  },
+  "common": {
+    "loading": "Chargement...",
+    "error": "Une erreur s'est produite",
+    "retry": "Réessayer",
+    "copy": "Copier",
+    "copied": "Copié !",
+    "learnMore": "En savoir plus",
+    "getStarted": "Commencer",
+    "viewMore": "Voir plus",
+    "close": "Fermer",
+    "open": "Ouvrir",
+    "save": "Enregistrer",
+    "cancel": "Annuler",
+    "confirm": "Confirmer",
+    "yes": "Oui",
+    "no": "Non"
+  }
+}

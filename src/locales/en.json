@@ -1,62 +1,416 @@
 {
+  "meta": {
+    "title": "EchoNote - Smart Voice Transcription & Calendar Management",
+    "description": "Privacy-first local solution for intelligent voice transcription and calendar management. Open source desktop application with local processing.",
+    "keywords": "voice transcription, speech recognition, calendar management, local processing, privacy protection, open source, desktop application",
+    "author": "EchoNote Team"
+  },
   "nav": {
     "home": "Home",
     "features": "Features",
     "quickStart": "Quick Start",
     "technical": "Technical",
     "community": "Community",
-    "github": "GitHub"
+    "github": "GitHub",
+    "language": "Language"
   },
   "hero": {
     "title": "EchoNote",
     "tagline": "Smart Voice Transcription & Calendar Management",
     "description": "Privacy-first local solution for intelligent voice transcription and calendar management that's smart, secure, and efficient.",
+    "features": {
+      "0": "🔒 Complete privacy protection with local processing",
+      "1": "🎤 Advanced speech recognition technology",
+      "2": "📅 Intelligent calendar integration",
+      "3": "⚡ Fast and efficient performance",
+      "4": "🌐 Cross-platform compatibility"
+    },
     "downloadButton": "Download Now",
-    "docsButton": "View Docs",
-    "githubButton": "GitHub"
+    "docsButton": "View Documentation",
+    "githubButton": "View on GitHub",
+    "stats": {
+      "stars": "GitHub Stars",
+      "forks": "Forks",
+      "contributors": "Contributors",
+      "releases": "Releases"
+    }
   },
   "features": {
     "title": "Core Features",
     "subtitle": "Why Choose EchoNote",
-    "privacyTitle": "Privacy First",
-    "privacyDescription": "All data processed locally, no cloud uploads required, complete privacy protection.",
-    "localTitle": "Local Processing",
-    "localDescription": "Powerful local speech recognition and processing capabilities, works without internet connection.",
-    "smartTitle": "Smart Management",
-    "smartDescription": "Intelligent calendar integration, automatically extracts time and event information from speech."
+    "items": {
+      "privacy": {
+        "title": "Privacy First",
+        "description": "All data processed locally on your device. No cloud uploads required, ensuring complete privacy protection for your sensitive information.",
+        "highlights": [
+          "Local speech processing",
+          "No data transmission",
+          "Encrypted local storage",
+          "GDPR compliant"
+        ]
+      },
+      "local": {
+        "title": "Local Processing",
+        "description": "Powerful local speech recognition and processing capabilities. Works completely offline without requiring internet connection.",
+        "highlights": [
+          "Offline functionality",
+          "Fast processing speed",
+          "No internet dependency",
+          "Reduced latency"
+        ]
+      },
+      "smart": {
+        "title": "Smart Management",
+        "description": "Intelligent calendar integration that automatically extracts time, dates, and event information from your speech input.",
+        "highlights": [
+          "Automatic event extraction",
+          "Smart scheduling",
+          "Natural language processing",
+          "Calendar synchronization"
+        ]
+      },
+      "crossPlatform": {
+        "title": "Cross-Platform",
+        "description": "Native desktop application available for Windows, macOS, and Linux with consistent user experience across all platforms.",
+        "highlights": [
+          "Windows support",
+          "macOS compatibility",
+          "Linux distribution",
+          "Consistent UI/UX"
+        ]
+      }
+    }
   },
   "quickStart": {
     "title": "Quick Start",
     "subtitle": "Get started with EchoNote in minutes",
-    "installationTitle": "Installation Guide",
-    "requirementsTitle": "System Requirements",
-    "configurationTitle": "Configuration"
+    "installation": {
+      "title": "Installation Guide",
+      "subtitle": "Choose your platform and follow the installation steps",
+      "platforms": {
+        "windows": "Windows",
+        "macos": "macOS",
+        "linux": "Linux"
+      },
+      "steps": {
+        "download": "Download the latest release",
+        "install": "Run the installer",
+        "launch": "Launch EchoNote",
+        "configure": "Configure your preferences"
+      }
+    },
+    "requirements": {
+      "title": "System Requirements",
+      "subtitle": "Minimum system specifications",
+      "items": {
+        "os": "Operating System: Windows 10+, macOS 10.14+, or Linux",
+        "memory": "Memory: 4GB RAM minimum, 8GB recommended",
+        "storage": "Storage: 500MB available space",
+        "audio": "Audio: Microphone for voice input"
+      }
+    },
+    "configuration": {
+      "title": "Initial Configuration",
+      "subtitle": "Set up EchoNote for optimal performance",
+      "steps": [
+        "Configure microphone settings",
+        "Set up calendar integration",
+        "Customize transcription preferences",
+        "Configure privacy settings"
+      ]
+    }
   },
   "technical": {
     "title": "Technical Information",
-    "subtitle": "Learn about EchoNote's technical architecture",
-    "architectureTitle": "System Architecture",
-    "techStackTitle": "Tech Stack",
-    "performanceTitle": "Performance Metrics"
+    "subtitle": "Learn about EchoNote's technical architecture and implementation",
+    "architecture": {
+      "title": "System Architecture",
+      "description": "EchoNote is built with a modular architecture focusing on privacy, performance, and extensibility.",
+      "components": [
+        "Speech Recognition Engine",
+        "Natural Language Processing",
+        "Calendar Integration Layer",
+        "Local Storage System",
+        "User Interface Framework"
+      ]
+    },
+    "techStack": {
+      "title": "Technology Stack",
+      "subtitle": "Built with modern, reliable technologies",
+      "items": {
+        "python": "Python - Core application logic",
+        "whisper": "OpenAI Whisper - Speech recognition",
+        "nlp": "spaCy - Natural language processing",
+        "qt": "PyQt - User interface framework",
+        "sqlite": "SQLite - Local data storage"
+      }
+    },
+    "performance": {
+      "title": "Performance Metrics",
+      "subtitle": "Optimized for speed and efficiency",
+      "metrics": {
+        "transcription": "Real-time transcription speed",
+        "accuracy": "95%+ transcription accuracy",
+        "startup": "< 3 seconds startup time",
+        "memory": "< 200MB memory usage"
+      }
+    }
   },
   "community": {
-    "title": "Community Support",
+    "title": "Community & Support",
     "subtitle": "Join the EchoNote open source community",
-    "contributorsTitle": "Contributors",
-    "supportTitle": "Get Help",
-    "roadmapTitle": "Roadmap"
+    "contributors": {
+      "title": "Contributors",
+      "description": "Thanks to all the amazing contributors who help make EchoNote better.",
+      "viewAll": "View All Contributors"
+    },
+    "support": {
+      "title": "Get Help",
+      "description": "Multiple ways to get support and connect with the community",
+      "channels": {
+        "github": "GitHub Issues - Bug reports and feature requests",
+        "discussions": "GitHub Discussions - Community Q&A",
+        "docs": "Documentation - Comprehensive guides and tutorials",
+        "email": "Email Support - Direct contact for urgent issues"
+      }
+    },
+    "contribute": {
+      "title": "How to Contribute",
+      "description": "We welcome contributions from developers of all skill levels",
+      "ways": [
+        "Report bugs and suggest features",
+        "Improve documentation",
+        "Submit code contributions",
+        "Help with translations",
+        "Share your experience"
+      ]
+    },
+    "roadmap": {
+      "title": "Development Roadmap",
+      "description": "Upcoming features and improvements",
+      "items": [
+        "Multi-language speech recognition",
+        "Advanced calendar integrations",
+        "Plugin system architecture",
+        "Mobile companion app",
+        "Cloud sync (optional)"
+      ]
+    }
   },
   "footer": {
     "license": "Apache 2.0 License",
     "version": "Version",
-    "lastUpdated": "Last Updated"
+    "lastUpdated": "Last Updated",
+    "links": {
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service",
+      "security": "Security",
+      "changelog": "Changelog"
+    },
+    "social": {
+      "github": "GitHub",
+      "twitter": "Twitter",
+      "discord": "Discord"
+    }
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Everything you need to know about EchoNote",
+    "moreQuestions": "Have more questions?",
+    "askCommunity": "Ask Community",
+    "reportIssue": "Report Issue",
+    "items": {
+      "whatIs": {
+        "question": "What is EchoNote?",
+        "answer": "EchoNote is a privacy-first desktop application for intelligent voice transcription and calendar management that processes all data locally on your device.",
+        "details": [
+          "Advanced speech recognition using OpenAI Whisper technology",
+          "Intelligent calendar integration with natural language processing",
+          "Complete offline functionality with no cloud dependencies",
+          "Cross-platform support for Windows, macOS, and Linux"
+        ],
+        "links": {
+          "features": "View Features",
+          "quickStart": "Quick Start Guide"
+        }
+      },
+      "free": {
+        "question": "Is EchoNote free to use?",
+        "answer": "Yes, EchoNote is completely free and open source under the Apache 2.0 license.",
+        "details": [
+          "No subscription fees or premium tiers",
+          "Full access to all features without limitations",
+          "Open source code available for review and contribution"
+        ],
+        "links": {
+          "license": "View License",
+          "source": "Source Code"
+        }
+      },
+      "platforms": {
+        "question": "What platforms does EchoNote support?",
+        "answer": "EchoNote supports Windows 10+, macOS 10.14+, and Linux distributions.",
+        "details": [
+          "Windows 10 and Windows 11 with native performance",
+          "macOS Mojave (10.14) and later versions",
+          "Major Linux distributions including Ubuntu, Fedora, and Debian",
+          "Consistent user experience across all platforms"
+        ],
+        "links": {
+          "download": "Download Now",
+          "requirements": "System Requirements"
+        }
+      },
+      "offline": {
+        "question": "Does EchoNote require an internet connection?",
+        "answer": "No, EchoNote works completely offline. All voice processing is done locally on your device for maximum privacy.",
+        "details": [
+          "Local speech recognition without cloud dependencies",
+          "All data remains on your device at all times",
+          "No network requests for core functionality",
+          "Optional internet connection only for software updates"
+        ],
+        "links": {
+          "privacy": "Privacy Features",
+          "technical": "Technical Details"
+        }
+      },
+      "accuracy": {
+        "question": "How accurate is the voice transcription?",
+        "answer": "EchoNote achieves over 95% transcription accuracy using advanced local speech recognition technology.",
+        "details": [
+          "State-of-the-art OpenAI Whisper model for speech recognition",
+          "Continuous improvement through model updates",
+          "Support for multiple languages and accents",
+          "Real-time processing with minimal latency"
+        ],
+        "links": {
+          "technical": "Technical Information",
+          "performance": "Performance Metrics"
+        }
+      },
+      "privacy": {
+        "question": "How does EchoNote protect my privacy?",
+        "answer": "EchoNote processes all data locally on your device with no cloud uploads, ensuring complete privacy protection.",
+        "details": [
+          "Zero data transmission to external servers",
+          "Local encryption for stored transcriptions",
+          "No user tracking or analytics collection",
+          "GDPR compliant by design"
+        ],
+        "links": {
+          "features": "Privacy Features",
+          "security": "Security Policy"
+        }
+      },
+      "calendar": {
+        "question": "How does calendar integration work?",
+        "answer": "EchoNote automatically extracts dates, times, and events from your speech and integrates with your existing calendar applications.",
+        "details": [
+          "Natural language processing for date and time extraction",
+          "Integration with Google Calendar, Outlook, and Apple Calendar",
+          "Smart event creation with automatic scheduling",
+          "Conflict detection and resolution suggestions"
+        ],
+        "links": {
+          "setup": "Setup Guide",
+          "features": "Calendar Features"
+        }
+      },
+      "languages": {
+        "question": "What languages does EchoNote support?",
+        "answer": "Currently, EchoNote supports English with additional languages planned for future releases.",
+        "details": [
+          "Full English language support with high accuracy",
+          "Multi-language support in development roadmap",
+          "Community contributions welcome for language expansion",
+          "Interface available in English, Chinese, and French"
+        ],
+        "links": {
+          "roadmap": "Development Roadmap",
+          "contribute": "Contribute"
+        }
+      },
+      "support": {
+        "question": "How can I get help or support?",
+        "answer": "EchoNote offers multiple support channels including community forums, documentation, and direct issue reporting.",
+        "details": [
+          "GitHub Discussions for community Q&A",
+          "Comprehensive documentation and tutorials",
+          "GitHub Issues for bug reports and feature requests",
+          "Active community of users and contributors"
+        ],
+        "links": {
+          "community": "Join Community",
+          "github": "GitHub Issues"
+        }
+      },
+      "contribute": {
+        "question": "How can I contribute to EchoNote?",
+        "answer": "EchoNote welcomes contributions from developers of all skill levels through code, documentation, testing, and community support.",
+        "details": [
+          "Code contributions through GitHub pull requests",
+          "Documentation improvements and translations",
+          "Bug testing and quality assurance",
+          "Community support and user assistance"
+        ],
+        "links": {
+          "guide": "Contribution Guide",
+          "community": "Developer Community"
+        }
+      }
+    }
+  },
+  "feedback": {
+    "title": "Share Your Feedback",
+    "button": {
+      "label": "Send Feedback"
+    },
+    "type": {
+      "label": "What type of feedback do you have?",
+      "bug": "Bug Report",
+      "feature": "Feature Request",
+      "general": "General Feedback",
+      "translation": "Translation Issue"
+    },
+    "rating": {
+      "label": "How would you rate your experience?"
+    },
+    "message": {
+      "label": "Your Message",
+      "placeholder": "Please describe your feedback in detail..."
+    },
+    "contact": {
+      "label": "Contact Information",
+      "optional": "optional",
+      "placeholder": "your.email@example.com"
+    },
+    "privacy": {
+      "notice": "Your feedback helps us improve EchoNote. We respect your privacy and will only use this information to address your feedback."
+    },
+    "submit": "Send Feedback",
+    "submitting": "Sending...",
+    "success": {
+      "title": "Thank You!",
+      "message": "Your feedback has been received. We appreciate you taking the time to help us improve EchoNote.",
+      "newFeedback": "Send More Feedback"
+    }
   },
   "common": {
     "loading": "Loading...",
-    "error": "Error occurred",
+    "error": "An error occurred",
     "retry": "Retry",
     "copy": "Copy",
-    "copied": "Copied",
-    "learnMore": "Learn More"
+    "copied": "Copied!",
+    "learnMore": "Learn More",
+    "getStarted": "Get Started",
+    "viewMore": "View More",
+    "close": "Close",
+    "open": "Open",
+    "save": "Save",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "yes": "Yes",
+    "no": "No"
   }
 }

@@ -1,0 +1,130 @@
+<svg width="600" height="400" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <linearGradient id="privacyBg" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#f0f9ff;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#e0f2fe;stop-opacity:1" />
+        </linearGradient>
+        <filter id="shield-glow" x="-50%" y="-50%" width="200%" height="200%">
+            <feGaussianBlur stdDeviation="4" result="coloredBlur" />
+            <feMerge>
+                <feMergeNode in="coloredBlur" />
+                <feMergeNode in="SourceGraphic" />
+            </feMerge>
+        </filter>
+    </defs>
+
+    <!-- Background -->
+    <rect width="100%" height="100%" fill="url(#privacyBg)" />
+
+    <!-- Title -->
+    <text x="300" y="40" font-family="Arial, sans-serif" font-size="24" font-weight="bold"
+        fill="#0f172a" text-anchor="middle">Privacy First Architecture</text>
+
+    <!-- Device representation -->
+    <g transform="translate(50,80)">
+        <!-- Laptop -->
+        <rect x="0" y="40" width="200" height="120" rx="8" fill="#374151" stroke="#1f2937"
+            stroke-width="2" />
+        <rect x="10" y="50" width="180" height="100" rx="4" fill="#1f2937" />
+        <rect x="80" y="170" width="40" height="8" rx="4" fill="#6b7280" />
+        <ellipse cx="100" cy="185" rx="60" ry="8" fill="#9ca3af" />
+
+        <!-- Screen content -->
+        <rect x="20" y="60" width="160" height="80" rx="4" fill="#0f172a" />
+        <text x="100" y="85" font-family="Arial, sans-serif" font-size="12" fill="#10b981"
+            text-anchor="middle">EchoNote</text>
+        <text x="100" y="105" font-family="Arial, sans-serif" font-size="8" fill="#60a5fa"
+            text-anchor="middle">🎤 Processing locally...</text>
+
+        <!-- Waveform -->
+        <g transform="translate(40,115)">
+            <rect x="0" y="5" width="2" height="10" fill="#3b82f6" />
+            <rect x="5" y="2" width="2" height="16" fill="#3b82f6" />
+            <rect x="10" y="7" width="2" height="6" fill="#3b82f6" />
+            <rect x="15" y="0" width="2" height="20" fill="#3b82f6" />
+            <rect x="20" y="4" width="2" height="12" fill="#3b82f6" />
+        </g>
+    </g>
+
+    <!-- Shield icon -->
+    <g transform="translate(300,150)">
+        <path d="M0,-40 L-30,-20 L-30,20 L0,40 L30,20 L30,-20 Z" fill="#10b981"
+            filter="url(#shield-glow)" />
+        <path d="M0,-30 L-20,-15 L-20,15 L0,30 L20,15 L20,-15 Z" fill="#ffffff" />
+        <path d="M-10,0 L-5,5 L10,-10" stroke="#10b981" stroke-width="3" fill="none"
+            stroke-linecap="round" stroke-linejoin="round" />
+    </g>
+
+    <!-- Cloud with X -->
+    <g transform="translate(450,120)">
+        <!-- Cloud -->
+        <ellipse cx="0" cy="0" rx="40" ry="25" fill="#ef4444" opacity="0.3" />
+        <circle cx="-20" cy="-5" r="15" fill="#ef4444" opacity="0.3" />
+        <circle cx="20" cy="-5" r="15" fill="#ef4444" opacity="0.3" />
+        <circle cx="0" cy="-15" r="18" fill="#ef4444" opacity="0.3" />
+
+        <!-- X mark -->
+        <path d="M-10,-10 L10,10 M10,-10 L-10,10" stroke="#ef4444" stroke-width="4"
+            stroke-linecap="round" />
+    </g>
+
+    <!-- Data flow arrows -->
+    <g stroke="#6b7280" stroke-width="2" fill="none" marker-end="url(#arrowhead)">
+        <defs>
+            <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5"
+                orient="auto">
+                <polygon points="0 0, 10 3.5, 0 7" fill="#6b7280" />
+            </marker>
+        </defs>
+
+        <!-- Arrow from device to shield -->
+        <path d="M250,140 Q275,130 270,150" stroke-dasharray="5,5" />
+
+        <!-- Blocked arrow to cloud -->
+        <path d="M350,150 Q400,140 410,120" stroke="#ef4444" stroke-dasharray="5,5" opacity="0.5" />
+        <text x="380" y="135" font-family="Arial, sans-serif" font-size="12" fill="#ef4444">✗
+            Blocked</text>
+    </g>
+
+    <!-- Features list -->
+    <g transform="translate(50,250)">
+        <text x="0" y="20" font-family="Arial, sans-serif" font-size="16" font-weight="bold"
+            fill="#0f172a">Local Processing Benefits:</text>
+
+        <g transform="translate(0,40)">
+            <circle cx="8" cy="8" r="4" fill="#10b981" />
+            <text x="20" y="12" font-family="Arial, sans-serif" font-size="14" fill="#374151">No
+                data transmission to external servers</text>
+        </g>
+
+        <g transform="translate(0,65)">
+            <circle cx="8" cy="8" r="4" fill="#10b981" />
+            <text x="20" y="12" font-family="Arial, sans-serif" font-size="14" fill="#374151">Complete
+                offline functionality</text>
+        </g>
+
+        <g transform="translate(0,90)">
+            <circle cx="8" cy="8" r="4" fill="#10b981" />
+            <text x="20" y="12" font-family="Arial, sans-serif" font-size="14" fill="#374151">GDPR
+                compliant by design</text>
+        </g>
+
+        <g transform="translate(300,40)">
+            <circle cx="8" cy="8" r="4" fill="#10b981" />
+            <text x="20" y="12" font-family="Arial, sans-serif" font-size="14" fill="#374151">Encrypted
+                local storage</text>
+        </g>
+
+        <g transform="translate(300,65)">
+            <circle cx="8" cy="8" r="4" fill="#10b981" />
+            <text x="20" y="12" font-family="Arial, sans-serif" font-size="14" fill="#374151">Zero
+                tracking or analytics</text>
+        </g>
+
+        <g transform="translate(300,90)">
+            <circle cx="8" cy="8" r="4" fill="#10b981" />
+            <text x="20" y="12" font-family="Arial, sans-serif" font-size="14" fill="#374151">Your
+                data stays on your device</text>
+        </g>
+    </g>
+</svg>

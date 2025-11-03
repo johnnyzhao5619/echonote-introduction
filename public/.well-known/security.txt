@@ -1,0 +1,8 @@
+Contact: https://github.com/echonote/echonote-introduction/security/advisories/new
+Contact: security@echonote.dev
+Expires: 2026-12-31T23:59:59.000Z
+Encryption: https://keybase.io/echonote/pgp_keys.asc
+Acknowledgments: https://github.com/echonote/echonote-introduction/blob/main/SECURITY.md#acknowledgments
+Policy: https://github.com/echonote/echonote-introduction/blob/main/SECURITY.md
+Preferred-Languages: en, zh-CN, zh-TW, fr
+Canonical: https://echonote.github.io/.well-known/security.txt

@@ -1,0 +1,1154 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+    - generic [ref=e3]:
+        - link "Skip to main content" [ref=e4] [cursor=pointer]:
+            - /url: '#main-content'
+        - link "Skip to navigation" [ref=e5] [cursor=pointer]:
+            - /url: '#navigation'
+        - navigation "Main navigation" [ref=e6]:
+            - generic [ref=e8]:
+                - generic [ref=e9]:
+                    - img "EchoNote Logo" [ref=e11]
+                    - generic [ref=e12]: EchoNote
+                - button "Toggle navigation menu" [ref=e14]
+        - main [ref=e16]:
+            - main [ref=e17]:
+                - banner "EchoNote" [ref=e18]:
+                    - generic [ref=e20]:
+                        - heading "EchoNote" [level=1] [ref=e21]
+                        - paragraph [ref=e22]: Smart Voice Transcription & Calendar Management
+                        - paragraph [ref=e23]: Privacy-first local solution for intelligent voice transcription and calendar management that's smart, secure, and efficient.
+                        - generic [ref=e25]:
+                            - generic [ref=e26]: ✨
+                            - generic [ref=e27]: 🔒 Complete privacy protection with local processing
+                        - generic [ref=e28]:
+                            - link "⬇️ Download Now" [ref=e29] [cursor=pointer]:
+                                - /url: https://github.com/echonote/echonote/releases/latest
+                                - generic [ref=e30]: ⬇️
+                                - text: Download Now
+                                - img [ref=e31]
+                            - link "📚 View Documentation" [ref=e33] [cursor=pointer]:
+                                - /url: https://github.com/echonote/echonote#readme
+                                - generic [ref=e34]: 📚
+                                - text: View Documentation
+                                - img [ref=e35]
+                            - link "⭐ View on GitHub" [ref=e37] [cursor=pointer]:
+                                - /url: https://github.com/echonote/echonote
+                                - generic [ref=e38]: ⭐
+                                - text: View on GitHub
+                                - img [ref=e39]
+                        - region "Project Statistics" [ref=e41]:
+                            - heading "Project Statistics" [level=2] [ref=e42]
+                            - status [ref=e43]:
+                                - generic [ref=e44]: Loading...
+                    - button "Scroll to features section" [ref=e46]:
+                        - img
+                - generic [ref=e49]:
+                    - generic [ref=e50]:
+                        - heading "Core Features" [level=2] [ref=e51]
+                        - paragraph [ref=e52]: Why Choose EchoNote
+                    - generic [ref=e53]:
+                        - generic [ref=e55]:
+                            - generic [ref=e58]:
+                                - img "Privacy Protection Illustration" [ref=e59]
+                                - generic [ref=e61]:
+                                    - img [ref=e62]
+                                    - generic [ref=e64]: An error occurred
+                            - generic [ref=e65]:
+                                - heading "Privacy First" [level=3] [ref=e66]
+                                - paragraph [ref=e67]: All data processed locally on your device. No cloud uploads required, ensuring complete privacy protection for your sensitive information.
+                                - list [ref=e68]:
+                                    - listitem [ref=e69]:
+                                        - img [ref=e70]
+                                        - generic [ref=e72]: Local speech processing
+                                    - listitem [ref=e73]:
+                                        - img [ref=e74]
+                                        - generic [ref=e76]: No data transmission
+                                    - listitem [ref=e77]:
+                                        - img [ref=e78]
+                                        - generic [ref=e80]: Encrypted local storage
+                                    - listitem [ref=e81]:
+                                        - img [ref=e82]
+                                        - generic [ref=e84]: GDPR compliant
+                                - link "Learn More" [ref=e86] [cursor=pointer]:
+                                    - /url: '#privacy-details'
+                                    - text: Learn More
+                                    - img [ref=e87]
+                        - generic [ref=e90]:
+                            - generic [ref=e93]:
+                                - img "Local Processing Illustration" [ref=e94]
+                                - generic [ref=e96]:
+                                    - img [ref=e97]
+                                    - generic [ref=e99]: An error occurred
+                            - generic [ref=e100]:
+                                - heading "Local Processing" [level=3] [ref=e101]
+                                - paragraph [ref=e102]: Powerful local speech recognition and processing capabilities. Works completely offline without requiring internet connection.
+                                - list [ref=e103]:
+                                    - listitem [ref=e104]:
+                                        - img [ref=e105]
+                                        - generic [ref=e107]: Offline functionality
+                                    - listitem [ref=e108]:
+                                        - img [ref=e109]
+                                        - generic [ref=e111]: Fast processing speed
+                                    - listitem [ref=e112]:
+                                        - img [ref=e113]
+                                        - generic [ref=e115]: No internet dependency
+                                    - listitem [ref=e116]:
+                                        - img [ref=e117]
+                                        - generic [ref=e119]: Reduced latency
+                                - link "Learn More" [ref=e121] [cursor=pointer]:
+                                    - /url: '#local-details'
+                                    - text: Learn More
+                                    - img [ref=e122]
+                        - generic [ref=e125]:
+                            - generic [ref=e128]:
+                                - img "Smart Management Illustration"
+                                - img [ref=e131]
+                            - generic [ref=e133]:
+                                - heading "Smart Management" [level=3] [ref=e134]
+                                - paragraph [ref=e135]: Intelligent calendar integration that automatically extracts time, dates, and event information from your speech input.
+                                - list [ref=e136]:
+                                    - listitem [ref=e137]:
+                                        - img [ref=e138]
+                                        - generic [ref=e140]: Automatic event extraction
+                                    - listitem [ref=e141]:
+                                        - img [ref=e142]
+                                        - generic [ref=e144]: Smart scheduling
+                                    - listitem [ref=e145]:
+                                        - img [ref=e146]
+                                        - generic [ref=e148]: Natural language processing
+                                    - listitem [ref=e149]:
+                                        - img [ref=e150]
+                                        - generic [ref=e152]: Calendar synchronization
+                                - link "Learn More" [ref=e154] [cursor=pointer]:
+                                    - /url: '#smart-details'
+                                    - text: Learn More
+                                    - img [ref=e155]
+                        - generic [ref=e158]:
+                            - generic [ref=e161]:
+                                - img "Cross Platform Support Illustration"
+                                - img [ref=e164]
+                            - generic [ref=e166]:
+                                - heading "Cross-Platform" [level=3] [ref=e167]
+                                - paragraph [ref=e168]: Native desktop application available for Windows, macOS, and Linux with consistent user experience across all platforms.
+                                - list [ref=e169]:
+                                    - listitem [ref=e170]:
+                                        - img [ref=e171]
+                                        - generic [ref=e173]: Windows support
+                                    - listitem [ref=e174]:
+                                        - img [ref=e175]
+                                        - generic [ref=e177]: macOS compatibility
+                                    - listitem [ref=e178]:
+                                        - img [ref=e179]
+                                        - generic [ref=e181]: Linux distribution
+                                    - listitem [ref=e182]:
+                                        - img [ref=e183]
+                                        - generic [ref=e185]: Consistent UI/UX
+                                - link "Learn More" [ref=e187] [cursor=pointer]:
+                                    - /url: '#platform-details'
+                                    - text: Learn More
+                                    - img [ref=e188]
+                    - generic [ref=e191]:
+                        - generic [ref=e193]: 🛡️
+                        - heading "Privacy-First Architecture" [level=3] [ref=e194]
+                        - paragraph [ref=e195]: Unlike cloud-based solutions, EchoNote processes everything locally on your device. Your voice data never leaves your computer, ensuring complete privacy and security for your sensitive information.
+                        - generic [ref=e196]:
+                            - generic [ref=e197]:
+                                - generic [ref=e198]: 🔒
+                                - heading "Zero Data Collection" [level=4] [ref=e199]
+                                - paragraph [ref=e200]: No personal data is collected or transmitted
+                            - generic [ref=e201]:
+                                - generic [ref=e202]: 💾
+                                - heading "Local Storage" [level=4] [ref=e203]
+                                - paragraph [ref=e204]: All data stored encrypted on your device
+                            - generic [ref=e205]:
+                                - generic [ref=e206]: 🌐
+                                - heading "Offline First" [level=4] [ref=e207]
+                                - paragraph [ref=e208]: Works completely without internet
+                    - generic [ref=e209]:
+                        - generic [ref=e210]:
+                            - heading "Perfect For Your Workflow" [level=3] [ref=e211]
+                            - paragraph [ref=e212]: Discover how EchoNote fits into different professional and personal scenarios
+                        - generic [ref=e213]:
+                            - generic [ref=e214]:
+                                - generic [ref=e215]: 💼
+                                - heading "Meeting Notes & Transcription" [level=4] [ref=e216]
+                                - paragraph [ref=e217]: Perfect for professionals who need accurate meeting transcriptions and automatic calendar event creation.
+                                - generic [ref=e218]:
+                                    - paragraph [ref=e219]: 'Ideal for:'
+                                    - generic [ref=e220]:
+                                        - generic [ref=e221]: Business Professionals
+                                        - generic [ref=e222]: Project Managers
+                                        - generic [ref=e223]: Consultants
+                            - generic [ref=e224]:
+                                - generic [ref=e225]: 🎓
+                                - heading "Academic Research & Lectures" [level=4] [ref=e226]
+                                - paragraph [ref=e227]: Ideal for students and researchers who need to transcribe interviews, lectures, and research sessions.
+                                - generic [ref=e228]:
+                                    - paragraph [ref=e229]: 'Ideal for:'
+                                    - generic [ref=e230]:
+                                        - generic [ref=e231]: Students
+                                        - generic [ref=e232]: Researchers
+                                        - generic [ref=e233]: Academics
+                            - generic [ref=e234]:
+                                - generic [ref=e235]: 🎤
+                                - heading "Content Creation" [level=4] [ref=e236]
+                                - paragraph [ref=e237]: Great for content creators who want to quickly convert voice recordings into written content.
+                                - generic [ref=e238]:
+                                    - paragraph [ref=e239]: 'Ideal for:'
+                                    - generic [ref=e240]:
+                                        - generic [ref=e241]: Podcasters
+                                        - generic [ref=e242]: Writers
+                                        - generic [ref=e243]: Journalists
+                            - generic [ref=e244]:
+                                - generic [ref=e245]: 📝
+                                - heading "Personal Productivity" [level=4] [ref=e246]
+                                - paragraph [ref=e247]: Excellent for individuals who prefer voice input for personal notes and task management.
+                                - generic [ref=e248]:
+                                    - paragraph [ref=e249]: 'Ideal for:'
+                                    - generic [ref=e250]:
+                                        - generic [ref=e251]: Busy Professionals
+                                        - generic [ref=e252]: Personal Users
+                                        - generic [ref=e253]: Accessibility Users
+                    - generic [ref=e255]:
+                        - heading "Why Choose EchoNote?" [level=3] [ref=e256]
+                        - paragraph [ref=e257]: See how EchoNote compares to other voice transcription solutions
+                        - button "Show Comparison" [ref=e258]:
+                            - text: Show Comparison
+                            - img [ref=e259]
+                    - generic [ref=e262]:
+                        - heading "Ready to Experience Privacy-First Voice Transcription?" [level=3] [ref=e263]
+                        - paragraph [ref=e264]: Join thousands of users who trust EchoNote for their voice transcription needs
+                        - generic [ref=e265]:
+                            - link "⬇️ Download Now" [ref=e266] [cursor=pointer]:
+                                - /url: https://github.com/johnnyzhao5619/echonote/releases
+                                - generic [ref=e267]: ⬇️
+                                - text: Download Now
+                            - link "⭐ View on GitHub" [ref=e268] [cursor=pointer]:
+                                - /url: https://github.com/johnnyzhao5619/echonote
+                                - generic [ref=e269]: ⭐
+                                - text: View on GitHub
+                - generic [ref=e271]:
+                    - generic [ref=e272]:
+                        - heading "Quick Start" [level=2] [ref=e273]
+                        - paragraph [ref=e274]: Get started with EchoNote in minutes
+                    - generic [ref=e275]:
+                        - heading "Installation Guide" [level=3] [ref=e276]
+                        - paragraph [ref=e277]: Choose your platform and follow the installation steps
+                        - generic [ref=e279]:
+                            - button "🪟 Windows" [ref=e280]:
+                                - generic [ref=e281]: 🪟
+                                - text: Windows
+                            - button "🍎 macOS" [ref=e282]:
+                                - generic [ref=e283]: 🍎
+                                - text: macOS
+                            - button "🐧 Linux" [ref=e284]:
+                                - generic [ref=e285]: 🐧
+                                - text: Linux
+                        - generic [ref=e286]:
+                            - generic [ref=e287]:
+                                - generic [ref=e289]:
+                                    - generic [ref=e290]:
+                                        - generic [ref=e291]: '1'
+                                        - generic [ref=e292]: ⬇️
+                                    - heading "Download the latest release" [level=4] [ref=e293]
+                                    - paragraph [ref=e294]: Download the latest release for your platform
+                                    - generic [ref=e296]:
+                                        - generic [ref=e297]:
+                                            - generic [ref=e298]:
+                                                - generic [ref=e299]: step-1.sh
+                                                - generic [ref=e300]: bash
+                                            - button "Copy" [ref=e301]: Copy
+                                        - code [ref=e305]: '# Download the latest Linux package wget https://github.com/johnnyzhao5619/echonote/releases/latest/download/echonote-linux-x64.deb'
+                                - generic [ref=e307]:
+                                    - generic [ref=e308]:
+                                        - generic [ref=e309]: '2'
+                                        - generic [ref=e310]: 📦
+                                    - heading "Run the installer" [level=4] [ref=e311]
+                                    - paragraph [ref=e312]: Run the installer or extract the package
+                                    - generic [ref=e314]:
+                                        - generic [ref=e315]:
+                                            - generic [ref=e316]:
+                                                - generic [ref=e317]: step-2.sh
+                                                - generic [ref=e318]: bash
+                                            - button "Copy" [ref=e319]: Copy
+                                        - code [ref=e323]: '# Install the package (Ubuntu/Debian) sudo dpkg -i echonote-linux-x64.deb sudo apt-get install -f'
+                                - generic [ref=e325]:
+                                    - generic [ref=e326]:
+                                        - generic [ref=e327]: '3'
+                                        - generic [ref=e328]: 🚀
+                                    - heading "Launch EchoNote" [level=4] [ref=e329]
+                                    - paragraph [ref=e330]: Start the application
+                                    - generic [ref=e332]:
+                                        - generic [ref=e333]:
+                                            - generic [ref=e334]:
+                                                - generic [ref=e335]: step-3.sh
+                                                - generic [ref=e336]: bash
+                                            - button "Copy" [ref=e337]: Copy
+                                        - code [ref=e341]: '# Launch EchoNote echonote'
+                                - generic [ref=e343]:
+                                    - generic [ref=e344]:
+                                        - generic [ref=e345]: '4'
+                                        - generic [ref=e346]: ⚙️
+                                    - heading "Configure your preferences" [level=4] [ref=e347]
+                                    - paragraph [ref=e348]: Set up your preferences and start using EchoNote
+                                    - generic [ref=e350]:
+                                        - generic [ref=e351]:
+                                            - generic [ref=e352]:
+                                                - generic [ref=e353]: step-4.sh
+                                                - generic [ref=e354]: bash
+                                            - button "Copy" [ref=e355]: Copy
+                                        - code [ref=e359]: '# Configuration will be guided through the UI'
+                            - generic [ref=e360]:
+                                - button "Previous" [disabled] [ref=e361]:
+                                    - img
+                                    - text: Previous
+                                - button "Next" [ref=e363]:
+                                    - text: Next
+                                    - img
+                            - generic [ref=e365]:
+                                - heading "Alternative Installation" [level=4] [ref=e366]
+                                - generic [ref=e367]:
+                                    - generic [ref=e368]:
+                                        - generic [ref=e369]:
+                                            - generic [ref=e370]: alternative-install.sh
+                                            - generic [ref=e371]: bash
+                                        - button "Copy" [ref=e372]: Copy
+                                    - code [ref=e376]: '# Alternative: Install via snap sudo snap install echonote'
+                    - generic [ref=e377]:
+                        - heading "System Requirements" [level=3] [ref=e378]
+                        - paragraph [ref=e379]: Minimum system specifications
+                        - table [ref=e381]:
+                            - rowgroup [ref=e382]:
+                                - row "Component 🪟 Windows 🍎 macOS 🐧 Linux" [ref=e383]:
+                                    - cell "Component" [ref=e384]
+                                    - cell "🪟 Windows" [ref=e385]:
+                                        - generic [ref=e386]: 🪟 Windows
+                                    - cell "🍎 macOS" [ref=e387]:
+                                        - generic [ref=e388]: 🍎 macOS
+                                    - cell "🐧 Linux" [ref=e389]:
+                                        - generic [ref=e390]: 🐧 Linux
+                            - rowgroup [ref=e391]:
+                                - row "Operating System Windows 10 (64-bit) or later macOS 10.14 (Mojave) or later Ubuntu 18.04+ / Debian 10+ / Fedora 32+" [ref=e392]:
+                                    - cell "Operating System" [ref=e393]
+                                    - cell "Windows 10 (64-bit) or later" [ref=e394]
+                                    - cell "macOS 10.14 (Mojave) or later" [ref=e395]
+                                    - cell "Ubuntu 18.04+ / Debian 10+ / Fedora 32+" [ref=e396]
+                                - row "Memory 4 GB RAM (8 GB recommended) 4 GB RAM (8 GB recommended) 4 GB RAM (8 GB recommended)" [ref=e397]:
+                                    - cell "Memory" [ref=e398]
+                                    - cell "4 GB RAM (8 GB recommended)" [ref=e399]
+                                    - cell "4 GB RAM (8 GB recommended)" [ref=e400]
+                                    - cell "4 GB RAM (8 GB recommended)" [ref=e401]
+                                - row "Storage 500 MB available space 500 MB available space 500 MB available space" [ref=e402]:
+                                    - cell "Storage" [ref=e403]
+                                    - cell "500 MB available space" [ref=e404]
+                                    - cell "500 MB available space" [ref=e405]
+                                    - cell "500 MB available space" [ref=e406]
+                                - row "Audio Microphone for voice input Microphone for voice input Microphone for voice input (ALSA/PulseAudio)" [ref=e407]:
+                                    - cell "Audio" [ref=e408]
+                                    - cell "Microphone for voice input" [ref=e409]
+                                    - cell "Microphone for voice input" [ref=e410]
+                                    - cell "Microphone for voice input (ALSA/PulseAudio)" [ref=e411]
+                                - row "Additional Microsoft Visual C++ Redistributable No additional requirements Python 3.8+ runtime (usually pre-installed)" [ref=e412]:
+                                    - cell "Additional" [ref=e413]
+                                    - cell "Microsoft Visual C++ Redistributable" [ref=e414]
+                                    - cell "No additional requirements" [ref=e415]
+                                    - cell "Python 3.8+ runtime (usually pre-installed)" [ref=e416]
+                    - generic [ref=e417]:
+                        - heading "Initial Configuration" [level=3] [ref=e418]
+                        - paragraph [ref=e419]: Set up EchoNote for optimal performance
+                        - generic [ref=e420]:
+                            - generic [ref=e421]:
+                                - generic [ref=e422]:
+                                    - generic [ref=e423]: 🎤
+                                    - heading "Microphone Setup" [level=4] [ref=e424]
+                                - paragraph [ref=e425]: Configure your microphone for optimal voice recognition
+                                - list [ref=e426]:
+                                    - listitem [ref=e427]:
+                                        - img [ref=e428]
+                                        - text: Test microphone input levels
+                                    - listitem [ref=e430]:
+                                        - img [ref=e431]
+                                        - text: Adjust noise cancellation settings
+                                    - listitem [ref=e433]:
+                                        - img [ref=e434]
+                                        - text: Set up push-to-talk if preferred
+                                    - listitem [ref=e436]:
+                                        - img [ref=e437]
+                                        - text: Configure voice activation threshold
+                            - generic [ref=e439]:
+                                - generic [ref=e440]:
+                                    - generic [ref=e441]: 📅
+                                    - heading "Calendar Integration" [level=4] [ref=e442]
+                                - paragraph [ref=e443]: Connect your calendar applications for smart scheduling
+                                - list [ref=e444]:
+                                    - listitem [ref=e445]:
+                                        - img [ref=e446]
+                                        - text: Connect to Google Calendar, Outlook, or local calendar
+                                    - listitem [ref=e448]:
+                                        - img [ref=e449]
+                                        - text: Set default calendar for new events
+                                    - listitem [ref=e451]:
+                                        - img [ref=e452]
+                                        - text: Configure event creation preferences
+                                    - listitem [ref=e454]:
+                                        - img [ref=e455]
+                                        - text: Set up notification preferences
+                            - generic [ref=e457]:
+                                - generic [ref=e458]:
+                                    - generic [ref=e459]: 📝
+                                    - heading "Transcription Preferences" [level=4] [ref=e460]
+                                - paragraph [ref=e461]: Customize transcription settings for your needs
+                                - list [ref=e462]:
+                                    - listitem [ref=e463]:
+                                        - img [ref=e464]
+                                        - text: Select preferred language models
+                                    - listitem [ref=e466]:
+                                        - img [ref=e467]
+                                        - text: Configure punctuation and formatting
+                                    - listitem [ref=e469]:
+                                        - img [ref=e470]
+                                        - text: Set up custom vocabulary
+                                    - listitem [ref=e472]:
+                                        - img [ref=e473]
+                                        - text: Adjust transcription accuracy vs speed
+                            - generic [ref=e475]:
+                                - generic [ref=e476]:
+                                    - generic [ref=e477]: 🔒
+                                    - heading "Privacy Settings" [level=4] [ref=e478]
+                                - paragraph [ref=e479]: Configure privacy and data handling preferences
+                                - list [ref=e480]:
+                                    - listitem [ref=e481]:
+                                        - img [ref=e482]
+                                        - text: Review local data storage settings
+                                    - listitem [ref=e484]:
+                                        - img [ref=e485]
+                                        - text: Configure automatic cleanup policies
+                                    - listitem [ref=e487]:
+                                        - img [ref=e488]
+                                        - text: Set up backup preferences
+                                    - listitem [ref=e490]:
+                                        - img [ref=e491]
+                                        - text: Review security settings
+                    - generic [ref=e493]:
+                        - heading "Need Help?" [level=3] [ref=e494]
+                        - paragraph [ref=e495]: Common issues and helpful resources to get you started
+                        - generic [ref=e496]:
+                            - link "🔧 Installation Issues Common installation problems and solutions Learn more" [ref=e497] [cursor=pointer]:
+                                - /url: https://github.com/johnnyzhao5619/echonote/wiki/Installation-Troubleshooting
+                                - generic [ref=e498]: 🔧
+                                - heading "Installation Issues" [level=4] [ref=e499]
+                                - paragraph [ref=e500]: Common installation problems and solutions
+                                - generic [ref=e501]:
+                                    - text: Learn more
+                                    - img [ref=e502]
+                            - link "🎤 Audio Setup Guide Microphone configuration and audio troubleshooting Learn more" [ref=e504] [cursor=pointer]:
+                                - /url: https://github.com/johnnyzhao5619/echonote/wiki/Audio-Setup
+                                - generic [ref=e505]: 🎤
+                                - heading "Audio Setup Guide" [level=4] [ref=e506]
+                                - paragraph [ref=e507]: Microphone configuration and audio troubleshooting
+                                - generic [ref=e508]:
+                                    - text: Learn more
+                                    - img [ref=e509]
+                            - link "⚡ Performance Optimization Tips for optimal performance on your system Learn more" [ref=e511] [cursor=pointer]:
+                                - /url: https://github.com/johnnyzhao5619/echonote/wiki/Performance-Tips
+                                - generic [ref=e512]: ⚡
+                                - heading "Performance Optimization" [level=4] [ref=e513]
+                                - paragraph [ref=e514]: Tips for optimal performance on your system
+                                - generic [ref=e515]:
+                                    - text: Learn more
+                                    - img [ref=e516]
+                            - link "❓ FAQ Frequently asked questions and answers Learn more" [ref=e518] [cursor=pointer]:
+                                - /url: https://github.com/johnnyzhao5619/echonote/wiki/FAQ
+                                - generic [ref=e519]: ❓
+                                - heading "FAQ" [level=4] [ref=e520]
+                                - paragraph [ref=e521]: Frequently asked questions and answers
+                                - generic [ref=e522]:
+                                    - text: Learn more
+                                    - img [ref=e523]
+                    - generic [ref=e526]:
+                        - heading "Ready to Get Started?" [level=3] [ref=e527]
+                        - paragraph [ref=e528]: Download EchoNote now and experience privacy-first voice transcription
+                        - link "⬇️ Download for Linux" [ref=e529] [cursor=pointer]:
+                            - /url: https://github.com/johnnyzhao5619/echonote/releases/latest/download/echonote-linux-x64.deb
+                            - generic [ref=e530]: ⬇️
+                            - text: Download for Linux
+                - generic [ref=e532]:
+                    - generic [ref=e533]:
+                        - heading "Technical Information" [level=2] [ref=e534]
+                        - paragraph [ref=e535]: Learn about EchoNote's technical architecture and implementation
+                    - generic [ref=e536]:
+                        - heading "System Architecture" [level=3] [ref=e537]
+                        - paragraph [ref=e538]: EchoNote is built with a modular architecture focusing on privacy, performance, and extensibility.
+                        - generic:
+                            - generic:
+                                - generic [ref=e540] [cursor=pointer]:
+                                    - generic [ref=e541]: 🎤
+                                    - heading "Speech Recognition Engine" [level=4] [ref=e542]
+                                - generic [ref=e544] [cursor=pointer]:
+                                    - generic [ref=e545]: 🧠
+                                    - heading "Natural Language Processing" [level=4] [ref=e546]
+                                - generic [ref=e548] [cursor=pointer]:
+                                    - generic [ref=e549]: 📅
+                                    - heading "Calendar Integration Layer" [level=4] [ref=e550]
+                                - generic [ref=e552] [cursor=pointer]:
+                                    - generic [ref=e553]: 💾
+                                    - heading "Local Storage System" [level=4] [ref=e554]
+                                - generic [ref=e556] [cursor=pointer]:
+                                    - generic [ref=e557]: 🖥️
+                                    - heading "User Interface Framework" [level=4] [ref=e558]
+                                - img
+                    - generic [ref=e559]:
+                        - heading "Technology Stack" [level=3] [ref=e560]
+                        - paragraph [ref=e561]: Built with modern, reliable technologies
+                        - generic [ref=e563]:
+                            - button "⚙️ Core Technologies" [ref=e564]:
+                                - generic [ref=e565]: ⚙️
+                                - text: Core Technologies
+                            - button "🤖 AI & Machine Learning" [ref=e566]:
+                                - generic [ref=e567]: 🤖
+                                - text: AI & Machine Learning
+                            - button "🔗 Integration & APIs" [ref=e568]:
+                                - generic [ref=e569]: 🔗
+                                - text: Integration & APIs
+                            - button "🛠️ Development Tools" [ref=e570]:
+                                - generic [ref=e571]: 🛠️
+                                - text: Development Tools
+                        - generic [ref=e572]:
+                            - generic [ref=e573]:
+                                - generic [ref=e574]:
+                                    - generic [ref=e575]: 🐍
+                                    - generic [ref=e576]:
+                                        - heading "Python" [level=4] [ref=e577]
+                                        - paragraph [ref=e578]: 3.8+
+                                - paragraph [ref=e579]: Main programming language for application logic
+                                - paragraph [ref=e580]: Core application development
+                                - generic [ref=e581]:
+                                    - link "official" [ref=e582] [cursor=pointer]:
+                                        - /url: https://python.org
+                                        - text: official
+                                        - img
+                                    - link "docs" [ref=e584] [cursor=pointer]:
+                                        - /url: https://docs.python.org
+                                        - text: docs
+                                        - img
+                            - generic [ref=e586]:
+                                - generic [ref=e587]:
+                                    - generic [ref=e588]: 🖼️
+                                    - generic [ref=e589]:
+                                        - heading "PyQt6" [level=4] [ref=e590]
+                                        - paragraph [ref=e591]: 6.4+
+                                - paragraph [ref=e592]: Cross-platform GUI toolkit for desktop applications
+                                - paragraph [ref=e593]: User interface framework
+                                - generic [ref=e594]:
+                                    - link "official" [ref=e595] [cursor=pointer]:
+                                        - /url: https://www.qt.io/qt-for-python
+                                        - text: official
+                                        - img
+                                    - link "docs" [ref=e597] [cursor=pointer]:
+                                        - /url: https://doc.qt.io/qtforpython/
+                                        - text: docs
+                                        - img
+                            - generic [ref=e599]:
+                                - generic [ref=e600]:
+                                    - generic [ref=e601]: 🗄️
+                                    - generic [ref=e602]:
+                                        - heading "SQLite" [level=4] [ref=e603]
+                                        - paragraph [ref=e604]: 3.35+
+                                - paragraph [ref=e605]: Lightweight embedded database for local storage
+                                - paragraph [ref=e606]: Local data persistence
+                                - generic [ref=e607]:
+                                    - link "official" [ref=e608] [cursor=pointer]:
+                                        - /url: https://sqlite.org
+                                        - text: official
+                                        - img
+                                    - link "docs" [ref=e610] [cursor=pointer]:
+                                        - /url: https://sqlite.org/docs.html
+                                        - text: docs
+                                        - img
+                    - generic [ref=e612]:
+                        - heading "Performance Metrics" [level=3] [ref=e613]
+                        - paragraph [ref=e614]: Optimized for speed and efficiency
+                        - generic [ref=e615]:
+                            - generic [ref=e616]:
+                                - heading "Speech Recognition" [level=4] [ref=e617]
+                                - generic [ref=e618]:
+                                    - generic [ref=e619]:
+                                        - generic [ref=e620]: < 0.3x
+                                        - generic [ref=e621]: Real-time Factor
+                                        - generic [ref=e622]: Processing speed relative to audio length
+                                    - generic [ref=e623]:
+                                        - generic [ref=e624]: 95%+
+                                        - generic [ref=e625]: Accuracy
+                                        - generic [ref=e626]: Word-level transcription accuracy
+                                    - generic [ref=e627]:
+                                        - generic [ref=e628]: < 500ms
+                                        - generic [ref=e629]: Latency
+                                        - generic [ref=e630]: Time from speech end to text output
+                                    - generic [ref=e631]:
+                                        - generic [ref=e632]: 99+
+                                        - generic [ref=e633]: Languages
+                                        - generic [ref=e634]: Supported languages and dialects
+                            - generic [ref=e635]:
+                                - heading "Application Performance" [level=4] [ref=e636]
+                                - generic [ref=e637]:
+                                    - generic [ref=e638]:
+                                        - generic [ref=e639]: < 3s
+                                        - generic [ref=e640]: Startup Time
+                                        - generic [ref=e641]: Time to fully load application
+                                    - generic [ref=e642]:
+                                        - generic [ref=e643]: < 200MB
+                                        - generic [ref=e644]: Memory Usage
+                                        - generic [ref=e645]: RAM consumption during operation
+                                    - generic [ref=e646]:
+                                        - generic [ref=e647]: < 15%
+                                        - generic [ref=e648]: CPU Usage
+                                        - generic [ref=e649]: Processor utilization during transcription
+                                    - generic [ref=e650]:
+                                        - generic [ref=e651]: < 500MB
+                                        - generic [ref=e652]: Storage
+                                        - generic [ref=e653]: Disk space required for installation
+                            - generic [ref=e654]:
+                                - heading "Data Processing" [level=4] [ref=e655]
+                                - generic [ref=e656]:
+                                    - generic [ref=e657]:
+                                        - generic [ref=e658]: 90%+
+                                        - generic [ref=e659]: Event Extraction
+                                        - generic [ref=e660]: Accuracy of calendar event detection
+                                    - generic [ref=e661]:
+                                        - generic [ref=e662]: 1000+ WPM
+                                        - generic [ref=e663]: Processing Speed
+                                        - generic [ref=e664]: Text processing throughput
+                                    - generic [ref=e665]:
+                                        - generic [ref=e666]: 10MB+
+                                        - generic [ref=e667]: Batch Size
+                                        - generic [ref=e668]: Maximum audio file size supported
+                                    - generic [ref=e669]:
+                                        - generic [ref=e670]: 5+
+                                        - generic [ref=e671]: Concurrent Tasks
+                                        - generic [ref=e672]: Simultaneous processing capabilities
+                    - generic [ref=e673]:
+                        - heading "Code Quality & Status" [level=3] [ref=e674]
+                        - paragraph [ref=e675]: Real-time project health and quality metrics
+                        - generic [ref=e676]:
+                            - link "Build Status passing" [ref=e677] [cursor=pointer]:
+                                - /url: https://github.com/echonote/echonote/actions
+                                - generic [ref=e678]: Build Status
+                                - generic [ref=e679]: passing
+                            - link "Test Coverage 85%" [ref=e680] [cursor=pointer]:
+                                - /url: https://codecov.io/gh/echonote/echonote
+                                - generic [ref=e681]: Test Coverage
+                                - generic [ref=e682]: 85%
+                            - link "Code Quality A" [ref=e683] [cursor=pointer]:
+                                - /url: https://codeclimate.com/github/echonote/echonote
+                                - generic [ref=e684]: Code Quality
+                                - generic [ref=e685]: A
+                            - link "Security No Issues" [ref=e686] [cursor=pointer]:
+                                - /url: https://snyk.io/test/github/echonote/echonote
+                                - generic [ref=e687]: Security
+                                - generic [ref=e688]: No Issues
+                            - link "Dependencies Up to Date" [ref=e689] [cursor=pointer]:
+                                - /url: https://dependabot.com
+                                - generic [ref=e690]: Dependencies
+                                - generic [ref=e691]: Up to Date
+                            - link "License Apache 2.0" [ref=e692] [cursor=pointer]:
+                                - /url: https://github.com/echonote/echonote/blob/main/LICENSE
+                                - generic [ref=e693]: License
+                                - generic [ref=e694]: Apache 2.0
+                    - generic [ref=e695]:
+                        - heading "Developer Resources" [level=3] [ref=e696]
+                        - paragraph [ref=e697]: Comprehensive documentation and guides for developers
+                        - generic [ref=e698]:
+                            - link "📚 API Documentation Complete API reference and integration guides Read more" [ref=e699] [cursor=pointer]:
+                                - /url: https://github.com/echonote/echonote/wiki/API-Documentation
+                                - generic [ref=e700]:
+                                    - generic [ref=e701]: 📚
+                                    - heading "API Documentation" [level=4] [ref=e702]
+                                - paragraph [ref=e703]: Complete API reference and integration guides
+                                - generic [ref=e704]:
+                                    - text: Read more
+                                    - img [ref=e705]
+                            - link "👨‍💻 Developer Guide Setup instructions and development workflow Read more" [ref=e707] [cursor=pointer]:
+                                - /url: https://github.com/echonote/echonote/wiki/Developer-Guide
+                                - generic [ref=e708]:
+                                    - generic [ref=e709]: 👨‍💻
+                                    - heading "Developer Guide" [level=4] [ref=e710]
+                                - paragraph [ref=e711]: Setup instructions and development workflow
+                                - generic [ref=e712]:
+                                    - text: Read more
+                                    - img [ref=e713]
+                            - link "🏗️ Architecture Overview System design and component interactions Read more" [ref=e715] [cursor=pointer]:
+                                - /url: https://github.com/echonote/echonote/wiki/Architecture
+                                - generic [ref=e716]:
+                                    - generic [ref=e717]: 🏗️
+                                    - heading "Architecture Overview" [level=4] [ref=e718]
+                                - paragraph [ref=e719]: System design and component interactions
+                                - generic [ref=e720]:
+                                    - text: Read more
+                                    - img [ref=e721]
+                            - link "🤝 Contributing Guidelines How to contribute code, documentation, and translations Read more" [ref=e723] [cursor=pointer]:
+                                - /url: https://github.com/echonote/echonote/blob/main/CONTRIBUTING.md
+                                - generic [ref=e724]:
+                                    - generic [ref=e725]: 🤝
+                                    - heading "Contributing Guidelines" [level=4] [ref=e726]
+                                - paragraph [ref=e727]: How to contribute code, documentation, and translations
+                                - generic [ref=e728]:
+                                    - text: Read more
+                                    - img [ref=e729]
+                            - link "🔌 Plugin Development Create custom plugins and extensions Read more" [ref=e731] [cursor=pointer]:
+                                - /url: https://github.com/echonote/echonote/wiki/Plugin-Development
+                                - generic [ref=e732]:
+                                    - generic [ref=e733]: 🔌
+                                    - heading "Plugin Development" [level=4] [ref=e734]
+                                - paragraph [ref=e735]: Create custom plugins and extensions
+                                - generic [ref=e736]:
+                                    - text: Read more
+                                    - img [ref=e737]
+                            - link "🧪 Testing Guide Testing strategies and test suite documentation Read more" [ref=e739] [cursor=pointer]:
+                                - /url: https://github.com/echonote/echonote/wiki/Testing
+                                - generic [ref=e740]:
+                                    - generic [ref=e741]: 🧪
+                                    - heading "Testing Guide" [level=4] [ref=e742]
+                                - paragraph [ref=e743]: Testing strategies and test suite documentation
+                                - generic [ref=e744]:
+                                    - text: Read more
+                                    - img [ref=e745]
+                    - generic [ref=e748]:
+                        - heading "Ready to Dive Deeper?" [level=3] [ref=e749]
+                        - paragraph [ref=e750]: Explore the technical documentation and start contributing to EchoNote
+                        - generic [ref=e751]:
+                            - link "📚 View Documentation" [ref=e752] [cursor=pointer]:
+                                - /url: https://github.com/echonote/echonote/wiki
+                                - generic [ref=e753]: 📚
+                                - text: View Documentation
+                            - link "💻 View Source Code" [ref=e754] [cursor=pointer]:
+                                - /url: https://github.com/echonote/echonote
+                                - generic [ref=e755]: 💻
+                                - text: View Source Code
+                - generic [ref=e757]:
+                    - generic [ref=e758]:
+                        - heading "Community & Support" [level=2] [ref=e759]
+                        - paragraph [ref=e760]: Join the EchoNote open source community
+                    - generic [ref=e762]:
+                        - generic [ref=e763]:
+                            - generic [ref=e764]: 👥
+                            - generic [ref=e765]: '0'
+                            - generic [ref=e766]: Active Contributors
+                            - generic [ref=e767]: Regular code contributors
+                        - generic [ref=e768]:
+                            - generic [ref=e769]: ⭐
+                            - generic [ref=e770]: '0'
+                            - generic [ref=e771]: GitHub Stars
+                            - generic [ref=e772]: Community appreciation
+                        - generic [ref=e773]:
+                            - generic [ref=e774]: ⬇️
+                            - generic [ref=e775]: 50K+
+                            - generic [ref=e776]: Total Downloads
+                            - generic [ref=e777]: Across all platforms
+                        - generic [ref=e778]:
+                            - generic [ref=e779]: 🌍
+                            - generic [ref=e780]: 99+
+                            - generic [ref=e781]: Languages Supported
+                            - generic [ref=e782]: Speech recognition languages
+                        - generic [ref=e783]:
+                            - generic [ref=e784]: ✅
+                            - generic [ref=e785]: 200+
+                            - generic [ref=e786]: Issues Resolved
+                            - generic [ref=e787]: Community-reported issues
+                        - generic [ref=e788]:
+                            - generic [ref=e789]: 📚
+                            - generic [ref=e790]: 25+
+                            - generic [ref=e791]: Documentation Pages
+                            - generic [ref=e792]: Comprehensive guides
+                    - generic [ref=e793]:
+                        - heading "Contributors" [level=3] [ref=e794]
+                        - paragraph [ref=e795]: Thanks to all the amazing contributors who help make EchoNote better.
+                        - generic [ref=e798]: Loading contributors...
+                    - generic [ref=e799]:
+                        - heading "Get Help" [level=3] [ref=e800]
+                        - paragraph [ref=e801]: Multiple ways to get support and connect with the community
+                        - generic [ref=e802]:
+                            - link "🐛 GitHub Issues < 24 hours GitHub Issues - Bug reports and feature requests 12 open 156 closed" [ref=e803] [cursor=pointer]:
+                                - /url: https://github.com/echonote/echonote/issues
+                                - generic [ref=e804]:
+                                    - generic [ref=e805]:
+                                        - generic [ref=e806]: 🐛
+                                        - heading "GitHub Issues" [level=4] [ref=e807]
+                                    - generic [ref=e808]: < 24 hours
+                                - paragraph [ref=e809]: GitHub Issues - Bug reports and feature requests
+                                - generic [ref=e810]:
+                                    - generic [ref=e811]:
+                                        - generic [ref=e812]:
+                                            - strong [ref=e813]: '12'
+                                            - text: open
+                                        - generic [ref=e814]:
+                                            - strong [ref=e815]: '156'
+                                            - text: closed
+                                    - img [ref=e816]
+                            - link "💬 GitHub Discussions < 12 hours GitHub Discussions - Community Q&A 45 active 89 answered" [ref=e818] [cursor=pointer]:
+                                - /url: https://github.com/echonote/echonote/discussions
+                                - generic [ref=e819]:
+                                    - generic [ref=e820]:
+                                        - generic [ref=e821]: 💬
+                                        - heading "GitHub Discussions" [level=4] [ref=e822]
+                                    - generic [ref=e823]: < 12 hours
+                                - paragraph [ref=e824]: GitHub Discussions - Community Q&A
+                                - generic [ref=e825]:
+                                    - generic [ref=e826]:
+                                        - generic [ref=e827]:
+                                            - strong [ref=e828]: '45'
+                                            - text: active
+                                        - generic [ref=e829]:
+                                            - strong [ref=e830]: '89'
+                                            - text: answered
+                                    - img [ref=e831]
+                            - link "📚 Documentation Self-service Documentation - Comprehensive guides and tutorials 25 pages Weekly updated" [ref=e833] [cursor=pointer]:
+                                - /url: https://github.com/echonote/echonote/wiki
+                                - generic [ref=e834]:
+                                    - generic [ref=e835]:
+                                        - generic [ref=e836]: 📚
+                                        - heading "Documentation" [level=4] [ref=e837]
+                                    - generic [ref=e838]: Self-service
+                                - paragraph [ref=e839]: Documentation - Comprehensive guides and tutorials
+                                - generic [ref=e840]:
+                                    - generic [ref=e841]:
+                                        - generic [ref=e842]:
+                                            - strong [ref=e843]: '25'
+                                            - text: pages
+                                        - generic [ref=e844]:
+                                            - strong [ref=e845]: Weekly
+                                            - text: updated
+                                    - img [ref=e846]
+                            - link "📧 Email Support < 48 hours Email Support - Direct contact for urgent issues < 48h response High priority" [ref=e848] [cursor=pointer]:
+                                - /url: mailto:support@echonote.dev
+                                - generic [ref=e849]:
+                                    - generic [ref=e850]:
+                                        - generic [ref=e851]: 📧
+                                        - heading "Email Support" [level=4] [ref=e852]
+                                    - generic [ref=e853]: < 48 hours
+                                - paragraph [ref=e854]: Email Support - Direct contact for urgent issues
+                                - generic [ref=e855]:
+                                    - generic [ref=e856]:
+                                        - generic [ref=e857]:
+                                            - strong [ref=e858]: < 48h
+                                            - text: response
+                                        - generic [ref=e859]:
+                                            - strong [ref=e860]: High
+                                            - text: priority
+                                    - img [ref=e861]
+                    - generic [ref=e863]:
+                        - heading "How to Contribute" [level=3] [ref=e864]
+                        - paragraph [ref=e865]: We welcome contributions from developers of all skill levels
+                        - generic [ref=e866]:
+                            - generic [ref=e867]:
+                                - generic [ref=e868]:
+                                    - generic [ref=e869]: 💻
+                                    - heading "Code Contributions" [level=4] [ref=e870]
+                                - paragraph [ref=e871]: Submit bug fixes, new features, and improvements
+                                - generic [ref=e872]:
+                                    - generic [ref=e873]:
+                                        - generic [ref=e874]: 'Difficulty:'
+                                        - generic [ref=e875]: Intermediate
+                                    - generic [ref=e876]:
+                                        - generic [ref=e877]: 'Time:'
+                                        - generic [ref=e878]: 2-10 hours
+                                - generic [ref=e879]:
+                                    - paragraph [ref=e880]: 'Skills needed:'
+                                    - generic [ref=e881]:
+                                        - generic [ref=e882]: Python
+                                        - generic [ref=e883]: PyQt
+                                        - generic [ref=e884]: Git
+                                - generic [ref=e885]:
+                                    - paragraph [ref=e886]: 'Examples:'
+                                    - list [ref=e887]:
+                                        - listitem [ref=e888]:
+                                            - img [ref=e889]
+                                            - text: Fix reported bugs
+                                        - listitem [ref=e891]:
+                                            - img [ref=e892]
+                                            - text: Implement new features
+                                - link "Get Started" [ref=e894] [cursor=pointer]:
+                                    - /url: https://github.com/echonote/echonote/blob/main/CONTRIBUTING.md#code-contributions
+                                    - text: Get Started
+                                    - img [ref=e895]
+                            - generic [ref=e897]:
+                                - generic [ref=e898]:
+                                    - generic [ref=e899]: 📝
+                                    - heading "Documentation" [level=4] [ref=e900]
+                                - paragraph [ref=e901]: Improve guides, tutorials, and API documentation
+                                - generic [ref=e902]:
+                                    - generic [ref=e903]:
+                                        - generic [ref=e904]: 'Difficulty:'
+                                        - generic [ref=e905]: Beginner
+                                    - generic [ref=e906]:
+                                        - generic [ref=e907]: 'Time:'
+                                        - generic [ref=e908]: 1-5 hours
+                                - generic [ref=e909]:
+                                    - paragraph [ref=e910]: 'Skills needed:'
+                                    - generic [ref=e911]:
+                                        - generic [ref=e912]: Writing
+                                        - generic [ref=e913]: Markdown
+                                        - generic [ref=e914]: Technical Communication
+                                - generic [ref=e915]:
+                                    - paragraph [ref=e916]: 'Examples:'
+                                    - list [ref=e917]:
+                                        - listitem [ref=e918]:
+                                            - img [ref=e919]
+                                            - text: Write user guides
+                                        - listitem [ref=e921]:
+                                            - img [ref=e922]
+                                            - text: Create tutorials
+                                - link "Get Started" [ref=e924] [cursor=pointer]:
+                                    - /url: https://github.com/echonote/echonote/blob/main/CONTRIBUTING.md#documentation
+                                    - text: Get Started
+                                    - img [ref=e925]
+                            - generic [ref=e927]:
+                                - generic [ref=e928]:
+                                    - generic [ref=e929]: 🌍
+                                    - heading "Translation" [level=4] [ref=e930]
+                                - paragraph [ref=e931]: Help translate EchoNote into different languages
+                                - generic [ref=e932]:
+                                    - generic [ref=e933]:
+                                        - generic [ref=e934]: 'Difficulty:'
+                                        - generic [ref=e935]: Beginner
+                                    - generic [ref=e936]:
+                                        - generic [ref=e937]: 'Time:'
+                                        - generic [ref=e938]: 2-8 hours
+                                - generic [ref=e939]:
+                                    - paragraph [ref=e940]: 'Skills needed:'
+                                    - generic [ref=e941]:
+                                        - generic [ref=e942]: Language Skills
+                                        - generic [ref=e943]: Cultural Awareness
+                                - generic [ref=e944]:
+                                    - paragraph [ref=e945]: 'Examples:'
+                                    - list [ref=e946]:
+                                        - listitem [ref=e947]:
+                                            - img [ref=e948]
+                                            - text: Translate UI text
+                                        - listitem [ref=e950]:
+                                            - img [ref=e951]
+                                            - text: Localize documentation
+                                - link "Get Started" [ref=e953] [cursor=pointer]:
+                                    - /url: https://github.com/echonote/echonote/blob/main/CONTRIBUTING.md#translations
+                                    - text: Get Started
+                                    - img [ref=e954]
+                            - generic [ref=e956]:
+                                - generic [ref=e957]:
+                                    - generic [ref=e958]: 🧪
+                                    - heading "Testing & QA" [level=4] [ref=e959]
+                                - paragraph [ref=e960]: Test new features and report issues
+                                - generic [ref=e961]:
+                                    - generic [ref=e962]:
+                                        - generic [ref=e963]: 'Difficulty:'
+                                        - generic [ref=e964]: Beginner
+                                    - generic [ref=e965]:
+                                        - generic [ref=e966]: 'Time:'
+                                        - generic [ref=e967]: 1-4 hours
+                                - generic [ref=e968]:
+                                    - paragraph [ref=e969]: 'Skills needed:'
+                                    - generic [ref=e970]:
+                                        - generic [ref=e971]: Attention to Detail
+                                        - generic [ref=e972]: Bug Reporting
+                                - generic [ref=e973]:
+                                    - paragraph [ref=e974]: 'Examples:'
+                                    - list [ref=e975]:
+                                        - listitem [ref=e976]:
+                                            - img [ref=e977]
+                                            - text: Test beta releases
+                                        - listitem [ref=e979]:
+                                            - img [ref=e980]
+                                            - text: Report bugs
+                                - link "Get Started" [ref=e982] [cursor=pointer]:
+                                    - /url: https://github.com/echonote/echonote/blob/main/CONTRIBUTING.md#testing
+                                    - text: Get Started
+                                    - img [ref=e983]
+                            - generic [ref=e985]:
+                                - generic [ref=e986]:
+                                    - generic [ref=e987]: 🎨
+                                    - heading "Design & UX" [level=4] [ref=e988]
+                                - paragraph [ref=e989]: Improve user interface and user experience
+                                - generic [ref=e990]:
+                                    - generic [ref=e991]:
+                                        - generic [ref=e992]: 'Difficulty:'
+                                        - generic [ref=e993]: Intermediate
+                                    - generic [ref=e994]:
+                                        - generic [ref=e995]: 'Time:'
+                                        - generic [ref=e996]: 3-12 hours
+                                - generic [ref=e997]:
+                                    - paragraph [ref=e998]: 'Skills needed:'
+                                    - generic [ref=e999]:
+                                        - generic [ref=e1000]: UI/UX Design
+                                        - generic [ref=e1001]: Figma
+                                        - generic [ref=e1002]: User Research
+                                - generic [ref=e1003]:
+                                    - paragraph [ref=e1004]: 'Examples:'
+                                    - list [ref=e1005]:
+                                        - listitem [ref=e1006]:
+                                            - img [ref=e1007]
+                                            - text: Design new features
+                                        - listitem [ref=e1009]:
+                                            - img [ref=e1010]
+                                            - text: Improve accessibility
+                                - link "Get Started" [ref=e1012] [cursor=pointer]:
+                                    - /url: https://github.com/echonote/echonote/blob/main/CONTRIBUTING.md#design
+                                    - text: Get Started
+                                    - img [ref=e1013]
+                            - generic [ref=e1015]:
+                                - generic [ref=e1016]:
+                                    - generic [ref=e1017]: 🤝
+                                    - heading "Community Support" [level=4] [ref=e1018]
+                                - paragraph [ref=e1019]: Help other users and build the community
+                                - generic [ref=e1020]:
+                                    - generic [ref=e1021]:
+                                        - generic [ref=e1022]: 'Difficulty:'
+                                        - generic [ref=e1023]: Beginner
+                                    - generic [ref=e1024]:
+                                        - generic [ref=e1025]: 'Time:'
+                                        - generic [ref=e1026]: 1-3 hours
+                                - generic [ref=e1027]:
+                                    - paragraph [ref=e1028]: 'Skills needed:'
+                                    - generic [ref=e1029]:
+                                        - generic [ref=e1030]: Communication
+                                        - generic [ref=e1031]: Problem Solving
+                                - generic [ref=e1032]:
+                                    - paragraph [ref=e1033]: 'Examples:'
+                                    - list [ref=e1034]:
+                                        - listitem [ref=e1035]:
+                                            - img [ref=e1036]
+                                            - text: Answer questions
+                                        - listitem [ref=e1038]:
+                                            - img [ref=e1039]
+                                            - text: Help troubleshoot
+                                - link "Get Started" [ref=e1041] [cursor=pointer]:
+                                    - /url: https://github.com/echonote/echonote/discussions
+                                    - text: Get Started
+                                    - img [ref=e1042]
+                    - generic [ref=e1044]:
+                        - heading "Development Roadmap" [level=3] [ref=e1045]
+                        - paragraph [ref=e1046]: Upcoming features and improvements
+                        - generic [ref=e1047]:
+                            - generic [ref=e1048]:
+                                - generic [ref=e1049]:
+                                    - heading "Current (v1.2)" [level=4] [ref=e1050]
+                                    - generic [ref=e1051]: in progress
+                                - generic [ref=e1052]:
+                                    - generic [ref=e1054]:
+                                        - heading "Multi-language speech recognition" [level=5] [ref=e1055]
+                                        - generic [ref=e1056]:
+                                            - generic [ref=e1057]: completed
+                                            - generic [ref=e1058]: high priority
+                                    - generic [ref=e1060]:
+                                        - heading "Advanced calendar integrations" [level=5] [ref=e1061]
+                                        - generic [ref=e1062]:
+                                            - generic [ref=e1063]: in progress
+                                            - generic [ref=e1064]: high priority
+                                    - generic [ref=e1066]:
+                                        - heading "Performance optimizations" [level=5] [ref=e1067]
+                                        - generic [ref=e1068]:
+                                            - generic [ref=e1069]: in progress
+                                            - generic [ref=e1070]: medium priority
+                                    - generic [ref=e1072]:
+                                        - heading "Bug fixes and stability" [level=5] [ref=e1073]
+                                        - generic [ref=e1074]:
+                                            - generic [ref=e1075]: ongoing
+                                            - generic [ref=e1076]: high priority
+                            - generic [ref=e1077]:
+                                - generic [ref=e1078]:
+                                    - heading "Next Release (v1.3)" [level=4] [ref=e1079]
+                                    - generic [ref=e1080]: planned
+                                - generic [ref=e1081]:
+                                    - generic [ref=e1083]:
+                                        - heading "Plugin system architecture" [level=5] [ref=e1084]
+                                        - generic [ref=e1085]:
+                                            - generic [ref=e1086]: planned
+                                            - generic [ref=e1087]: high priority
+                                    - generic [ref=e1089]:
+                                        - heading "Custom vocabulary support" [level=5] [ref=e1090]
+                                        - generic [ref=e1091]:
+                                            - generic [ref=e1092]: planned
+                                            - generic [ref=e1093]: medium priority
+                                    - generic [ref=e1095]:
+                                        - heading "Batch processing features" [level=5] [ref=e1096]
+                                        - generic [ref=e1097]:
+                                            - generic [ref=e1098]: planned
+                                            - generic [ref=e1099]: medium priority
+                                    - generic [ref=e1101]:
+                                        - heading "Enhanced accessibility" [level=5] [ref=e1102]
+                                        - generic [ref=e1103]:
+                                            - generic [ref=e1104]: planned
+                                            - generic [ref=e1105]: high priority
+                            - generic [ref=e1106]:
+                                - generic [ref=e1107]:
+                                    - heading "Future (v2.0)" [level=4] [ref=e1108]
+                                    - generic [ref=e1109]: research
+                                - generic [ref=e1110]:
+                                    - generic [ref=e1112]:
+                                        - heading "Mobile companion app" [level=5] [ref=e1113]
+                                        - generic [ref=e1114]:
+                                            - generic [ref=e1115]: research
+                                            - generic [ref=e1116]: medium priority
+                                    - generic [ref=e1118]:
+                                        - heading "Cloud sync (optional)" [level=5] [ref=e1119]
+                                        - generic [ref=e1120]:
+                                            - generic [ref=e1121]: research
+                                            - generic [ref=e1122]: low priority
+                                    - generic [ref=e1124]:
+                                        - heading "AI-powered insights" [level=5] [ref=e1125]
+                                        - generic [ref=e1126]:
+                                            - generic [ref=e1127]: research
+                                            - generic [ref=e1128]: medium priority
+                                    - generic [ref=e1130]:
+                                        - heading "Team collaboration features" [level=5] [ref=e1131]
+                                        - generic [ref=e1132]:
+                                            - generic [ref=e1133]: research
+                                            - generic [ref=e1134]: low priority
+                    - generic [ref=e1135]:
+                        - heading "Connect With Us" [level=3] [ref=e1136]
+                        - paragraph [ref=e1137]: Follow EchoNote on social media for updates and community discussions
+                        - generic [ref=e1138]:
+                            - link "🐙 GitHub Source code and issues 0 followers" [ref=e1139] [cursor=pointer]:
+                                - /url: https://github.com/johnnyzhao5619/echonote
+                                - generic [ref=e1140]: 🐙
+                                - heading "GitHub" [level=4] [ref=e1141]
+                                - paragraph [ref=e1142]: Source code and issues
+                                - generic [ref=e1143]: 0 followers
+                            - link "🐦 Twitter Updates and announcements 1.2K followers" [ref=e1144] [cursor=pointer]:
+                                - /url: https://twitter.com/echonote_dev
+                                - generic [ref=e1145]: 🐦
+                                - heading "Twitter" [level=4] [ref=e1146]
+                                - paragraph [ref=e1147]: Updates and announcements
+                                - generic [ref=e1148]: 1.2K followers
+                            - link "💬 Discord Real-time community chat 500+ followers" [ref=e1149] [cursor=pointer]:
+                                - /url: https://discord.gg/echonote
+                                - generic [ref=e1150]: 💬
+                                - heading "Discord" [level=4] [ref=e1151]
+                                - paragraph [ref=e1152]: Real-time community chat
+                                - generic [ref=e1153]: 500+ followers
+                            - link "🤖 Reddit Community discussions 800+ followers" [ref=e1154] [cursor=pointer]:
+                                - /url: https://reddit.com/r/echonote
+                                - generic [ref=e1155]: 🤖
+                                - heading "Reddit" [level=4] [ref=e1156]
+                                - paragraph [ref=e1157]: Community discussions
+                                - generic [ref=e1158]: 800+ followers
+                    - generic [ref=e1160]:
+                        - heading "Join the EchoNote Community" [level=3] [ref=e1161]
+                        - paragraph [ref=e1162]: Be part of building the future of privacy-first voice transcription
+                        - generic [ref=e1163]:
+                            - link "⭐ Star on GitHub" [ref=e1164] [cursor=pointer]:
+                                - /url: https://github.com/echonote/echonote
+                                - generic [ref=e1165]: ⭐
+                                - text: Star on GitHub
+                            - link "🤝 Start Contributing" [ref=e1166] [cursor=pointer]:
+                                - /url: https://github.com/echonote/echonote/blob/main/CONTRIBUTING.md
+                                - generic [ref=e1167]: 🤝
+                                - text: Start Contributing
+        - button "Send Feedback" [ref=e1169]:
+            - img [ref=e1170]
+    - generic [ref=e1172]:
+        - generic "Toggle devtools panel" [ref=e1173] [cursor=pointer]:
+            - img [ref=e1174]
+        - generic "Toggle Component Inspector" [ref=e1179] [cursor=pointer]:
+            - img [ref=e1180]
+```

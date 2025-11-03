@@ -1,62 +1,375 @@
 {
+  "meta": {
+    "title": "EchoNote - 智能语音转录和日历管理",
+    "description": "本地优先的隐私保护解决方案，智能语音转录和日历管理。开源桌面应用程序，支持本地处理。",
+    "keywords": "语音转录, 语音识别, 日历管理, 本地处理, 隐私保护, 开源软件, 桌面应用",
+    "author": "EchoNote 团队"
+  },
   "nav": {
     "home": "首页",
     "features": "功能特性",
     "quickStart": "快速开始",
     "technical": "技术信息",
     "community": "社区支持",
-    "github": "GitHub"
+    "github": "GitHub",
+    "language": "语言"
   },
   "hero": {
     "title": "EchoNote",
     "tagline": "智能语音转录和日历管理",
     "description": "本地优先的隐私保护解决方案，让您的语音转录和日历管理更加智能、安全、高效。",
+    "features": {
+      "0": "🔒 本地处理，完全保护隐私安全",
+      "1": "🎤 先进的AI语音识别技术",
+      "2": "📅 智能日历集成与管理",
+      "3": "⚡ 快速高效的实时处理",
+      "4": "🌐 全平台兼容支持"
+    },
     "downloadButton": "立即下载",
     "docsButton": "查看文档",
-    "githubButton": "GitHub"
+    "githubButton": "在 GitHub 查看",
+    "stats": {
+      "stars": "GitHub 星标",
+      "forks": "分支",
+      "contributors": "贡献者",
+      "releases": "发布版本"
+    }
   },
   "features": {
     "title": "核心功能",
     "subtitle": "为什么选择 EchoNote",
-    "privacyTitle": "隐私优先",
-    "privacyDescription": "所有数据本地处理，无需上传到云端，完全保护您的隐私。",
-    "localTitle": "本地处理",
-    "localDescription": "强大的本地语音识别和处理能力，无需网络连接即可使用。",
-    "smartTitle": "智能管理",
-    "smartDescription": "智能日历集成，自动从语音中提取时间和事件信息。"
+    "items": {
+      "privacy": {
+        "title": "隐私优先",
+        "description": "所有数据均在您的设备上进行本地处理，无需上传至云端服务器，从根本上保障您的敏感信息安全，让隐私保护真正做到万无一失。",
+        "highlights": ["本地语音处理", "无数据传输", "加密本地存储", "符合 GDPR 规范"]
+      },
+      "local": {
+        "title": "本地处理",
+        "description": "采用业界领先的本地语音识别和处理技术，完全脱离网络环境独立运行，确保在任何场景下都能提供稳定可靠的服务体验。",
+        "highlights": ["离线功能", "快速处理速度", "无网络依赖", "降低延迟"]
+      },
+      "smart": {
+        "title": "智能管理",
+        "description": "基于先进的自然语言处理技术，智能识别并提取语音中的时间、日期和事件信息，自动创建日程安排，让您的时间管理更加高效便捷。",
+        "highlights": ["自动事件提取", "智能调度", "自然语言处理", "日历同步"]
+      },
+      "crossPlatform": {
+        "title": "跨平台支持",
+        "description": "原生开发的跨平台桌面应用，完美适配Windows、macOS和Linux系统，在不同操作系统上都能提供一致的优质用户体验。",
+        "highlights": ["Windows 支持", "macOS 兼容", "Linux 发行版", "一致的界面体验"]
+      }
+    }
   },
   "quickStart": {
     "title": "快速开始",
     "subtitle": "几分钟内开始使用 EchoNote",
-    "installationTitle": "安装指南",
-    "requirementsTitle": "系统要求",
-    "configurationTitle": "配置说明"
+    "installation": {
+      "title": "安装指南",
+      "subtitle": "选择您的平台并按照安装步骤操作",
+      "platforms": {
+        "windows": "Windows",
+        "macos": "macOS",
+        "linux": "Linux"
+      },
+      "steps": {
+        "download": "下载最新版本",
+        "install": "运行安装程序",
+        "launch": "启动 EchoNote",
+        "configure": "配置您的偏好设置"
+      }
+    },
+    "requirements": {
+      "title": "系统要求",
+      "subtitle": "最低系统规格要求",
+      "items": {
+        "os": "操作系统：Windows 10+、macOS 10.14+ 或 Linux",
+        "memory": "内存：最低 4GB RAM，推荐 8GB",
+        "storage": "存储：500MB 可用空间",
+        "audio": "音频：用于语音输入的麦克风"
+      }
+    },
+    "configuration": {
+      "title": "初始配置",
+      "subtitle": "设置 EchoNote 以获得最佳性能",
+      "steps": ["配置麦克风设置", "设置日历集成", "自定义转录偏好", "配置隐私设置"]
+    }
   },
   "technical": {
     "title": "技术信息",
-    "subtitle": "了解 EchoNote 的技术架构",
-    "architectureTitle": "系统架构",
-    "techStackTitle": "技术栈",
-    "performanceTitle": "性能指标"
+    "subtitle": "了解 EchoNote 的技术架构和实现",
+    "architecture": {
+      "title": "系统架构",
+      "description": "EchoNote采用现代化的模块化架构设计，将隐私保护、性能优化和功能扩展性作为核心设计原则，确保软件的稳定性和可维护性。",
+      "components": ["语音识别引擎", "自然语言处理", "日历集成层", "本地存储系统", "用户界面框架"]
+    },
+    "techStack": {
+      "title": "技术栈",
+      "subtitle": "使用现代、可靠的技术构建",
+      "items": {
+        "python": "Python - 核心应用逻辑",
+        "whisper": "OpenAI Whisper - 语音识别",
+        "nlp": "spaCy - 自然语言处理",
+        "qt": "PyQt - 用户界面框架",
+        "sqlite": "SQLite - 本地数据存储"
+      }
+    },
+    "performance": {
+      "title": "性能指标",
+      "subtitle": "针对速度和效率进行优化",
+      "metrics": {
+        "transcription": "毫秒级实时转录响应",
+        "accuracy": "超过95%的转录准确率",
+        "startup": "不到3秒的快速启动",
+        "memory": "低于200MB的内存占用"
+      }
+    }
   },
   "community": {
-    "title": "社区支持",
+    "title": "社区与支持",
     "subtitle": "加入 EchoNote 开源社区",
-    "contributorsTitle": "贡献者",
-    "supportTitle": "获取帮助",
-    "roadmapTitle": "发展路线图"
+    "contributors": {
+      "title": "贡献者",
+      "description": "感谢所有帮助 EchoNote 变得更好的优秀贡献者。",
+      "viewAll": "查看所有贡献者"
+    },
+    "support": {
+      "title": "获取帮助",
+      "description": "多种方式获得支持并与社区联系",
+      "channels": {
+        "github": "GitHub Issues - 错误报告和功能请求",
+        "discussions": "GitHub Discussions - 社区问答",
+        "docs": "文档 - 全面的指南和教程",
+        "email": "邮件支持 - 紧急问题直接联系"
+      }
+    },
+    "contribute": {
+      "title": "如何贡献",
+      "description": "我们欢迎各种技能水平的开发者贡献",
+      "ways": ["报告错误和建议功能", "改进文档", "提交代码贡献", "帮助翻译", "分享您的使用经验"]
+    },
+    "roadmap": {
+      "title": "开发路线图",
+      "description": "即将推出的功能和改进",
+      "items": [
+        "多语言语音识别",
+        "高级日历集成",
+        "插件系统架构",
+        "移动端配套应用",
+        "云同步（可选）"
+      ]
+    }
   },
   "footer": {
     "license": "Apache 2.0 许可证",
     "version": "版本",
-    "lastUpdated": "最后更新"
+    "lastUpdated": "最后更新",
+    "links": {
+      "privacy": "隐私政策",
+      "terms": "服务条款",
+      "security": "安全",
+      "changelog": "更新日志"
+    },
+    "social": {
+      "github": "GitHub",
+      "twitter": "Twitter",
+      "discord": "Discord"
+    }
+  },
+  "faq": {
+    "title": "常见问题",
+    "subtitle": "关于 EchoNote 您需要了解的一切",
+    "moreQuestions": "还有其他问题？",
+    "askCommunity": "询问社区",
+    "reportIssue": "报告问题",
+    "items": {
+      "whatIs": {
+        "question": "什么是 EchoNote？",
+        "answer": "EchoNote 是一个隐私优先的桌面应用程序，用于智能语音转录和日历管理，所有数据都在您的设备上本地处理。",
+        "details": [
+          "使用 OpenAI Whisper 技术的先进语音识别",
+          "具有自然语言处理的智能日历集成",
+          "完全离线功能，无云依赖",
+          "跨平台支持 Windows、macOS 和 Linux"
+        ],
+        "links": {
+          "features": "查看功能",
+          "quickStart": "快速开始指南"
+        }
+      },
+      "free": {
+        "question": "EchoNote 是免费使用的吗？",
+        "answer": "是的，EchoNote 完全免费且在 Apache 2.0 许可证下开源。",
+        "details": ["无订阅费用或高级版本", "完全访问所有功能，无限制", "开源代码可供审查和贡献"],
+        "links": {
+          "license": "查看许可证",
+          "source": "源代码"
+        }
+      },
+      "platforms": {
+        "question": "EchoNote 支持哪些平台？",
+        "answer": "EchoNote 支持 Windows 10+、macOS 10.14+ 和 Linux 发行版。",
+        "details": [
+          "Windows 10 和 Windows 11 具有原生性能",
+          "macOS Mojave (10.14) 及更高版本",
+          "主要 Linux 发行版，包括 Ubuntu、Fedora 和 Debian",
+          "所有平台上一致的用户体验"
+        ],
+        "links": {
+          "download": "立即下载",
+          "requirements": "系统要求"
+        }
+      },
+      "offline": {
+        "question": "EchoNote 需要网络连接吗？",
+        "answer": "不需要，EchoNote 完全离线工作。所有语音处理都在您的设备上本地完成，以确保最大隐私。",
+        "details": [
+          "本地语音识别，无云依赖",
+          "所有数据始终保留在您的设备上",
+          "核心功能无需网络请求",
+          "仅软件更新需要可选的网络连接"
+        ],
+        "links": {
+          "privacy": "隐私功能",
+          "technical": "技术详情"
+        }
+      },
+      "accuracy": {
+        "question": "语音转录的准确率如何？",
+        "answer": "EchoNote 使用先进的本地语音识别技术，转录准确率超过 95%。",
+        "details": [
+          "最先进的 OpenAI Whisper 语音识别模型",
+          "通过模型更新持续改进",
+          "支持多种语言和口音",
+          "实时处理，延迟最小"
+        ],
+        "links": {
+          "technical": "技术信息",
+          "performance": "性能指标"
+        }
+      },
+      "privacy": {
+        "question": "EchoNote 如何保护我的隐私？",
+        "answer": "EchoNote 在您的设备上本地处理所有数据，无云上传，确保完全的隐私保护。",
+        "details": [
+          "零数据传输到外部服务器",
+          "存储转录的本地加密",
+          "无用户跟踪或分析收集",
+          "设计符合 GDPR 规范"
+        ],
+        "links": {
+          "features": "隐私功能",
+          "security": "安全政策"
+        }
+      },
+      "calendar": {
+        "question": "日历集成如何工作？",
+        "answer": "EchoNote 自动从您的语音中提取日期、时间和事件，并与您现有的日历应用程序集成。",
+        "details": [
+          "用于日期和时间提取的自然语言处理",
+          "与 Google 日历、Outlook 和 Apple 日历集成",
+          "智能事件创建和自动调度",
+          "冲突检测和解决建议"
+        ],
+        "links": {
+          "setup": "设置指南",
+          "features": "日历功能"
+        }
+      },
+      "languages": {
+        "question": "EchoNote 支持哪些语言？",
+        "answer": "目前，EchoNote 支持英语，计划在未来版本中支持更多语言。",
+        "details": [
+          "完整的英语支持，准确率高",
+          "多语言支持在开发路线图中",
+          "欢迎社区贡献语言扩展",
+          "界面提供英语、中文和法语"
+        ],
+        "links": {
+          "roadmap": "开发路线图",
+          "contribute": "贡献"
+        }
+      },
+      "support": {
+        "question": "如何获得帮助或支持？",
+        "answer": "EchoNote 提供多种支持渠道，包括社区论坛、文档和直接问题报告。",
+        "details": [
+          "GitHub Discussions 社区问答",
+          "全面的文档和教程",
+          "GitHub Issues 用于错误报告和功能请求",
+          "活跃的用户和贡献者社区"
+        ],
+        "links": {
+          "community": "加入社区",
+          "github": "GitHub Issues"
+        }
+      },
+      "contribute": {
+        "question": "如何为 EchoNote 做贡献？",
+        "answer": "EchoNote 欢迎各种技能水平的开发者通过代码、文档、测试和社区支持做出贡献。",
+        "details": [
+          "通过 GitHub pull requests 贡献代码",
+          "文档改进和翻译",
+          "错误测试和质量保证",
+          "社区支持和用户协助"
+        ],
+        "links": {
+          "guide": "贡献指南",
+          "community": "开发者社区"
+        }
+      }
+    }
+  },
+  "feedback": {
+    "title": "分享您的反馈",
+    "button": {
+      "label": "发送反馈"
+    },
+    "type": {
+      "label": "您想提供什么类型的反馈？",
+      "bug": "错误报告",
+      "feature": "功能建议",
+      "general": "一般反馈",
+      "translation": "翻译问题"
+    },
+    "rating": {
+      "label": "您如何评价您的使用体验？"
+    },
+    "message": {
+      "label": "您的消息",
+      "placeholder": "请详细描述您的反馈..."
+    },
+    "contact": {
+      "label": "联系信息",
+      "optional": "可选",
+      "placeholder": "your.email@example.com"
+    },
+    "privacy": {
+      "notice": "您的反馈帮助我们改进 EchoNote。我们尊重您的隐私，仅会使用这些信息来处理您的反馈。"
+    },
+    "submit": "发送反馈",
+    "submitting": "发送中...",
+    "success": {
+      "title": "谢谢您！",
+      "message": "我们已收到您的反馈。感谢您花时间帮助我们改进 EchoNote。",
+      "newFeedback": "发送更多反馈"
+    }
   },
   "common": {
     "loading": "加载中...",
-    "error": "出错了",
+    "error": "发生错误",
     "retry": "重试",
     "copy": "复制",
-    "copied": "已复制",
-    "learnMore": "了解更多"
+    "copied": "已复制！",
+    "learnMore": "了解更多",
+    "getStarted": "开始使用",
+    "viewMore": "查看更多",
+    "close": "关闭",
+    "open": "打开",
+    "save": "保存",
+    "cancel": "取消",
+    "confirm": "确认",
+    "yes": "是",
+    "no": "否"
   }
 }

@@ -1,0 +1,381 @@
+{
+  "meta": {
+    "title": "EchoNote - 智慧語音轉錄與行事曆管理",
+    "description": "本地優先的隱私保護解決方案，智慧語音轉錄和行事曆管理。開源桌面應用程式，支援本地處理。",
+    "keywords": "語音轉錄, 語音識別, 行事曆管理, 本地處理, 隱私保護, 開源軟體, 桌面應用",
+    "author": "EchoNote 團隊"
+  },
+  "nav": {
+    "home": "首頁",
+    "features": "功能特性",
+    "quickStart": "快速開始",
+    "technical": "技術資訊",
+    "community": "社群支援",
+    "github": "GitHub",
+    "language": "語言"
+  },
+  "hero": {
+    "title": "EchoNote",
+    "tagline": "智慧語音轉錄與行事曆管理",
+    "description": "本地優先的隱私保護解決方案，讓您的語音轉錄和行事曆管理更加智慧、安全、高效。",
+    "features": {
+      "0": "🔒 本地處理，完全保護隱私安全",
+      "1": "🎤 先進的AI語音識別技術",
+      "2": "📅 智慧行事曆整合與管理",
+      "3": "⚡ 快速高效的即時處理",
+      "4": "🌐 全平台相容支援"
+    },
+    "downloadButton": "立即下載",
+    "docsButton": "查看文件",
+    "githubButton": "在 GitHub 查看",
+    "stats": {
+      "stars": "GitHub 星標",
+      "forks": "分支",
+      "contributors": "貢獻者",
+      "releases": "發布版本"
+    }
+  },
+  "features": {
+    "title": "核心功能",
+    "subtitle": "為什麼選擇 EchoNote",
+    "items": {
+      "privacy": {
+        "title": "隱私優先",
+        "description": "所有資料均在您的裝置上進行本地處理，無需上傳至雲端伺服器，從根本上保障您的敏感資訊安全，讓隱私保護真正做到萬無一失。",
+        "highlights": ["本地語音處理", "無資料傳輸", "加密本地儲存", "符合 GDPR 規範"]
+      },
+      "local": {
+        "title": "本地處理",
+        "description": "採用業界領先的本地語音識別和處理技術，完全脫離網路環境獨立運行，確保在任何場景下都能提供穩定可靠的服務體驗。",
+        "highlights": ["離線功能", "快速處理速度", "無網路依賴", "降低延遲"]
+      },
+      "smart": {
+        "title": "智慧管理",
+        "description": "基於先進的自然語言處理技術，智慧識別並提取語音中的時間、日期和事件資訊，自動建立行程安排，讓您的時間管理更加高效便捷。",
+        "highlights": ["自動事件提取", "智慧排程", "自然語言處理", "行事曆同步"]
+      },
+      "crossPlatform": {
+        "title": "跨平台支援",
+        "description": "原生開發的跨平台桌面應用程式，完美適配Windows、macOS和Linux系統，在不同作業系統上都能提供一致的優質使用者體驗。",
+        "highlights": ["Windows 支援", "macOS 相容", "Linux 發行版", "一致的介面體驗"]
+      }
+    }
+  },
+  "quickStart": {
+    "title": "快速開始",
+    "subtitle": "幾分鐘內開始使用 EchoNote",
+    "installation": {
+      "title": "安裝指南",
+      "subtitle": "選擇您的平台並按照安裝步驟操作",
+      "platforms": {
+        "windows": "Windows",
+        "macos": "macOS",
+        "linux": "Linux"
+      },
+      "steps": {
+        "download": "下載最新版本",
+        "install": "執行安裝程式",
+        "launch": "啟動 EchoNote",
+        "configure": "設定您的偏好設定"
+      }
+    },
+    "requirements": {
+      "title": "系統需求",
+      "subtitle": "最低系統規格需求",
+      "items": {
+        "os": "作業系統：Windows 10+、macOS 10.14+ 或 Linux",
+        "memory": "記憶體：最低 4GB RAM，建議 8GB",
+        "storage": "儲存：500MB 可用空間",
+        "audio": "音訊：用於語音輸入的麥克風"
+      }
+    },
+    "configuration": {
+      "title": "初始設定",
+      "subtitle": "設定 EchoNote 以獲得最佳效能",
+      "steps": ["設定麥克風設定", "設定行事曆整合", "自訂轉錄偏好", "設定隱私設定"]
+    }
+  },
+  "technical": {
+    "title": "技術資訊",
+    "subtitle": "了解 EchoNote 的技術架構和實作",
+    "architecture": {
+      "title": "系統架構",
+      "description": "EchoNote採用現代化的模組化架構設計，將隱私保護、效能最佳化和功能擴展性作為核心設計原則，確保軟體的穩定性和可維護性。",
+      "components": [
+        "語音識別引擎",
+        "自然語言處理",
+        "行事曆整合層",
+        "本地儲存系統",
+        "使用者介面框架"
+      ]
+    },
+    "techStack": {
+      "title": "技術堆疊",
+      "subtitle": "使用現代、可靠的技術建構",
+      "items": {
+        "python": "Python - 核心應用邏輯",
+        "whisper": "OpenAI Whisper - 語音識別",
+        "nlp": "spaCy - 自然語言處理",
+        "qt": "PyQt - 使用者介面框架",
+        "sqlite": "SQLite - 本地資料儲存"
+      }
+    },
+    "performance": {
+      "title": "效能指標",
+      "subtitle": "針對速度和效率進行最佳化",
+      "metrics": {
+        "transcription": "毫秒級即時轉錄回應",
+        "accuracy": "超過95%的轉錄準確率",
+        "startup": "不到3秒的快速啟動",
+        "memory": "低於200MB的記憶體佔用"
+      }
+    }
+  },
+  "community": {
+    "title": "社群與支援",
+    "subtitle": "加入 EchoNote 開源社群",
+    "contributors": {
+      "title": "貢獻者",
+      "description": "感謝所有幫助 EchoNote 變得更好的優秀貢獻者。",
+      "viewAll": "查看所有貢獻者"
+    },
+    "support": {
+      "title": "取得協助",
+      "description": "多種方式獲得支援並與社群聯繫",
+      "channels": {
+        "github": "GitHub Issues - 錯誤回報和功能請求",
+        "discussions": "GitHub Discussions - 社群問答",
+        "docs": "文件 - 全面的指南和教學",
+        "email": "郵件支援 - 緊急問題直接聯繫"
+      }
+    },
+    "contribute": {
+      "title": "如何貢獻",
+      "description": "我們歡迎各種技能水準的開發者貢獻",
+      "ways": ["回報錯誤和建議功能", "改進文件", "提交程式碼貢獻", "協助翻譯", "分享您的使用經驗"]
+    },
+    "roadmap": {
+      "title": "開發路線圖",
+      "description": "即將推出的功能和改進",
+      "items": [
+        "多語言語音識別",
+        "進階行事曆整合",
+        "外掛系統架構",
+        "行動端配套應用",
+        "雲端同步（可選）"
+      ]
+    }
+  },
+  "footer": {
+    "license": "Apache 2.0 授權",
+    "version": "版本",
+    "lastUpdated": "最後更新",
+    "links": {
+      "privacy": "隱私政策",
+      "terms": "服務條款",
+      "security": "安全",
+      "changelog": "更新日誌"
+    },
+    "social": {
+      "github": "GitHub",
+      "twitter": "Twitter",
+      "discord": "Discord"
+    }
+  },
+  "faq": {
+    "title": "常見問題",
+    "subtitle": "關於 EchoNote 您需要了解的一切",
+    "moreQuestions": "還有其他問題？",
+    "askCommunity": "詢問社群",
+    "reportIssue": "回報問題",
+    "items": {
+      "whatIs": {
+        "question": "什麼是 EchoNote？",
+        "answer": "EchoNote 是一個隱私優先的桌面應用程式，用於智慧語音轉錄和行事曆管理，所有資料都在您的裝置上本地處理。",
+        "details": [
+          "使用 OpenAI Whisper 技術的先進語音識別",
+          "具有自然語言處理的智慧行事曆整合",
+          "完全離線功能，無雲端依賴",
+          "跨平台支援 Windows、macOS 和 Linux"
+        ],
+        "links": {
+          "features": "查看功能",
+          "quickStart": "快速開始指南"
+        }
+      },
+      "free": {
+        "question": "EchoNote 是免費使用的嗎？",
+        "answer": "是的，EchoNote 完全免費且在 Apache 2.0 授權下開源。",
+        "details": ["無訂閱費用或高級版本", "完全存取所有功能，無限制", "開源程式碼可供審查和貢獻"],
+        "links": {
+          "license": "查看授權",
+          "source": "原始碼"
+        }
+      },
+      "platforms": {
+        "question": "EchoNote 支援哪些平台？",
+        "answer": "EchoNote 支援 Windows 10+、macOS 10.14+ 和 Linux 發行版。",
+        "details": [
+          "Windows 10 和 Windows 11 具有原生效能",
+          "macOS Mojave (10.14) 及更高版本",
+          "主要 Linux 發行版，包括 Ubuntu、Fedora 和 Debian",
+          "所有平台上一致的使用者體驗"
+        ],
+        "links": {
+          "download": "立即下載",
+          "requirements": "系統需求"
+        }
+      },
+      "offline": {
+        "question": "EchoNote 需要網路連線嗎？",
+        "answer": "不需要，EchoNote 完全離線工作。所有語音處理都在您的裝置上本地完成，以確保最大隱私。",
+        "details": [
+          "本地語音識別，無雲端依賴",
+          "所有資料始終保留在您的裝置上",
+          "核心功能無需網路請求",
+          "僅軟體更新需要可選的網路連線"
+        ],
+        "links": {
+          "privacy": "隱私功能",
+          "technical": "技術詳情"
+        }
+      },
+      "accuracy": {
+        "question": "語音轉錄的準確率如何？",
+        "answer": "EchoNote 使用先進的本地語音識別技術，轉錄準確率超過 95%。",
+        "details": [
+          "最先進的 OpenAI Whisper 語音識別模型",
+          "透過模型更新持續改進",
+          "支援多種語言和口音",
+          "即時處理，延遲最小"
+        ],
+        "links": {
+          "technical": "技術資訊",
+          "performance": "效能指標"
+        }
+      },
+      "privacy": {
+        "question": "EchoNote 如何保護我的隱私？",
+        "answer": "EchoNote 在您的裝置上本地處理所有資料，無雲端上傳，確保完全的隱私保護。",
+        "details": [
+          "零資料傳輸到外部伺服器",
+          "儲存轉錄的本地加密",
+          "無使用者追蹤或分析收集",
+          "設計符合 GDPR 規範"
+        ],
+        "links": {
+          "features": "隱私功能",
+          "security": "安全政策"
+        }
+      },
+      "calendar": {
+        "question": "行事曆整合如何工作？",
+        "answer": "EchoNote 自動從您的語音中提取日期、時間和事件，並與您現有的行事曆應用程式整合。",
+        "details": [
+          "用於日期和時間提取的自然語言處理",
+          "與 Google 行事曆、Outlook 和 Apple 行事曆整合",
+          "智慧事件建立和自動排程",
+          "衝突偵測和解決建議"
+        ],
+        "links": {
+          "setup": "設定指南",
+          "features": "行事曆功能"
+        }
+      },
+      "languages": {
+        "question": "EchoNote 支援哪些語言？",
+        "answer": "目前，EchoNote 支援英語，計劃在未來版本中支援更多語言。",
+        "details": [
+          "完整的英語支援，準確率高",
+          "多語言支援在開發路線圖中",
+          "歡迎社群貢獻語言擴展",
+          "介面提供英語、中文和法語"
+        ],
+        "links": {
+          "roadmap": "開發路線圖",
+          "contribute": "貢獻"
+        }
+      },
+      "support": {
+        "question": "如何獲得協助或支援？",
+        "answer": "EchoNote 提供多種支援管道，包括社群論壇、文件和直接問題回報。",
+        "details": [
+          "GitHub Discussions 社群問答",
+          "全面的文件和教學",
+          "GitHub Issues 用於錯誤回報和功能請求",
+          "活躍的使用者和貢獻者社群"
+        ],
+        "links": {
+          "community": "加入社群",
+          "github": "GitHub Issues"
+        }
+      },
+      "contribute": {
+        "question": "如何為 EchoNote 做貢獻？",
+        "answer": "EchoNote 歡迎各種技能水準的開發者透過程式碼、文件、測試和社群支援做出貢獻。",
+        "details": [
+          "透過 GitHub pull requests 貢獻程式碼",
+          "文件改進和翻譯",
+          "錯誤測試和品質保證",
+          "社群支援和使用者協助"
+        ],
+        "links": {
+          "guide": "貢獻指南",
+          "community": "開發者社群"
+        }
+      }
+    }
+  },
+  "feedback": {
+    "title": "分享您的回饋",
+    "button": {
+      "label": "發送回饋"
+    },
+    "type": {
+      "label": "您想提供什麼類型的回饋？",
+      "bug": "錯誤回報",
+      "feature": "功能建議",
+      "general": "一般回饋",
+      "translation": "翻譯問題"
+    },
+    "rating": {
+      "label": "您如何評價您的使用體驗？"
+    },
+    "message": {
+      "label": "您的訊息",
+      "placeholder": "請詳細描述您的回饋..."
+    },
+    "contact": {
+      "label": "聯絡資訊",
+      "optional": "可選",
+      "placeholder": "your.email@example.com"
+    },
+    "privacy": {
+      "notice": "您的回饋幫助我們改進 EchoNote。我們尊重您的隱私，僅會使用這些資訊來處理您的回饋。"
+    },
+    "submit": "發送回饋",
+    "submitting": "發送中...",
+    "success": {
+      "title": "謝謝您！",
+      "message": "我們已收到您的回饋。感謝您花時間幫助我們改進 EchoNote。",
+      "newFeedback": "發送更多回饋"
+    }
+  },
+  "common": {
+    "loading": "載入中...",
+    "error": "發生錯誤",
+    "retry": "重試",
+    "copy": "複製",
+    "copied": "已複製！",
+    "learnMore": "了解更多",
+    "getStarted": "開始使用",
+    "viewMore": "查看更多",
+    "close": "關閉",
+    "open": "開啟",
+    "save": "儲存",
+    "cancel": "取消",
+    "confirm": "確認",
+    "yes": "是",
+    "no": "否"
+  }
+}

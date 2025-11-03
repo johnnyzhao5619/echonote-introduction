@@ -1,0 +1,43 @@
+# Security headers for GitHub Pages
+# Note: GitHub Pages has limited support for custom headers
+# These headers are primarily for documentation and may not be applied
+
+/*
+  # Content Security Policy
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://www.google-analytics.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https: blob:; connect-src 'self' https://api.github.com https://www.google-analytics.com; frame-ancestors 'none'; base-uri 'self'; form-action 'self';
+  
+  # Prevent MIME type sniffing
+  X-Content-Type-Options: nosniff
+  
+  # Enable XSS protection
+  X-XSS-Protection: 1; mode=block
+  
+  # Prevent clickjacking
+  X-Frame-Options: DENY
+  
+  # Referrer policy
+  Referrer-Policy: strict-origin-when-cross-origin
+  
+  # Permissions policy
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=(), usb=(), magnetometer=(), gyroscope=(), accelerometer=()
+
+# Cache control for static assets
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/images/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/js/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/css/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Cache control for HTML files
+/*.html
+  Cache-Control: public, max-age=3600, must-revalidate
+
+# Cache control for service worker
+/sw.js
+  Cache-Control: public, max-age=0, must-revalidate

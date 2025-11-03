@@ -1,0 +1,137 @@
+<svg width="400" height="300" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background -->
+    <rect width="400" height="300" fill="url(#gradient-bg)" />
+
+    <!-- Calendar Grid -->
+    <rect x="80" y="60" width="240" height="180" rx="8" fill="#FFFFFF" stroke="#D1D5DB"
+        stroke-width="2" />
+
+    <!-- Calendar Header -->
+    <rect x="80" y="60" width="240" height="40" rx="8" fill="#6366F1" />
+    <rect x="80" y="92" width="240" height="8" fill="#6366F1" />
+
+    <!-- Month/Year -->
+    <text x="200" y="85" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif"
+        font-size="16" font-weight="bold">
+        November 2025
+    </text>
+
+    <!-- Day headers -->
+    <g fill="#6B7280" font-family="Arial, sans-serif" font-size="12" font-weight="500">
+        <text x="95" y="120" text-anchor="middle">S</text>
+        <text x="125" y="120" text-anchor="middle">M</text>
+        <text x="155" y="120" text-anchor="middle">T</text>
+        <text x="185" y="120" text-anchor="middle">W</text>
+        <text x="215" y="120" text-anchor="middle">T</text>
+        <text x="245" y="120" text-anchor="middle">F</text>
+        <text x="275" y="120" text-anchor="middle">S</text>
+    </g>
+
+    <!-- Calendar dates -->
+    <g fill="#374151" font-family="Arial, sans-serif" font-size="12">
+        <!-- Week 1 -->
+        <text x="155" y="140" text-anchor="middle">1</text>
+        <text x="185" y="140" text-anchor="middle">2</text>
+        <text x="215" y="140" text-anchor="middle">3</text>
+        <text x="245" y="140" text-anchor="middle">4</text>
+        <text x="275" y="140" text-anchor="middle">5</text>
+
+        <!-- Week 2 -->
+        <text x="95" y="160" text-anchor="middle">6</text>
+        <text x="125" y="160" text-anchor="middle">7</text>
+        <text x="155" y="160" text-anchor="middle">8</text>
+        <text x="185" y="160" text-anchor="middle">9</text>
+        <text x="215" y="160" text-anchor="middle">10</text>
+        <text x="245" y="160" text-anchor="middle">11</text>
+        <text x="275" y="160" text-anchor="middle">12</text>
+
+        <!-- Week 3 -->
+        <text x="95" y="180" text-anchor="middle">13</text>
+        <text x="125" y="180" text-anchor="middle">14</text>
+        <text x="155" y="180" text-anchor="middle">15</text>
+        <text x="185" y="180" text-anchor="middle">16</text>
+        <text x="215" y="180" text-anchor="middle">17</text>
+        <text x="245" y="180" text-anchor="middle">18</text>
+        <text x="275" y="180" text-anchor="middle">19</text>
+
+        <!-- Week 4 -->
+        <text x="95" y="200" text-anchor="middle">20</text>
+        <text x="125" y="200" text-anchor="middle">21</text>
+        <text x="155" y="200" text-anchor="middle">22</text>
+        <text x="185" y="200" text-anchor="middle">23</text>
+        <text x="215" y="200" text-anchor="middle">24</text>
+        <text x="245" y="200" text-anchor="middle">25</text>
+        <text x="275" y="200" text-anchor="middle">26</text>
+    </g>
+
+    <!-- Highlighted event days -->
+    <circle cx="155" cy="135" r="12" fill="#10B981" opacity="0.2" />
+    <circle cx="215" cy="175" r="12" fill="#F59E0B" opacity="0.2" />
+    <circle cx="245" cy="195" r="12" fill="#EF4444" opacity="0.2" />
+
+    <!-- Event indicators -->
+    <circle cx="155" cy="145" r="2" fill="#10B981" />
+    <circle cx="215" cy="185" r="2" fill="#F59E0B" />
+    <circle cx="245" cy="205" r="2" fill="#EF4444" />
+
+    <!-- Speech bubble with voice input -->
+    <g transform="translate(30, 30)">
+        <path
+            d="M0 20 Q0 0 20 0 L80 0 Q100 0 100 20 L100 40 Q100 60 80 60 L25 60 L10 75 L20 60 Q0 60 0 40 Z"
+            fill="#FFFFFF" stroke="#D1D5DB" stroke-width="2" />
+        <text x="50" y="25" text-anchor="middle" fill="#374151" font-family="Arial, sans-serif"
+            font-size="10">
+            "Meeting with team
+        </text>
+        <text x="50" y="40" text-anchor="middle" fill="#374151" font-family="Arial, sans-serif"
+            font-size="10">
+            tomorrow at 2 PM"
+        </text>
+    </g>
+
+    <!-- AI processing indicator -->
+    <g transform="translate(340, 100)">
+        <circle cx="20" cy="20" r="18" fill="#6366F1" opacity="0.1" />
+        <path d="M12 12 L28 12 M12 20 L28 20 M12 28 L28 28" stroke="#6366F1" stroke-width="2"
+            stroke-linecap="round">
+            <animate attributeName="opacity" values="0.3;1;0.3" dur="2s" repeatCount="indefinite" />
+        </path>
+        <text x="20" y="50" text-anchor="middle" fill="#6366F1" font-family="Arial, sans-serif"
+            font-size="8">
+            AI Processing
+        </text>
+    </g>
+
+    <!-- Arrow from speech to calendar -->
+    <path d="M130 50 Q150 40 170 50 Q190 60 200 80" stroke="#10B981" stroke-width="3"
+        marker-end="url(#arrowhead)" fill="none" stroke-dasharray="5,5">
+        <animate attributeName="stroke-dashoffset" values="0;-10" dur="1s" repeatCount="indefinite" />
+    </path>
+
+    <!-- Smart extraction labels -->
+    <g transform="translate(200, 250)">
+        <rect x="0" y="0" width="120" height="30" rx="15" fill="#10B981" opacity="0.1" />
+        <text x="60" y="20" text-anchor="middle" fill="#059669" font-family="Arial, sans-serif"
+            font-size="12" font-weight="500">
+            Auto-extracted event
+        </text>
+    </g>
+
+    <!-- Title -->
+    <text x="200" y="25" text-anchor="middle" fill="#374151" font-family="Arial, sans-serif"
+        font-size="18" font-weight="bold">
+        Smart Calendar Integration
+    </text>
+
+    <!-- Definitions -->
+    <defs>
+        <linearGradient id="gradient-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#F8FAFC;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#F1F5F9;stop-opacity:1" />
+        </linearGradient>
+
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#10B981" />
+        </marker>
+    </defs>
+</svg>

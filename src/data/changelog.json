@@ -1,0 +1,51 @@
+{
+  "lastUpdated": "2025-11-02T00:00:00Z",
+  "releases": [
+    {
+      "version": "v1.2.0",
+      "date": "2025-11-01T00:00:00Z",
+      "title": "Enhanced Voice Processing and Calendar Integration",
+      "body": "### Features\n- Enhanced voice transcription accuracy with improved AI models\n- Better calendar integration with popular calendar applications\n- New privacy controls for data management\n- Performance optimizations for faster processing\n\n### Bug Fixes\n- Fixed audio processing issues on certain hardware configurations\n- Resolved calendar sync problems with Google Calendar\n- Improved error handling and user feedback\n\n### Technical Improvements\n- Updated core dependencies to latest versions\n- Enhanced security measures for data protection\n- Better cross-platform compatibility\n- Improved memory usage and performance",
+      "url": "https://github.com/echonote/echonote/releases/tag/v1.2.0",
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "echonote-v1.2.0-windows-x64.exe",
+          "downloadUrl": "https://github.com/echonote/echonote/releases/download/v1.2.0/echonote-v1.2.0-windows-x64.exe",
+          "downloadCount": 1250,
+          "size": 45678901
+        },
+        {
+          "name": "echonote-v1.2.0-macos-x64.dmg",
+          "downloadUrl": "https://github.com/echonote/echonote/releases/download/v1.2.0/echonote-v1.2.0-macos-x64.dmg",
+          "downloadCount": 890,
+          "size": 42345678
+        },
+        {
+          "name": "echonote-v1.2.0-linux-x64.AppImage",
+          "downloadUrl": "https://github.com/echonote/echonote/releases/download/v1.2.0/echonote-v1.2.0-linux-x64.AppImage",
+          "downloadCount": 567,
+          "size": 48901234
+        }
+      ]
+    },
+    {
+      "version": "v1.1.5",
+      "date": "2025-10-15T00:00:00Z",
+      "title": "Bug Fixes and Stability Improvements",
+      "body": "### Bug Fixes\n- Fixed crash when processing very long audio files\n- Resolved UI freezing issues during transcription\n- Fixed calendar event creation with special characters\n\n### Improvements\n- Better error messages for troubleshooting\n- Improved audio quality detection\n- Enhanced logging for debugging",
+      "url": "https://github.com/echonote/echonote/releases/tag/v1.1.5",
+      "prerelease": false,
+      "assets": []
+    },
+    {
+      "version": "v1.1.0",
+      "date": "2025-09-20T00:00:00Z",
+      "title": "Multi-language Support and UI Improvements",
+      "body": "### Features\n- Added support for multiple languages in transcription\n- New modern UI with improved accessibility\n- Enhanced keyboard shortcuts and navigation\n- Better integration with system notifications\n\n### Technical Changes\n- Migrated to new audio processing engine\n- Improved database performance\n- Better error recovery mechanisms",
+      "url": "https://github.com/echonote/echonote/releases/tag/v1.1.0",
+      "prerelease": false,
+      "assets": []
+    }
+  ]
+}

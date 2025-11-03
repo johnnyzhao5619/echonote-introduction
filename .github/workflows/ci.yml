@@ -1,0 +1,111 @@
+name: Continuous Integration
+
+on:
+  push:
+    branches: [main, develop]
+  pull_request:
+    branches: [main, develop]
+  workflow_dispatch:
+
+jobs:
+  # Quality checks job
+  quality:
+    name: Code Quality
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+          cache-dependency-path: 'echonote-introduction/package-lock.json'
+
+      - name: Install dependencies
+        run: |
+          cd echonote-introduction
+          npm ci
+
+      - name: Type checking
+        run: |
+          cd echonote-introduction
+          npm run type-check
+
+      - name: Linting
+        run: |
+          cd echonote-introduction
+          npm run lint
+
+      - name: Format check
+        run: |
+          cd echonote-introduction
+          npm run format -- --check
+
+  # Build and test job
+  build-test:
+    name: Build and Test
+    runs-on: ubuntu-latest
+    needs: quality
+    strategy:
+      matrix:
+        node-version: [20, 22]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: 'npm'
+          cache-dependency-path: 'echonote-introduction/package-lock.json'
+
+      - name: Install dependencies
+        run: |
+          cd echonote-introduction
+          npm ci
+
+      - name: Build
+        run: |
+          cd echonote-introduction
+          npm run build
+
+      - name: Check build output
+        run: |
+          cd echonote-introduction
+          ls -la dist/
+          # Verify essential files exist
+          test -f dist/index.html
+          test -d dist/assets
+
+  # Security audit
+  security:
+    name: Security Audit
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+          cache-dependency-path: 'echonote-introduction/package-lock.json'
+
+      - name: Install dependencies
+        run: |
+          cd echonote-introduction
+          npm ci
+
+      - name: Run security audit
+        run: |
+          cd echonote-introduction
+          npm audit --audit-level=moderate
+
+      - name: Check for known vulnerabilities
+        run: |
+          cd echonote-introduction
+          npx audit-ci --moderate

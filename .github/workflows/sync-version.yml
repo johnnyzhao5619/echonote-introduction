@@ -1,0 +1,303 @@
+name: Sync Version Information
+
+on:
+  schedule:
+    # Run every day at 6:00 AM UTC
+    - cron: '0 6 * * *'
+  workflow_dispatch:
+    inputs:
+      force_update:
+        description: 'Force update even if no changes detected'
+        required: false
+        default: false
+        type: boolean
+
+jobs:
+  sync-version:
+    name: Sync Version from Main Project
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+          cache-dependency-path: 'echonote-introduction/package-lock.json'
+
+      - name: Install dependencies
+        run: |
+          cd echonote-introduction
+          npm ci
+
+      - name: Fetch EchoNote main project information
+        id: fetch-info
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const path = require('path');
+
+            try {
+              // Fetch main project repository information
+              const mainRepo = 'johnnyzhao5619/echonote';
+              
+              // Get repository information
+              const { data: repo } = await github.rest.repos.get({
+                owner: 'johnnyzhao5619',
+                repo: 'echonote'
+              });
+              
+              // Get latest release
+              let latestRelease = null;
+              try {
+                const { data: release } = await github.rest.repos.getLatestRelease({
+                  owner: 'johnnyzhao5619',
+                  repo: 'echonote'
+                });
+                latestRelease = release;
+              } catch (error) {
+                console.log('No releases found or error fetching release:', error.message);
+              }
+              
+              // Get repository statistics
+              const stats = {
+                stars: repo.stargazers_count,
+                forks: repo.forks_count,
+                watchers: repo.watchers_count,
+                openIssues: repo.open_issues_count,
+                language: repo.language,
+                license: repo.license?.name || 'Unknown',
+                lastUpdated: repo.updated_at,
+                description: repo.description
+              };
+              
+              // Get contributors count
+              let contributorsCount = 0;
+              try {
+                const { data: contributors } = await github.rest.repos.listContributors({
+                  owner: 'johnnyzhao5619',
+                  repo: 'echonote',
+                  per_page: 100
+                });
+                contributorsCount = contributors.length;
+              } catch (error) {
+                console.log('Error fetching contributors:', error.message);
+              }
+              
+              // Prepare version information
+              const versionInfo = {
+                version: latestRelease?.tag_name || 'v1.2.0',
+                releaseDate: latestRelease?.published_at || new Date().toISOString(),
+                releaseNotes: latestRelease?.body || 'No release notes available',
+                downloadUrl: latestRelease?.html_url || `https://github.com/${mainRepo}/releases`,
+                stats: {
+                  ...stats,
+                  contributors: contributorsCount
+                },
+                lastSync: new Date().toISOString()
+              };
+              
+              // Write to data file
+              const dataDir = path.join('echonote-introduction', 'src', 'data');
+              if (!fs.existsSync(dataDir)) {
+                fs.mkdirSync(dataDir, { recursive: true });
+              }
+              
+              const dataFile = path.join(dataDir, 'project-info.json');
+              fs.writeFileSync(dataFile, JSON.stringify(versionInfo, null, 2));
+              
+              // Update package.json version if different
+              const packageJsonPath = path.join('echonote-introduction', 'package.json');
+              const packageJson = JSON.parse(fs.readFileSync(packageJsonPath, 'utf8'));
+              const newVersion = versionInfo.version.replace('v', '');
+              
+              if (packageJson.version !== newVersion) {
+                packageJson.version = newVersion;
+                fs.writeFileSync(packageJsonPath, JSON.stringify(packageJson, null, 2) + '\n');
+                console.log(`Updated package.json version to ${newVersion}`);
+              }
+              
+              return {
+                hasChanges: true,
+                version: versionInfo.version,
+                stats: versionInfo.stats
+              };
+              
+            } catch (error) {
+              console.error('Error fetching project information:', error);
+              // Create fallback data
+              const fallbackInfo = {
+                version: 'v1.2.0',
+                releaseDate: new Date().toISOString(),
+                releaseNotes: 'Unable to fetch release information',
+                downloadUrl: 'https://github.com/johnnyzhao5619/echonote/releases',
+                stats: {
+                  stars: 0,
+                  forks: 0,
+                  watchers: 0,
+                  contributors: 0,
+                  openIssues: 0,
+                  language: 'Python',
+                  license: 'Apache-2.0',
+                  lastUpdated: new Date().toISOString(),
+                  description: 'Smart voice transcription and calendar management desktop application'
+                },
+                lastSync: new Date().toISOString(),
+                error: error.message
+              };
+              
+              const dataDir = path.join('echonote-introduction', 'src', 'data');
+              if (!fs.existsSync(dataDir)) {
+                fs.mkdirSync(dataDir, { recursive: true });
+              }
+              
+              const dataFile = path.join(dataDir, 'project-info.json');
+              fs.writeFileSync(dataFile, JSON.stringify(fallbackInfo, null, 2));
+              
+              return {
+                hasChanges: false,
+                error: error.message
+              };
+            }
+
+      - name: Create TypeScript types for project info
+        run: |
+          cd echonote-introduction
+          cat > src/types/project-info.ts << 'EOF'
+          export interface ProjectStats {
+            stars: number;
+            forks: number;
+            watchers: number;
+            contributors: number;
+            openIssues: number;
+            language: string;
+            license: string;
+            lastUpdated: string;
+            description: string;
+          }
+
+          export interface ProjectInfo {
+            version: string;
+            releaseDate: string;
+            releaseNotes: string;
+            downloadUrl: string;
+            stats: ProjectStats;
+            lastSync: string;
+            error?: string;
+          }
+          EOF
+
+      - name: Create composable for project info
+        run: |
+          cd echonote-introduction
+          mkdir -p src/composables
+          cat > src/composables/useProjectInfo.ts << 'EOF'
+          import { ref, computed } from 'vue';
+          import type { ProjectInfo } from '@/types/project-info';
+
+          // Import the project info data
+          import projectInfoData from '@/data/project-info.json';
+
+          const projectInfo = ref<ProjectInfo>(projectInfoData as ProjectInfo);
+
+          export function useProjectInfo() {
+            const isLoading = ref(false);
+            const error = ref<string | null>(null);
+            
+            const formattedVersion = computed(() => {
+              return projectInfo.value.version.startsWith('v') 
+                ? projectInfo.value.version 
+                : `v${projectInfo.value.version}`;
+            });
+            
+            const formattedReleaseDate = computed(() => {
+              return new Date(projectInfo.value.releaseDate).toLocaleDateString();
+            });
+            
+            const isDataStale = computed(() => {
+              const lastSync = new Date(projectInfo.value.lastSync);
+              const now = new Date();
+              const hoursSinceSync = (now.getTime() - lastSync.getTime()) / (1000 * 60 * 60);
+              return hoursSinceSync > 24; // Consider stale if older than 24 hours
+            });
+            
+            const refreshProjectInfo = async () => {
+              isLoading.value = true;
+              error.value = null;
+              
+              try {
+                // In a real implementation, this would fetch fresh data
+                // For now, we use the static data that gets updated by the workflow
+                console.log('Project info refreshed from static data');
+              } catch (err) {
+                error.value = err instanceof Error ? err.message : 'Unknown error';
+              } finally {
+                isLoading.value = false;
+              }
+            };
+            
+            return {
+              projectInfo: projectInfo.value,
+              isLoading,
+              error,
+              formattedVersion,
+              formattedReleaseDate,
+              isDataStale,
+              refreshProjectInfo
+            };
+          }
+          EOF
+
+      - name: Check for changes
+        id: check-changes
+        run: |
+          cd echonote-introduction
+          if git diff --quiet; then
+            echo "has_changes=false" >> $GITHUB_OUTPUT
+          else
+            echo "has_changes=true" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Commit and push changes
+        if: steps.check-changes.outputs.has_changes == 'true' || github.event.inputs.force_update == 'true'
+        run: |
+          cd echonote-introduction
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add .
+          git commit -m "chore: sync version information from main project
+
+          - Updated project statistics
+          - Synced version information
+          - Updated release notes
+
+          Auto-generated by sync-version workflow"
+          git push
+
+      - name: Create summary
+        if: always()
+        run: |
+          cd echonote-introduction
+          echo "## 📊 Version Sync Summary" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+
+          if [ -f "src/data/project-info.json" ]; then
+            VERSION=$(jq -r '.version' src/data/project-info.json)
+            STARS=$(jq -r '.stats.stars' src/data/project-info.json)
+            CONTRIBUTORS=$(jq -r '.stats.contributors' src/data/project-info.json)
+            LAST_SYNC=$(jq -r '.lastSync' src/data/project-info.json)
+            
+            echo "- **Version**: $VERSION" >> $GITHUB_STEP_SUMMARY
+            echo "- **Stars**: $STARS" >> $GITHUB_STEP_SUMMARY
+            echo "- **Contributors**: $CONTRIBUTORS" >> $GITHUB_STEP_SUMMARY
+            echo "- **Last Sync**: $LAST_SYNC" >> $GITHUB_STEP_SUMMARY
+            echo "- **Changes**: ${{ steps.check-changes.outputs.has_changes }}" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "❌ Project info file not found" >> $GITHUB_STEP_SUMMARY
+          fi

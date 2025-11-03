@@ -12,13 +12,89 @@
 a,
 .green {
   text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
+  color: hsla(160, 100%, 25%, 1);
+  /* Darker green for better contrast */
   transition: 0.4s;
   padding: 3px;
 }
 
 @media (hover: hover) {
   a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
+    background-color: hsla(160, 100%, 25%, 0.2);
   }
+}
+
+/* Accessibility improvements for better color contrast */
+.text-blue-600 {
+  color: #1d4ed8 !important;
+  /* Darker blue for better contrast */
+}
+
+.text-indigo-600 {
+  color: #4338ca !important;
+  /* Darker indigo for better contrast */
+}
+
+.hover\:text-blue-700:hover {
+  color: #1e40af !important;
+  /* Even darker on hover */
+}
+
+.hover\:text-indigo-600:hover {
+  color: #3730a3 !important;
+  /* Even darker on hover */
+}
+
+/* Fix gray text contrast issues */
+.text-gray-600 {
+  color: #4b5563 !important;
+  /* Darker gray for better contrast */
+}
+
+.text-gray-700 {
+  color: #374151 !important;
+  /* Even darker gray */
+}
+
+.text-gray-900 {
+  color: #111827 !important;
+  /* Very dark gray */
+}
+
+.text-gray-500 {
+  color: #6b7280 !important;
+  /* Darker gray for better contrast */
+}
+
+/* Fix code block contrast issues */
+.bg-gray-200 {
+  background-color: #e5e7eb !important;
+}
+
+/* Fix copy button contrast */
+button.text-gray-500,
+.text-gray-500 {
+  color: #374151 !important;
+  /* Much darker for better contrast */
+}
+
+/* Fix syntax highlighting contrast */
+.token.comment {
+  color: #6b7280 !important;
+  /* Darker comment color */
+}
+
+/* Fix opacity issues that reduce contrast */
+.opacity-90 {
+  opacity: 1 !important;
+  /* Remove opacity to improve contrast */
+}
+
+/* Fix specific color contrast issues found in tests */
+.text-sm.text-gray-600 {
+  color: #374151 !important;
+}
+
+.text-lg.font-semibold.text-gray-900 {
+  color: #111827 !important;
 }

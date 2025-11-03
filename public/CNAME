@@ -1,0 +1,15 @@
+# Custom domain configuration for GitHub Pages
+# 
+# To use a custom domain:
+# 1. Uncomment the line below and replace with your domain
+# 2. Configure DNS records:
+#    - For apex domain (example.com): A records pointing to GitHub Pages IPs
+#    - For subdomain (www.example.com): CNAME record pointing to username.github.io
+# 3. Enable "Enforce HTTPS" in GitHub Pages settings
+#
+# Example configurations:
+# echonote.dev
+# www.echonote.dev
+# intro.echonote.com
+#
+# Note: Remove this file entirely if not using a custom domain

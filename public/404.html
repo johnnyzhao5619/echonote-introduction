@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Page Not Found - EchoNote</title>
+    <meta
+      name="description"
+      content="The page you're looking for doesn't exist. Return to EchoNote introduction page."
+    />
+    <meta
+      name="robots"
+      content="noindex, nofollow"
+    />
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      href="/favicon.ico"
+    />
+
+    <!-- Preload critical resources -->
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family:
+          -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+          sans-serif;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: #333;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+      }
+
+      .container {
+        background: white;
+        border-radius: 16px;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        padding: 60px 40px;
+        text-align: center;
+        max-width: 600px;
+        width: 100%;
+      }
+
+      .error-code {
+        font-size: 120px;
+        font-weight: 700;
+        color: #667eea;
+        line-height: 1;
+        margin-bottom: 20px;
+        text-shadow: 0 4px 8px rgba(102, 126, 234, 0.2);
+      }
+
+      .error-title {
+        font-size: 32px;
+        font-weight: 600;
+        color: #2d3748;
+        margin-bottom: 16px;
+      }
+
+      .error-description {
+        font-size: 18px;
+        color: #718096;
+        line-height: 1.6;
+        margin-bottom: 40px;
+      }
+
+      .actions {
+        display: flex;
+        gap: 16px;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-bottom: 40px;
+      }
+
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 12px 24px;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: 500;
+        transition: all 0.2s ease;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+      }
+
+      .btn-primary {
+        background: #667eea;
+        color: white;
+      }
+
+      .btn-primary:hover {
+        background: #5a6fd8;
+        transform: translateY(-2px);
+        box-shadow: 0 8px 16px rgba(102, 126, 234, 0.3);
+      }
+
+      .btn-secondary {
+        background: #f7fafc;
+        color: #4a5568;
+        border: 2px solid #e2e8f0;
+      }
+
+      .btn-secondary:hover {
+        background: #edf2f7;
+        border-color: #cbd5e0;
+        transform: translateY(-2px);
+      }
+
+      .suggestions {
+        text-align: left;
+        background: #f8f9fa;
+        border-radius: 12px;
+        padding: 24px;
+        margin-top: 32px;
+      }
+
+      .suggestions h3 {
+        color: #2d3748;
+        margin-bottom: 16px;
+        font-size: 18px;
+      }
+
+      .suggestions ul {
+        list-style: none;
+      }
+
+      .suggestions li {
+        margin-bottom: 12px;
+        padding-left: 24px;
+        position: relative;
+        color: #4a5568;
+      }
+
+      .suggestions li::before {
+        content: '→';
+        position: absolute;
+        left: 0;
+        color: #667eea;
+        font-weight: bold;
+      }
+
+      .suggestions a {
+        color: #667eea;
+        text-decoration: none;
+      }
+
+      .suggestions a:hover {
+        text-decoration: underline;
+      }
+
+      .footer {
+        margin-top: 40px;
+        padding-top: 24px;
+        border-top: 1px solid #e2e8f0;
+        color: #718096;
+        font-size: 14px;
+      }
+
+      @media (max-width: 640px) {
+        .container {
+          padding: 40px 24px;
+        }
+
+        .error-code {
+          font-size: 80px;
+        }
+
+        .error-title {
+          font-size: 24px;
+        }
+
+        .error-description {
+          font-size: 16px;
+        }
+
+        .actions {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .btn {
+          width: 100%;
+          max-width: 280px;
+          justify-content: center;
+        }
+      }
+
+      /* Animation */
+      .container {
+        animation: fadeInUp 0.6s ease-out;
+      }
+
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="error-code">404</div>
+      <h1 class="error-title">Page Not Found</h1>
+      <p class="error-description">
+        Sorry, the page you're looking for doesn't exist or has been moved. Let's get you back to
+        exploring EchoNote's features.
+      </p>
+
+      <div class="actions">
+        <a
+          href="/"
+          class="btn btn-primary"
+        >
+          <svg
+            width="16"
+            height="16"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+            <polyline points="9,22 9,12 15,12 15,22" />
+          </svg>
+          Go Home
+        </a>
+        <button
+          onclick="history.back()"
+          class="btn btn-secondary"
+        >
+          <svg
+            width="16"
+            height="16"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path d="m12 19-7-7 7-7" />
+            <path d="M19 12H5" />
+          </svg>
+          Go Back
+        </button>
+      </div>
+
+      <div class="suggestions">
+        <h3>Popular Pages</h3>
+        <ul>
+          <li><a href="/">Home - Learn about EchoNote</a></li>
+          <li><a href="/#features">Features - Discover what EchoNote can do</a></li>
+          <li><a href="/#quick-start">Quick Start - Get started with EchoNote</a></li>
+          <li><a href="/#technical">Technical Info - Architecture and tech stack</a></li>
+          <li><a href="/#community">Community - Join the EchoNote community</a></li>
+          <li><a href="https://github.com/echonote/echonote">GitHub Repository</a></li>
+        </ul>
+      </div>
+
+      <div class="footer">
+        <p>
+          If you believe this is an error, please
+          <a
+            href="https://github.com/echonote/echonote-introduction/issues"
+            style="color: #667eea"
+            >report it on GitHub</a
+          >
+        </p>
+      </div>
+    </div>
+
+    <script>
+      // Track 404 errors (if analytics is enabled)
+      if (typeof gtag !== 'undefined') {
+        gtag('event', 'page_not_found', {
+          page_location: window.location.href,
+          page_referrer: document.referrer,
+        })
+      }
+
+      // Auto-redirect common typos
+      const path = window.location.pathname.toLowerCase()
+      const redirects = {
+        '/home': '/',
+        '/index': '/',
+        '/main': '/',
+        '/about': '/#about',
+        '/download': '/#quick-start',
+        '/docs': '/#technical',
+        '/github': 'https://github.com/echonote/echonote',
+      }
+
+      if (redirects[path]) {
+        setTimeout(() => {
+          window.location.href = redirects[path]
+        }, 3000)
+
+        // Show redirect message
+        const description = document.querySelector('.error-description')
+        description.innerHTML = `
+                This page doesn't exist, but we found what you might be looking for. 
+                <br><br>
+                <strong>Redirecting to ${redirects[path]} in 3 seconds...</strong>
+                <br><br>
+                <a href="${redirects[path]}" style="color: #667eea;">Click here to go immediately</a>
+            `
+      }
+    </script>
+  </body>
+</html>
