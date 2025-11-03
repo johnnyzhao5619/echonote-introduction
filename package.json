@@ -17,10 +17,10 @@
   ],
   "author": "EchoNote Team",
   "license": "Apache-2.0",
-  "homepage": "https://echonote.github.io",
+  "homepage": "https://johnnyzhao5619.github.io/echonote-introduction",
   "repository": {
     "type": "git",
-    "url": "https://github.com/echonote/echonote-introduction.git"
+    "url": "https://github.com/johnnyzhao5619/echonote-introduction.git"
   },
   "scripts": {
     "dev": "vite",
