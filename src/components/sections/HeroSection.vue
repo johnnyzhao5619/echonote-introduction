@@ -16,7 +16,7 @@ interface Props {
 const props = withDefaults(defineProps<Props>(), {
   showStats: true,
   animateFeatures: true,
-  repository: 'echonote/echonote',
+  repository: 'johnnyzhao5619/EchoNote',
 })
 
 const { t } = useI18n()
@@ -54,21 +54,21 @@ const features = computed(() => [
 const ctaButtons = computed(() => [
   {
     text: t('hero.downloadButton'),
-    href: `https://github.com/${props.repository}/releases/latest`,
+    href: `https://github.com/johnnyzhao5619/EchoNote/releases/latest`,
     variant: 'primary' as const,
     external: true,
     icon: '⬇️',
   },
   {
     text: t('hero.docsButton'),
-    href: `https://github.com/${props.repository}#readme`,
+    href: `https://github.com/johnnyzhao5619/EchoNote#readme`,
     variant: 'secondary' as const,
     external: true,
     icon: '📚',
   },
   {
     text: t('hero.githubButton'),
-    href: `https://github.com/${props.repository}`,
+    href: `https://github.com/johnnyzhao5619/EchoNote`,
     variant: 'secondary' as const,
     external: true,
     icon: '⭐',
@@ -117,7 +117,7 @@ onBeforeUnmount(() => {
 <template>
   <section
     id="home"
-    class="relative min-h-screen-small sm:min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-blue-50 via-white to-purple-50"
+    class="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-blue-50 via-white to-purple-50"
     role="banner"
     aria-labelledby="hero-title"
   >

@@ -2,7 +2,6 @@
 import { ref, onMounted, onUnmounted } from 'vue'
 import { useI18n } from '@/composables/useI18n'
 import LanguageSwitcher from './LanguageSwitcher.vue'
-import { APP_CONFIG } from '@/config/app'
 import { TEST_IDS } from '@/constants/testIds'
 import { useSmoothScroll } from '@/composables/useUI'
 
@@ -14,8 +13,8 @@ const isScrolled = ref(false)
 
 const { scrollToElement } = useSmoothScroll()
 
-// Configuration
-const githubUrl = APP_CONFIG.github.repoUrl
+// Configuration - 使用正确的GitHub仓库URL
+const githubUrl = `https://github.com/johnnyzhao5619/EchoNote`
 
 const navigationItems = [
   { key: 'home', label: 'nav.home', href: '#home' },

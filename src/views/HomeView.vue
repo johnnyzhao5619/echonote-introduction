@@ -8,7 +8,7 @@ import { TEST_IDS } from '@/constants/testIds'
 </script>
 
 <template>
-  <main class="min-h-screen bg-gray-50">
+  <div class="min-h-screen bg-gray-50">
     <!-- Hero Section -->
     <HeroSection
       :data-testid="TEST_IDS.HERO_SECTION"
@@ -49,5 +49,5 @@ import { TEST_IDS } from '@/constants/testIds'
       show-roadmap
       show-stats
     />
-  </main>
+  </div>
 </template>

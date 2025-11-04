@@ -2,7 +2,6 @@
 import { computed, ref } from 'vue'
 import { useI18n } from '@/composables/useI18n'
 import FeatureCard from '@/components/ui/FeatureCard.vue'
-import { APP_CONFIG } from '@/config/app'
 
 interface Props {
   showComparison?: boolean
@@ -36,7 +35,7 @@ const coreFeatures = computed(() => [
       t('features.items.privacy.highlights.3'),
     ],
     image: {
-      src: '/images/features/privacy-protection.webp',
+      src: '/images/features/feature-privacy.svg',
       alt: 'Privacy Protection Illustration',
       overlay: true,
     },
@@ -58,7 +57,7 @@ const coreFeatures = computed(() => [
       t('features.items.local.highlights.3'),
     ],
     image: {
-      src: '/images/features/local-processing.webp',
+      src: '/images/features/feature-local-processing.svg',
       alt: 'Local Processing Illustration',
       overlay: true,
     },
@@ -80,7 +79,7 @@ const coreFeatures = computed(() => [
       t('features.items.smart.highlights.3'),
     ],
     image: {
-      src: '/images/features/smart-management.webp',
+      src: '/images/features/feature-smart-calendar.svg',
       alt: 'Smart Management Illustration',
       overlay: true,
     },
@@ -102,7 +101,7 @@ const coreFeatures = computed(() => [
       t('features.items.crossPlatform.highlights.3'),
     ],
     image: {
-      src: '/images/features/cross-platform.webp',
+      src: '/images/features/feature-cross-platform.svg',
       alt: 'Cross Platform Support Illustration',
       overlay: true,
     },
@@ -391,7 +390,7 @@ const toggleComparison = () => {
           </p>
           <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
             <a
-              :href="APP_CONFIG.links.releases"
+              href="https://github.com/johnnyzhao5619/EchoNote/releases/latest"
               target="_blank"
               rel="noopener noreferrer"
               class="inline-flex items-center justify-center px-6 sm:px-8 py-3 sm:py-4 bg-white text-blue-600 rounded-xl font-semibold hover:bg-gray-100 transition-colors focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-blue-600 touch-target"
@@ -400,7 +399,7 @@ const toggleComparison = () => {
               Download Now
             </a>
             <a
-              :href="APP_CONFIG.github.repoUrl"
+              href="https://github.com/johnnyzhao5619/EchoNote"
               target="_blank"
               rel="noopener noreferrer"
               class="inline-flex items-center justify-center px-6 sm:px-8 py-3 sm:py-4 border-2 border-white text-white rounded-xl font-semibold hover:bg-white hover:text-blue-600 transition-colors focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-blue-600 touch-target"

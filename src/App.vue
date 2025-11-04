@@ -73,7 +73,7 @@ onMounted(() => {
     <!-- Main content with top padding to account for fixed navigation -->
     <main
       id="main-content"
-      class="pt-14 sm:pt-16"
+      class="pt-16"
       tabindex="-1"
     >
       <RouterView />

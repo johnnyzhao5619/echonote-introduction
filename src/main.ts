@@ -1,4 +1,5 @@
 import './assets/main.css'
+import './assets/styles/main.css'
 import './styles/accessibility-fixes.css'
 
 import { createApp } from 'vue'

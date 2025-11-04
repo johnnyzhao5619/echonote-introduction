@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { computed } from 'vue'
-import LazyImage from '@/components/common/LazyImage.vue'
 import { TEST_IDS } from '@/constants/testIds'
 
 interface ImageConfig {
@@ -243,7 +242,7 @@ const handleImageError = (event: Event) => {
           class="relative overflow-hidden rounded-lg"
           :class="imageContainerClasses"
         >
-          <LazyImage
+          <img
             :src="image.src"
             :alt="image.alt || title"
             :width="image.width"

@@ -1,30 +1,9 @@
-/* Main styles for EchoNote Introduction Page */
-
-/* Tailwind CSS imports will be added here */
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
-
-/* Import base styles */
-@import '../base.css';
-
-/* Custom styles */
-:root {
-  --primary-color: #3b82f6;
-  --secondary-color: #1e40af;
-  --accent-color: #06b6d4;
-  --text-primary: #1f2937;
-  --text-secondary: #6b7280;
-  --background: #ffffff;
-  --surface: #f9fafb;
-}
+/* EchoNote Introduction Page - Main Styles */
 
 /* Base styles with mobile-first approach */
 html {
   scroll-behavior: smooth;
-  /* Prevent horizontal scrolling on mobile */
   overflow-x: hidden;
-  /* Optimize scrolling performance */
   scroll-padding-top: 4rem;
 }
 
@@ -39,27 +18,15 @@ body {
   line-height: 1.6;
   color: var(--text-primary);
   background-color: var(--background);
-  /* Prevent horizontal scrolling */
   overflow-x: hidden;
-  /* Optimize text rendering on mobile */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
 }
 
-/* Focus styles for accessibility */
-*:focus {
-  outline: 2px solid var(--primary-color);
-  outline-offset: 2px;
-}
-
-/* Focus-visible for better keyboard navigation */
-*:focus:not(:focus-visible) {
-  outline: none;
-}
-
+/* Accessibility - Focus styles */
 *:focus-visible {
-  outline: 2px solid var(--primary-color);
+  outline: 2px solid var(--echonote-primary);
   outline-offset: 2px;
   box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.1);
 }
@@ -89,94 +56,22 @@ body {
   white-space: normal;
 }
 
-/* Touch target optimization */
-@layer components {
-  .touch-target {
-    @apply min-w-touch min-h-touch;
-  }
+/* Skip links for accessibility */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 6px;
+  background: var(--echonote-primary);
+  color: white;
+  padding: 8px;
+  text-decoration: none;
+  border-radius: 4px;
+  z-index: 1000;
+  transition: top 0.3s;
+}
 
-  /* Mobile-first button styles with enhanced interactions */
-  .btn-primary {
-    @apply inline-flex items-center justify-center px-4 py-3 text-base font-medium rounded-lg bg-primary-600 text-white hover:bg-primary-700 active:bg-primary-800 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 transition-all duration-200 touch-target transform hover:scale-105 active:scale-95;
-  }
-
-  .btn-secondary {
-    @apply inline-flex items-center justify-center px-4 py-3 text-base font-medium rounded-lg bg-white text-gray-900 border border-gray-300 hover:bg-gray-50 active:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 transition-all duration-200 touch-target transform hover:scale-105 active:scale-95;
-  }
-
-  /* Interactive link styles */
-  .link-interactive {
-    @apply text-primary-600 hover:text-primary-700 active:text-primary-800 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 rounded-sm;
-  }
-
-  /* Card hover effects */
-  .card-interactive {
-    @apply transition-all duration-300 hover:shadow-lg hover:-translate-y-1 active:translate-y-0 active:shadow-md;
-  }
-
-  /* Smooth animations */
-  .animate-fade-in {
-    animation: fadeIn 0.6s ease-out forwards;
-  }
-
-  .animate-slide-up {
-    animation: slideUp 0.6s ease-out forwards;
-  }
-
-  .animate-slide-in-left {
-    animation: slideInLeft 0.6s ease-out forwards;
-  }
-
-  .animate-slide-in-right {
-    animation: slideInRight 0.6s ease-out forwards;
-  }
-
-  .animate-bounce-gentle {
-    animation: bounceGentle 2s ease-in-out infinite;
-  }
-
-  .animate-pulse-gentle {
-    animation: pulseGentle 2s ease-in-out infinite;
-  }
-
-  /* Responsive container */
-  .container-responsive {
-    @apply w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
-  }
-
-  /* Mobile-optimized text sizes */
-  .text-responsive-xs {
-    @apply text-sm sm:text-base;
-  }
-
-  .text-responsive-sm {
-    @apply text-base sm:text-lg;
-  }
-
-  .text-responsive-md {
-    @apply text-lg sm:text-xl md:text-2xl;
-  }
-
-  .text-responsive-lg {
-    @apply text-xl sm:text-2xl md:text-3xl lg:text-4xl;
-  }
-
-  .text-responsive-xl {
-    @apply text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl;
-  }
-
-  /* Grid layouts with mobile-first approach */
-  .grid-responsive-2 {
-    @apply grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6;
-  }
-
-  .grid-responsive-3 {
-    @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6;
-  }
-
-  .grid-responsive-4 {
-    @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6;
-  }
+.skip-link:focus {
+  top: 6px;
 }
 
 /* Mobile-specific optimizations */
@@ -200,121 +95,6 @@ body {
   }
 }
 
-/* Tablet optimizations */
-@media (min-width: 768px) and (max-width: 1023px) {
-  /* Tablet-specific styles */
-  .tablet-optimized {
-    /* Add tablet-specific optimizations here */
-  }
-}
-
-/* Desktop optimizations */
-@media (min-width: 1024px) {
-  /* Desktop-specific styles */
-  .desktop-optimized {
-    /* Add desktop-specific optimizations here */
-  }
-}
-
-/* High DPI displays */
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-  /* Optimize for retina displays */
-  body {
-    -webkit-font-smoothing: antialiased;
-  }
-}
-
-/* Landscape orientation on mobile */
-@media (max-width: 768px) and (orientation: landscape) {
-  /* Optimize for mobile landscape */
-  .mobile-landscape-optimized {
-    /* Add mobile landscape optimizations here */
-  }
-}
-
-/* Keyframe animations */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes slideUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes slideInLeft {
-  from {
-    opacity: 0;
-    transform: translateX(-30px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes slideInRight {
-  from {
-    opacity: 0;
-    transform: translateX(30px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes bounceGentle {
-  0%,
-  20%,
-  50%,
-  80%,
-  100% {
-    transform: translateY(0);
-  }
-
-  40% {
-    transform: translateY(-10px);
-  }
-
-  60% {
-    transform: translateY(-5px);
-  }
-}
-
-@keyframes pulseGentle {
-  0%,
-  100% {
-    opacity: 1;
-  }
-
-  50% {
-    opacity: 0.7;
-  }
-}
-
-/* Smooth scrolling enhancement */
-@supports (scroll-behavior: smooth) {
-  html {
-    scroll-behavior: smooth;
-  }
-}
-
 /* Reduced motion preferences */
 @media (prefers-reduced-motion: reduce) {
   *,
@@ -327,7 +107,8 @@ body {
   }
 
   .animate-bounce-gentle,
-  .animate-pulse-gentle {
+  .animate-pulse-gentle,
+  .animate-blob {
     animation: none;
   }
 
@@ -341,10 +122,7 @@ body {
 /* Touch device optimizations */
 @media (hover: none) and (pointer: coarse) {
   /* Remove hover effects on touch devices */
-  .hover\:scale-105:hover {
-    transform: none;
-  }
-
+  .hover\:scale-105:hover,
   .hover\:-translate-y-1:hover {
     transform: none;
   }
@@ -353,26 +131,19 @@ body {
   .active\:scale-95:active {
     transform: scale(0.95);
   }
-
-  .active\:bg-primary-800:active {
-    background-color: rgb(30 58 138);
-  }
-
-  .active\:bg-gray-100:active {
-    background-color: rgb(243 244 246);
-  }
 }
 
 /* High contrast mode support */
 @media (prefers-contrast: high) {
   :root {
-    --primary-color: #000;
+    --echonote-primary: #000;
     --text-primary: #000;
     --text-secondary: #000;
     --background: #fff;
   }
 
-  .border-gray-200 {
+  .border-gray-200,
+  .border-gray-300 {
     border-color: #000;
     border-width: 2px;
   }
@@ -389,18 +160,12 @@ body {
     border: 2px solid #000;
   }
 
-  .bg-white {
-    background-color: #fff;
-    border: 1px solid #000;
-  }
-
   .shadow-lg,
   .shadow-md,
   .shadow-sm {
     box-shadow: 0 0 0 2px #000;
   }
 
-  /* Ensure sufficient contrast for interactive elements */
   button,
   a,
   input,
@@ -416,32 +181,11 @@ body {
   }
 }
 
-/* Focus indicators for different input methods */
-@supports selector(:focus-visible) {
-  *:focus {
-    outline: none;
-  }
-
-  *:focus-visible {
-    outline: 2px solid var(--primary-color);
-    outline-offset: 2px;
-  }
+/* Animation delay utilities */
+.animation-delay-2000 {
+  animation-delay: 2s;
 }
 
-/* Skip links */
-.skip-link {
-  position: absolute;
-  top: -40px;
-  left: 6px;
-  background: var(--primary-color);
-  color: white;
-  padding: 8px;
-  text-decoration: none;
-  border-radius: 4px;
-  z-index: 1000;
-  transition: top 0.3s;
-}
-
-.skip-link:focus {
-  top: 6px;
+.animation-delay-4000 {
+  animation-delay: 4s;
 }
