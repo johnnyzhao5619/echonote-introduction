@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import OptimizedImage from './OptimizedImage.vue'
-import type { ImageContext } from '@/config/constants'
+import type { ImageContext } from '@/config/app'
 
 interface Props {
   src: string

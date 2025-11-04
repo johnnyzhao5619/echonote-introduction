@@ -185,7 +185,7 @@ describe('CodeBlock', () => {
 
     const pre = wrapper.find('pre')
     expect(pre.classes()).toContain('bg-gray-50')
-    expect(pre.classes()).toContain('text-gray-900')
+    expect(pre.classes()).toContain('text-gray-800')
   })
 
   it('shows line numbers when enabled', () => {

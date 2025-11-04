@@ -23,14 +23,28 @@ const getConfig = () => {
       owner: 'johnnyzhao5619',
       repo: 'echonote',
       introRepo: 'echonote-introduction',
+      cacheTimeout: 10 * 60 * 1000, // 10 minutes
+      rateLimit: {
+        delay: 1000,
+        maxRetries: 3,
+      },
       get fullRepo() {
         return `${this.owner}/${this.repo}`
       },
       get fullIntroRepo() {
         return `${this.owner}/${this.introRepo}`
       },
+      get repository() {
+        return this.fullRepo
+      },
+      get introRepository() {
+        return this.fullIntroRepo
+      },
       get apiBase() {
         return 'https://api.github.com'
+      },
+      get apiUrl() {
+        return this.apiBase
       },
       get repoUrl() {
         return `https://github.com/${this.fullRepo}`
@@ -61,8 +75,47 @@ const getConfig = () => {
     // 支持的语言
     i18n: {
       defaultLocale: 'en',
-      supportedLocales: ['en', 'zh-CN', 'zh-TW', 'fr'],
+      supportedLocales: ['en', 'zh-CN', 'zh-TW', 'fr'] as const,
       fallbackLocale: 'en',
+    },
+
+    // 图像优化配置
+    images: {
+      formats: ['webp', 'avif', 'jpeg'] as const,
+      sizes: [320, 640, 768, 1024, 1280, 1920] as const,
+      quality: 85,
+      contexts: {
+        hero: {
+          aspectRatio: '16:9',
+          maxWidth: 1920,
+          sizes: '(max-width: 768px) 100vw, (max-width: 1024px) 80vw, 1200px',
+          priority: true,
+        },
+        feature: {
+          aspectRatio: '4:3',
+          maxWidth: 800,
+          sizes: '(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 400px',
+          priority: false,
+        },
+        screenshot: {
+          aspectRatio: '16:10',
+          maxWidth: 1200,
+          sizes: '(max-width: 768px) 100vw, (max-width: 1024px) 80vw, 800px',
+          priority: false,
+        },
+        social: {
+          aspectRatio: '1.91:1',
+          maxWidth: 1200,
+          sizes: '1200px',
+          priority: false,
+        },
+        icon: {
+          aspectRatio: '1:1',
+          maxWidth: 512,
+          sizes: '(max-width: 768px) 32px, 48px',
+          priority: false,
+        },
+      } as const,
     },
 
     // 下载链接 - 使用动态生成避免硬编码
@@ -113,7 +166,7 @@ const getConfig = () => {
       },
     },
 
-    // 性能指标
+    // 性能指标与阈值
     performance: {
       speechRecognition: {
         realTimeFactor: '< 0.3x',
@@ -132,6 +185,23 @@ const getConfig = () => {
         processingSpeed: '1000+ WPM',
         batchSize: '10MB+',
         concurrentTasks: '5+',
+      },
+      thresholds: {
+        imageLoadTimeout: 10000,
+        apiTimeout: 5000,
+        cacheSize: 50,
+      },
+    },
+
+    // 翻译配置
+    translation: {
+      fallbackLocale: 'en',
+      supportedLocales: ['en', 'zh-CN', 'zh-TW', 'fr'] as const,
+      cacheTimeout: 5 * 60 * 1000,
+      validation: {
+        enableInDev: isDev,
+        enableInProd: false,
+        reportThreshold: 95,
       },
     },
 
@@ -180,6 +250,9 @@ const getConfig = () => {
       performanceMonitoring: isProd,
       feedbackSystem: true,
       versionSync: true,
+      translationValidator: isDev,
+      feedbackCollection: true,
+      communityDashboard: true,
     },
 
     // 开发配置
@@ -195,3 +268,6 @@ export const APP_CONFIG = getConfig()
 
 // 导出类型
 export type AppConfig = typeof APP_CONFIG
+export type ImageContext = keyof AppConfig['images']['contexts']
+export type SupportedLocale = AppConfig['translation']['supportedLocales'][number]
+export type ImageFormat = AppConfig['images']['formats'][number]

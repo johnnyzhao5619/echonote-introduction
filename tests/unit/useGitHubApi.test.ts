@@ -218,12 +218,14 @@ describe('useGitHubApi', () => {
 
     await refreshStats()
 
-    expect(mockLocalStorage.removeItem).toHaveBeenCalledWith('github-echonote-echonote-stats')
-    expect(mockLocalStorage.removeItem).toHaveBeenCalledWith('github-echonote-echonote-repo')
+    expect(mockLocalStorage.removeItem).toHaveBeenCalledWith('github-johnnyzhao5619-echonote-stats')
+    expect(mockLocalStorage.removeItem).toHaveBeenCalledWith('github-johnnyzhao5619-echonote-repo')
     expect(mockLocalStorage.removeItem).toHaveBeenCalledWith(
-      'github-echonote-echonote-contributors'
+      'github-johnnyzhao5619-echonote-contributors'
     )
-    expect(mockLocalStorage.removeItem).toHaveBeenCalledWith('github-echonote-echonote-releases')
+    expect(mockLocalStorage.removeItem).toHaveBeenCalledWith(
+      'github-johnnyzhao5619-echonote-releases'
+    )
   })
 
   it('formats dates correctly', () => {
