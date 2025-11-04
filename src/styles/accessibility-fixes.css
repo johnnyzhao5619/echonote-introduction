@@ -1,73 +1,142 @@
 /**
  * Accessibility fixes for color contrast
  * These overrides ensure WCAG 2.1 AA compliance (4.5:1 contrast ratio)
+ * Using high specificity to override Tailwind classes
  */
 
-/* Fix text-gray-600 contrast issues */
-.text-gray-600 {
+/* Fix text-gray-600 contrast issues - use very high specificity */
+html body .text-gray-600,
+html body p.text-gray-600,
+html body div.text-gray-600,
+html body span.text-gray-600 {
+  color: #1f2937 !important;
+  /* gray-800 for much better contrast */
+}
+
+/* Fix text-gray-500 contrast issues */
+html body .text-gray-500,
+html body p.text-gray-500,
+html body div.text-gray-500,
+html body span.text-gray-500 {
   color: #374151 !important;
   /* gray-700 for better contrast */
 }
 
-/* Fix text-gray-500 contrast issues */
-.text-gray-500 {
-  color: #4b5563 !important;
-  /* gray-600 for better contrast */
+/* Fix text-gray-700 on light backgrounds */
+html body .text-gray-700,
+html body p.text-gray-700,
+html body div.text-gray-700,
+html body span.text-gray-700 {
+  color: #111827 !important;
+  /* gray-900 for maximum contrast */
 }
 
-/* Fix text-gray-700 on light backgrounds */
-.text-gray-700 {
-  color: #1f2937 !important;
-  /* gray-800 for better contrast */
+/* Fix text-gray-800 issues */
+html body .text-gray-800,
+html body p.text-gray-800,
+html body div.text-gray-800,
+html body span.text-gray-800 {
+  color: #000000 !important;
+  /* Pure black for maximum contrast */
 }
 
 /* Dark mode overrides */
-.dark .text-gray-600 {
-  color: #d1d5db !important;
-  /* gray-300 for dark mode */
-}
-
-.dark .text-gray-500 {
-  color: #e5e7eb !important;
-  /* gray-200 for dark mode */
-}
-
-.dark .text-gray-700 {
+html body.dark .text-gray-600,
+html body.dark p.text-gray-600,
+html body.dark div.text-gray-600,
+html body.dark span.text-gray-600 {
   color: #f3f4f6 !important;
   /* gray-100 for dark mode */
 }
 
-/* Code block specific fixes */
-.language-bash .token.comment {
-  color: #6b7280 !important;
-  /* Improved contrast for comments */
-}
-
-.dark .language-bash .token.comment {
-  color: #9ca3af !important;
-  /* Better contrast in dark mode */
-}
-
-/* Button text contrast fixes */
-button.text-gray-500,
-a.text-gray-500 {
-  color: #4b5563 !important;
-}
-
-.dark button.text-gray-500,
-.dark a.text-gray-500 {
-  color: #e5e7eb !important;
-}
-
-/* Ensure sufficient contrast for small text */
-.text-xs.text-gray-600,
-.text-sm.text-gray-600 {
-  color: #1f2937 !important;
-  /* Even darker for small text */
-}
-
-.dark .text-xs.text-gray-600,
-.dark .text-sm.text-gray-600 {
+html body.dark .text-gray-500,
+html body.dark p.text-gray-500,
+html body.dark div.text-gray-500,
+html body.dark span.text-gray-500 {
   color: #f9fafb !important;
-  /* Very light for dark mode small text */
+  /* gray-50 for dark mode */
+}
+
+html body.dark .text-gray-700,
+html body.dark p.text-gray-700,
+html body.dark div.text-gray-700,
+html body.dark span.text-gray-700 {
+  color: #ffffff !important;
+  /* Pure white for dark mode */
+}
+
+html body.dark .text-gray-800,
+html body.dark p.text-gray-800,
+html body.dark div.text-gray-800,
+html body.dark span.text-gray-800 {
+  color: #ffffff !important;
+  /* Pure white for dark mode */
+}
+
+/* Code block specific fixes with high specificity */
+html body .language-bash .token.comment,
+html body pre .token.comment,
+html body code .token.comment {
+  color: #374151 !important;
+  /* gray-700 for better contrast */
+}
+
+html body.dark .language-bash .token.comment,
+html body.dark pre .token.comment,
+html body.dark code .token.comment {
+  color: #d1d5db !important;
+  /* gray-300 for dark mode */
+}
+
+/* Button text contrast fixes with high specificity */
+html body button.text-gray-500,
+html body a.text-gray-500,
+html body button.text-gray-600,
+html body a.text-gray-600 {
+  color: #374151 !important;
+  /* gray-700 for buttons */
+}
+
+html body.dark button.text-gray-500,
+html body.dark a.text-gray-500,
+html body.dark button.text-gray-600,
+html body.dark a.text-gray-600 {
+  color: #f3f4f6 !important;
+  /* gray-100 for dark mode buttons */
+}
+
+/* Ensure sufficient contrast for small text with maximum specificity */
+html body .text-xs.text-gray-600,
+html body .text-sm.text-gray-600,
+html body p.text-xs.text-gray-600,
+html body p.text-sm.text-gray-600,
+html body div.text-xs.text-gray-600,
+html body div.text-sm.text-gray-600 {
+  color: #000000 !important;
+  /* Pure black for small text */
+}
+
+html body.dark .text-xs.text-gray-600,
+html body.dark .text-sm.text-gray-600,
+html body.dark p.text-xs.text-gray-600,
+html body.dark p.text-sm.text-gray-600,
+html body.dark div.text-xs.text-gray-600,
+html body.dark div.text-sm.text-gray-600 {
+  color: #ffffff !important;
+  /* Pure white for dark mode small text */
+}
+
+/* Fix CodeBlock component specific issues */
+html body [data-testid='code-block'] .text-gray-800,
+html body [data-testid='code-block'] .text-gray-700,
+html body [data-testid='code-block'] .text-gray-600 {
+  color: #000000 !important;
+  /* Pure black for code blocks */
+}
+
+html body.dark [data-testid='code-block'] .text-gray-800,
+html body.dark [data-testid='code-block'] .text-gray-700,
+html body.dark [data-testid='code-block'] .text-gray-600 {
+  color: #ffffff !important;
+  /* Pure white for dark mode code blocks */
 }
