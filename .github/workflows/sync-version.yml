@@ -26,14 +26,12 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '22'
+          node-version: '22.12.0'
           cache: 'npm'
-          cache-dependency-path: 'echonote-introduction/package-lock.json'
+          cache-dependency-path: 'package-lock.json'
 
       - name: Install dependencies
-        run: |
-          cd echonote-introduction
-          npm ci
+        run: npm ci
 
       - name: Fetch EchoNote main project information
         id: fetch-info
@@ -104,7 +102,7 @@ jobs:
               };
               
               // Write to data file
-              const dataDir = path.join('echonote-introduction', 'src', 'data');
+              const dataDir = path.join('src', 'data');
               if (!fs.existsSync(dataDir)) {
                 fs.mkdirSync(dataDir, { recursive: true });
               }
@@ -113,7 +111,7 @@ jobs:
               fs.writeFileSync(dataFile, JSON.stringify(versionInfo, null, 2));
               
               // Update package.json version if different
-              const packageJsonPath = path.join('echonote-introduction', 'package.json');
+              const packageJsonPath = 'package.json';
               const packageJson = JSON.parse(fs.readFileSync(packageJsonPath, 'utf8'));
               const newVersion = versionInfo.version.replace('v', '');
               
@@ -152,7 +150,7 @@ jobs:
                 error: error.message
               };
               
-              const dataDir = path.join('echonote-introduction', 'src', 'data');
+              const dataDir = path.join('src', 'data');
               if (!fs.existsSync(dataDir)) {
                 fs.mkdirSync(dataDir, { recursive: true });
               }
@@ -168,7 +166,6 @@ jobs:
 
       - name: Create TypeScript types for project info
         run: |
-          cd echonote-introduction
           cat > src/types/project-info.ts << 'EOF'
           export interface ProjectStats {
             stars: number;
@@ -195,7 +192,6 @@ jobs:
 
       - name: Create composable for project info
         run: |
-          cd echonote-introduction
           mkdir -p src/composables
           cat > src/composables/useProjectInfo.ts << 'EOF'
           import { ref, computed } from 'vue';
@@ -257,7 +253,6 @@ jobs:
       - name: Check for changes
         id: check-changes
         run: |
-          cd echonote-introduction
           if git diff --quiet; then
             echo "has_changes=false" >> $GITHUB_OUTPUT
           else
@@ -267,7 +262,6 @@ jobs:
       - name: Commit and push changes
         if: steps.check-changes.outputs.has_changes == 'true' || github.event.inputs.force_update == 'true'
         run: |
-          cd echonote-introduction
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add .
@@ -283,7 +277,6 @@ jobs:
       - name: Create summary
         if: always()
         run: |
-          cd echonote-introduction
           echo "## 📊 Version Sync Summary" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
 

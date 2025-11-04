@@ -31,9 +31,9 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '22'
+          node-version: '22.12.0'
           cache: 'npm'
-          cache-dependency-path: 'echonote-introduction/package-lock.json'
+          cache-dependency-path: 'package-lock.json'
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
@@ -45,29 +45,21 @@ jobs:
           static_site_generator: custom
 
       - name: Install dependencies
-        run: |
-          cd echonote-introduction
-          npm ci
+        run: npm ci
 
       - name: Run type checking
-        run: |
-          cd echonote-introduction
-          npm run type-check
+        run: npm run type-check
 
       - name: Run linting
-        run: |
-          cd echonote-introduction
-          npm run lint
+        run: npm run lint
 
       - name: Build with Vite
-        run: |
-          cd echonote-introduction
-          npm run build
+        run: npm run build
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: echonote-introduction/dist
+          path: dist
 
   # Deployment job
   deploy:

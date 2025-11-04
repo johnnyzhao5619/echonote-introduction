@@ -7,6 +7,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [1.2.0] - 2025-11-03
 
+### Fixed
+
+- **GitHub Actions 构建问题修复**: 解决了 Node.js setup 和缓存依赖的路径问题
+  - 修复了所有工作流文件中的 `cache-dependency-path` 配置错误
+  - 统一移除了不必要的 `cd echonote-introduction` 命令
+  - 更新 Node.js 版本至 22.12.0 以满足 engines 要求
+  - 修复了 format 脚本调用错误，使用正确的 `format:check` 命令
+  - 确保所有工作流文件路径配置一致性
+
 ### Added
 
 - **Task 10 - 多语言内容和视觉资源完善**: 全面的内容和资源优化

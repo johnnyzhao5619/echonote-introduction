@@ -17,26 +17,18 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '22'
+          node-version: '22.12.0'
           cache: 'npm'
-          cache-dependency-path: 'echonote-introduction/package-lock.json'
+          cache-dependency-path: 'package-lock.json'
 
       - name: Install dependencies
-        run: |
-          cd echonote-introduction
-          npm ci
+        run: npm ci
 
       - name: Check for outdated packages
-        run: |
-          cd echonote-introduction
-          npm outdated || true
+        run: npm outdated || true
 
       - name: Security audit
-        run: |
-          cd echonote-introduction
-          npm audit --audit-level=moderate || true
+        run: npm audit --audit-level=moderate || true
 
       - name: Run security checks
-        run: |
-          cd echonote-introduction
-          npm run security:check
+        run: npm run security:check
