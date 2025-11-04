@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref, onMounted, computed } from 'vue'
+import { ref, onMounted, onBeforeUnmount, computed } from 'vue'
 import { useI18n } from '@/composables/useI18n'
 import { useGitHubApi } from '@/composables/useGitHubApi'
 import { useStaggeredAnimations, useSmoothScroll } from '@/composables/useUI'
@@ -40,6 +40,7 @@ const { scrollToElement } = useSmoothScroll()
 
 // State
 const currentFeatureIndex = ref(0)
+let featureInterval: number | null = null
 
 // Computed
 const features = computed(() => [
@@ -83,7 +84,12 @@ const currentFeature = computed(() => {
 const startFeatureAnimation = (): void => {
   if (!props.animateFeatures || features.value.length <= 1) return
 
-  setInterval(() => {
+  if (featureInterval !== null) {
+    window.clearInterval(featureInterval)
+    featureInterval = null
+  }
+
+  featureInterval = window.setInterval(() => {
     currentFeatureIndex.value = (currentFeatureIndex.value + 1) % features.value.length
   }, 3000)
 }
@@ -98,6 +104,13 @@ onMounted(() => {
     fetchStats()
   }
   startFeatureAnimation()
+})
+
+onBeforeUnmount(() => {
+  if (featureInterval !== null) {
+    window.clearInterval(featureInterval)
+    featureInterval = null
+  }
 })
 </script>
 

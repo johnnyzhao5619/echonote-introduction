@@ -4,12 +4,15 @@ import { useI18n } from '@/composables/useI18n'
 import LanguageSwitcher from './LanguageSwitcher.vue'
 import { APP_CONFIG } from '@/config/app'
 import { TEST_IDS } from '@/constants/testIds'
+import { useSmoothScroll } from '@/composables/useUI'
 
 const { t } = useI18n()
 
 // State
 const isMobileMenuOpen = ref(false)
 const isScrolled = ref(false)
+
+const { scrollToElement } = useSmoothScroll()
 
 // Configuration
 const githubUrl = APP_CONFIG.github.repoUrl
@@ -31,48 +34,34 @@ const closeMobileMenu = () => {
   isMobileMenuOpen.value = false
 }
 
-const handleMobileNavClick = (event: Event) => {
-  scrollToSection(event)
-  closeMobileMenu()
+const getNavigationHeight = () => {
+  const nav = document.querySelector('nav')
+  if (nav) {
+    return nav.getBoundingClientRect().height
+  }
+
+  return window.innerWidth < 640 ? 56 : 64
 }
 
-const scrollToSection = (event: Event) => {
+const navigateToSection = (href: string | null) => {
+  if (!href || !href.startsWith('#')) return
+
+  scrollToElement(href, {
+    offset: getNavigationHeight(),
+    duration: 600,
+    easing: 'ease-out',
+  })
+}
+
+const handleNavClick = (event: Event) => {
   event.preventDefault()
-  const target = event.target as HTMLAnchorElement
-  const href = target.getAttribute('href')
+  const anchor = event.currentTarget as HTMLAnchorElement | null
+  navigateToSection(anchor?.getAttribute('href') ?? null)
+}
 
-  if (href && href.startsWith('#')) {
-    const sectionId = href.substring(1)
-    const element = document.getElementById(sectionId)
-
-    if (element) {
-      const navHeight = window.innerWidth < 640 ? 56 : 64 // Responsive nav height
-      const elementPosition = element.offsetTop - navHeight
-
-      // Enhanced smooth scrolling with easing
-      const startPosition = window.pageYOffset
-      const distance = elementPosition - startPosition
-      const duration = Math.min(Math.abs(distance) / 2, 800) // Dynamic duration, max 800ms
-      let start: number | null = null
-
-      const step = (timestamp: number) => {
-        if (!start) start = timestamp
-        const progress = timestamp - start
-        const percentage = Math.min(progress / duration, 1)
-
-        // Easing function (ease-out-cubic)
-        const easeOutCubic = 1 - Math.pow(1 - percentage, 3)
-
-        window.scrollTo(0, startPosition + distance * easeOutCubic)
-
-        if (progress < duration) {
-          window.requestAnimationFrame(step)
-        }
-      }
-
-      window.requestAnimationFrame(step)
-    }
-  }
+const handleMobileNavClick = (event: Event) => {
+  handleNavClick(event)
+  closeMobileMenu()
 }
 
 const handleScroll = () => {
@@ -105,7 +94,8 @@ const handleKeyboardNavigation = (event: KeyboardEvent) => {
     const target = event.target as HTMLElement
     if (target.tagName === 'A' && target.getAttribute('href')?.startsWith('#')) {
       event.preventDefault()
-      scrollToSection(event)
+      const anchor = target as HTMLAnchorElement
+      navigateToSection(anchor.getAttribute('href'))
       if (isMobileMenuOpen.value) {
         closeMobileMenu()
       }
@@ -183,7 +173,7 @@ onUnmounted(() => {
               class="text-gray-700 hover:text-blue-600 active:text-blue-700 px-2 lg:px-3 py-2 text-sm lg:text-base font-medium transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 rounded-md touch-target relative overflow-hidden group"
               role="menuitem"
               :aria-label="t(item.label)"
-              @click="scrollToSection"
+              @click="handleNavClick"
             >
               <span class="relative z-10">{{ t(item.label) }}</span>
               <span
