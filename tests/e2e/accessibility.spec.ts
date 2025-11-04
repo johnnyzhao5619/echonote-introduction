@@ -10,6 +10,9 @@ test.describe('Accessibility Tests', () => {
   test('should not have any accessibility violations (axe-core)', async ({ page }) => {
     const accessibilityScanResults = await new AxeBuilder({ page })
       .withTags(['wcag2a', 'wcag2aa', 'wcag21aa'])
+      .exclude('#__vue-devtools-guide-overlay')
+      .exclude('.vue-devtools__anchor-btn')
+      .exclude('[data-v-640ec535]')
       .analyze()
 
     expect(accessibilityScanResults.violations).toEqual([])

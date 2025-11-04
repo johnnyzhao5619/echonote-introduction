@@ -59,7 +59,8 @@ const themeClasses = computed(() => {
     return `${baseClasses} bg-gray-900 text-gray-100`
   }
 
-  return `${baseClasses} bg-gray-50 text-gray-900`
+  // Use higher contrast colors for better accessibility
+  return `${baseClasses} bg-gray-50 text-gray-800`
 })
 
 const highlightedCode = computed(() => {
@@ -175,13 +176,13 @@ onMounted(() => {
       <div class="flex items-center space-x-2">
         <div
           v-if="filename"
-          class="text-sm font-medium text-gray-700 dark:text-gray-300"
+          class="text-sm font-medium text-gray-800 dark:text-gray-200"
         >
           {{ filename }}
         </div>
         <div
           v-if="showLanguage && language"
-          class="px-2 py-1 text-xs font-mono bg-gray-200 dark:bg-gray-700 text-gray-600 dark:text-gray-400 rounded"
+          class="px-2 py-1 text-xs font-mono bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded"
         >
           {{ language }}
         </div>
@@ -191,7 +192,7 @@ onMounted(() => {
       <button
         v-if="copyable"
         type="button"
-        class="inline-flex items-center px-2 py-1 text-xs font-medium text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-700 rounded transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+        class="inline-flex items-center px-2 py-1 text-xs font-medium text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-gray-100 hover:bg-gray-200 dark:hover:bg-gray-700 rounded transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
         :class="{ 'text-green-600 dark:text-green-400': copySuccess }"
         :aria-label="copySuccess ? t('common.copied') : t('common.copy')"
         :data-testid="TEST_IDS.COPY_BUTTON"

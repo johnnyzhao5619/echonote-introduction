@@ -1,0 +1,73 @@
+/**
+ * Accessibility fixes for color contrast
+ * These overrides ensure WCAG 2.1 AA compliance (4.5:1 contrast ratio)
+ */
+
+/* Fix text-gray-600 contrast issues */
+.text-gray-600 {
+  color: #374151 !important;
+  /* gray-700 for better contrast */
+}
+
+/* Fix text-gray-500 contrast issues */
+.text-gray-500 {
+  color: #4b5563 !important;
+  /* gray-600 for better contrast */
+}
+
+/* Fix text-gray-700 on light backgrounds */
+.text-gray-700 {
+  color: #1f2937 !important;
+  /* gray-800 for better contrast */
+}
+
+/* Dark mode overrides */
+.dark .text-gray-600 {
+  color: #d1d5db !important;
+  /* gray-300 for dark mode */
+}
+
+.dark .text-gray-500 {
+  color: #e5e7eb !important;
+  /* gray-200 for dark mode */
+}
+
+.dark .text-gray-700 {
+  color: #f3f4f6 !important;
+  /* gray-100 for dark mode */
+}
+
+/* Code block specific fixes */
+.language-bash .token.comment {
+  color: #6b7280 !important;
+  /* Improved contrast for comments */
+}
+
+.dark .language-bash .token.comment {
+  color: #9ca3af !important;
+  /* Better contrast in dark mode */
+}
+
+/* Button text contrast fixes */
+button.text-gray-500,
+a.text-gray-500 {
+  color: #4b5563 !important;
+}
+
+.dark button.text-gray-500,
+.dark a.text-gray-500 {
+  color: #e5e7eb !important;
+}
+
+/* Ensure sufficient contrast for small text */
+.text-xs.text-gray-600,
+.text-sm.text-gray-600 {
+  color: #1f2937 !important;
+  /* Even darker for small text */
+}
+
+.dark .text-xs.text-gray-600,
+.dark .text-sm.text-gray-600 {
+  color: #f9fafb !important;
+  /* Very light for dark mode small text */
+}

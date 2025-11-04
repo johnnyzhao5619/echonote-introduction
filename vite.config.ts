@@ -24,8 +24,8 @@ export default defineConfig(({ mode }) => {
           },
         },
       }),
-      // Only use devtools in development
-      ...(isProduction ? [] : [vueDevTools()]),
+      // Only use devtools in development and not in test environment
+      ...(isProduction || process.env.NODE_ENV === 'test' ? [] : [vueDevTools()]),
     ],
     resolve: {
       alias: {
