@@ -20,6 +20,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - 更新键盘事件测试以使用正确的事件参数格式
   - 添加 TypeScript 类型注解解决编译错误
   - 确保所有 111 个单元测试通过
+- **GitHub Pages 部署配置修复**: 解决了 configure-pages action 的 TypeError 问题
+  - 降级使用 actions/configure-pages@v4 替代有问题的 v5 版本
+  - 移除了不必要的 static_site_generator 自定义配置
+  - 确保 Vite 构建的静态站点能正确部署到 GitHub Pages
 
 ### Added
 
