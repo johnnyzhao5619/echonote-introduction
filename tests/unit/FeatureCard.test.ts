@@ -178,10 +178,10 @@ describe('FeatureCard', () => {
       },
     })
 
-    await wrapper.trigger('keydown.enter')
+    await wrapper.trigger('keydown', { key: 'Enter' })
     expect(wrapper.emitted('click')).toBeTruthy()
 
-    await wrapper.trigger('keydown.space')
+    await wrapper.trigger('keydown', { key: ' ' })
     expect(wrapper.emitted('click')).toHaveLength(2)
   })
 

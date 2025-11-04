@@ -186,9 +186,19 @@ const handleImageError = (event: Event) => {
     :role="clickable && !action ? 'button' : undefined"
     :aria-label="clickable && !action ? `${title} - ${description}` : undefined"
     :data-testid="TEST_IDS.FEATURE_CARD"
-    @click="action ? undefined : handleClick"
-    @keydown.enter="action ? undefined : handleClick"
-    @keydown.space.prevent="action ? undefined : handleClick"
+    v-on="
+      clickable && !action
+        ? {
+            click: handleClick,
+            keydown: e => {
+              if (e.key === 'Enter' || e.key === ' ') {
+                if (e.key === ' ') e.preventDefault()
+                handleClick(e)
+              }
+            },
+          }
+        : {}
+    "
   >
     <!-- Background decoration -->
     <div
