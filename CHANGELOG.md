@@ -15,6 +15,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - 更新 Node.js 版本至 22.12.0 以满足 engines 要求
   - 修复了 format 脚本调用错误，使用正确的 `format:check` 命令
   - 确保所有工作流文件路径配置一致性
+- **单元测试修复**: 解决了 FeatureCard 组件的测试失败问题
+  - 修复了点击事件绑定逻辑，使用条件 v-on 指令
+  - 更新键盘事件测试以使用正确的事件参数格式
+  - 添加 TypeScript 类型注解解决编译错误
+  - 确保所有 111 个单元测试通过
 
 ### Added
 
