@@ -5,7 +5,7 @@
  */
 
 import type { MessageSchema } from '@/i18n'
-import { APP_CONFIG } from '@/config/constants'
+import { APP_CONFIG } from '@/config/app'
 
 // Core interfaces
 export interface TranslationIssue {

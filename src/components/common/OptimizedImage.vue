@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref, computed, onMounted, onUnmounted, watch } from 'vue'
 import { useI18n } from '@/composables/useI18n'
-import { APP_CONFIG, type ImageContext } from '@/config/constants'
+import { APP_CONFIG, type ImageContext } from '@/config/app'
 
 // Props - Simplified interface following first principles
 interface Props {

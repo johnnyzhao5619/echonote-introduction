@@ -1,5 +1,5 @@
 import { ref, computed } from 'vue'
-import { APP_CONFIG } from '@/config/constants'
+import { APP_CONFIG } from '@/config/app'
 import type {
   GitHubStats,
   GitHubRepository,
@@ -17,7 +17,7 @@ export function useGitHubApi(repository: string = APP_CONFIG.github.repository) 
   const releases = ref<GitHubRelease[]>([])
 
   // Computed
-  const apiUrl = computed(() => `${APP_CONFIG.github.apiUrl}/repos/${repository}`)
+  const apiUrl = computed(() => `${APP_CONFIG.github.apiBase}/repos/${repository}`)
   const cacheKey = computed(() => `github-${repository.replace('/', '-')}`)
 
   // Cache configuration from centralized config

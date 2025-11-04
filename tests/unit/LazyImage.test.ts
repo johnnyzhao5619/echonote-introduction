@@ -9,7 +9,7 @@ vi.mock('@/composables/useI18n', () => ({
 }))
 
 // Mock the constants
-vi.mock('@/config/constants', () => ({
+vi.mock('@/config/app', () => ({
   APP_CONFIG: {
     images: {
       contexts: {
