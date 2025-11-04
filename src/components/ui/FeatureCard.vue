@@ -190,7 +190,7 @@ const handleImageError = (event: Event) => {
       clickable && !action
         ? {
             click: handleClick,
-            keydown: e => {
+            keydown: (e: KeyboardEvent) => {
               if (e.key === 'Enter' || e.key === ' ') {
                 if (e.key === ' ') e.preventDefault()
                 handleClick(e)
